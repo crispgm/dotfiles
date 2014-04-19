@@ -1,0 +1,7 @@
+echo -e "\033[34;5m"
+echo -e "ttttttt iiiii eeeeeee bbbbbb      a"
+echo -e "   t      i   e       b     b    a a"
+echo -e "   t      i   eeeeeee bbbbbb    aaaaa"
+echo -e "   t      i   e       b     b  a     a"
+echo -e "   t    iiiii eeeeeee bbbbbb  a       a"
+echo -e "\033[0m"
