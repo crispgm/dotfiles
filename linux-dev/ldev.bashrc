@@ -19,6 +19,8 @@ alias welcome='sh ~/script/welcome.sh'
 alias con_orp='sh ~/script/connect/orp_control.sh'
 alias con_test='sh ~/script/connect/test_machine.sh'
 alias con_noah='sh ~/script/connect/noah_control.sh'
+
+# coloured display for ssh client
 alias ls='ls --color=tty'
 
 # default alias that i never use
