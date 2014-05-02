@@ -10,10 +10,15 @@ fi
 [[ -s "/home/users/zhangwanlong/.jumbo/etc/bashrc" ]] && source "/home/users/zhangwanlong/.jumbo/etc/bashrc"
 
 # bin path
-export PATH=/home/users/zhangwanlong/bin/php/bin:$PATH
+export PATH=/home/users/zhangwanlong/bin/bin:/home/users/zhangwanlong/bin/php/bin:/home/users/zhangwanlong/.jumbo/opt/gcc48/bin:$PATH
+# ld path
+export LD_LIBRARY_PATH=/home/users/zhangwanlong/bin/lib:/home/users/zhangwanlong/bin/lib/msgpack/lib:/home/users/zhangwanlong/.jumbo/lib:/home/users/zhangwanlong/private/peg-markdown/trunk:$LD_LIBRARY_PATH
+# library path
+export LIBRARY_PATH=/home/users/zhangwanlong/bin/lib:$LIBRARY_PATH
 
 # personal util's scripts
 alias pmake='sh ~/script/make.sh'
+alias trust='sh ~/script/trust.sh'
 alias clientgen='sh ~/script/client_php_gen.sh'
 alias welcome='sh ~/script/welcome.sh'
 alias con_orp='sh ~/script/connect/orp_control.sh'
