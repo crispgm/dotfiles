@@ -49,6 +49,7 @@ set ts=4
 set sw=4
 set t_Co=256
 set cursorline
+set nohlsearch
 colorscheme zarniwoop
 set number
 set ruler
@@ -57,6 +58,10 @@ set encoding=utf-8
 set fenc=utf-8
 set autoindent
 syntax on
+set whichwrap=b,s,<,>,[,] 
 
 let g:syntastic_php_check_on_open = 1
 let g:syntastic_php_checkers = ['php','phpcs']
+
+let g:ycm_global_ycm_extra_conf = '/Users/crisp/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
+
