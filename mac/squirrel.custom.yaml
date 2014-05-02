@@ -1,0 +1,7 @@
+patch:
+    "style/color_scheme": luna
+    "style/horizontal": true
+    "style/font_point": 18
+    "style/corner_radius": 4
+    "app_options/com.sublimetext.2":
+        ascii_mode: true

@@ -51,3 +51,7 @@ set ignorecase
 set autoindent
 syntax on
 colorscheme zarniwoop
+set whichwrap=b,s,<,>,[,] 
+
+let g:ycm_global_ycm_extra_conf = '/Users/crisp/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_show_diagnostics_ui = 0
