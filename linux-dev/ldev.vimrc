@@ -28,7 +28,6 @@ Bundle 'gmarik/vundle'
 " git repos on your local machine (i.e. when working on your own plugin)
 " Bundle 'file:///home/gmarik/path/to/plugin'
 " ...
-Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/syntastic'
 
 filetype plugin indent on     " required
@@ -62,6 +61,4 @@ set whichwrap=b,s,<,>,[,]
 
 let g:syntastic_php_check_on_open = 1
 let g:syntastic_php_checkers = ['php','phpcs']
-
-let g:ycm_global_ycm_extra_conf = '/Users/crisp/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
 

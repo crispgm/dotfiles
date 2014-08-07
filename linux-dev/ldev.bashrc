@@ -4,15 +4,15 @@
     # User specific aliases and functions
 
     # Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
-fi
+#if [ -f /etc/bashrc ]; then
+#	. /etc/bashrc
+#fi
 [[ -s "/home/users/zhangwanlong/.jumbo/etc/bashrc" ]] && source "/home/users/zhangwanlong/.jumbo/etc/bashrc"
 
 # bin path
-export PATH=/home/users/zhangwanlong/bin/bin:/home/users/zhangwanlong/bin/php/bin:/home/users/zhangwanlong/.jumbo/opt/gcc48/bin:$PATH
+export PATH=/home/users/zhangwanlong/bin/bin:/home/users/zhangwanlong/bin/php/bin:$PATH
 # ld path
-export LD_LIBRARY_PATH=/home/users/zhangwanlong/bin/lib:/home/users/zhangwanlong/bin/lib/msgpack/lib:/home/users/zhangwanlong/.jumbo/lib:/home/users/zhangwanlong/private/peg-markdown/trunk:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/home/users/zhangwanlong/bin/lib:/home/users/zhangwanlong/bin/lib/msgpack/lib:/home/users/zhangwanlong/.jumbo/lib:$LD_LIBRARY_PATH
 # library path
 export LIBRARY_PATH=/home/users/zhangwanlong/bin/lib:$LIBRARY_PATH
 
@@ -34,5 +34,7 @@ unalias l.
 unalias ll
 
 # ocean manual. however, it's GBK encoding.
-unalias ocean_help
+#unalias ocean_help
 
+export TERM=xterm
+export PATH
