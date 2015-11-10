@@ -10,25 +10,10 @@ call vundle#rc()
 
 " let Vundle manage Vundle, required
 Bundle 'gmarik/vundle'
-
-" The following are examples of different formats supported.
-" Keep bundle commands between here and filetype plugin indent on.
-" scripts on GitHub repos
-" Bundle 'tpope/vim-fugitive'
-" Bundle 'Lokaltog/vim-easymotion'
-" Bundle 'tpope/vim-rails.git'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-" Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-" scripts from http://vim-scripts.org/vim/scripts.html
-" Bundle 'L9'
-" Bundle 'FuzzyFinder'
-" scripts not on GitHub
-" Bundle 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-" Bundle 'file:///home/gmarik/path/to/plugin'
-" ...
 Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdtree'
+"Bundle 'fholgado/minibufexpl.vim'
+Bundle 'fatih/vim-go'
 
 filetype plugin indent on     " required
 "
@@ -58,7 +43,17 @@ set fenc=utf-8
 set autoindent
 syntax on
 set whichwrap=b,s,<,>,[,] 
+set mouse-=a
 
+" syntastic settings
 let g:syntastic_php_check_on_open = 1
 let g:syntastic_php_checkers = ['php','phpcs']
+
+" NERD_Tree settings
+"autocmd VimEnter * NERDTree
+"wincmd w
+"autocmd VimEnter * wincmd w
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") &&b:NERDTreeType == "primary") | q | endif
+let g:NERDTreeWinPos = 'right'
+let g:NERDTreeMinimalUI = 1
 
