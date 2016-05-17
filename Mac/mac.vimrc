@@ -26,7 +26,7 @@ Plugin 'VundleVim/vundle'
 " scripts not on GitHub
 " Bundle 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
-" Bundle 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
@@ -54,4 +54,5 @@ set autoindent
 syntax on
 colorscheme zarniwoop
 set whichwrap=b,s,<,>,[,]
+set backspace=2
 
