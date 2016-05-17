@@ -10,4 +10,4 @@
 ||amazonaws.com
 ||vip.vido.ws
 ||naturalhigh.co.jp
-
+||fastly.net
