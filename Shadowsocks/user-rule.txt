@@ -11,3 +11,5 @@
 ||vip.vido.ws
 ||naturalhigh.co.jp
 ||fastly.net
+||github.com
+||githubusercontent.com
