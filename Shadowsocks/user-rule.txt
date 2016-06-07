@@ -13,3 +13,4 @@
 ||fastly.net
 ||github.com
 ||githubusercontent.com
+||gitter.im
