@@ -16,3 +16,5 @@
 ||gitter.im
 ||glassdoor.com
 ||cloudfront.net
+||atlassian.com
+||bitbucket.org
