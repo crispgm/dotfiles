@@ -13,6 +13,7 @@
 ||fastly.net
 ||github.com
 ||githubusercontent.com
+||github.io
 ||gitter.im
 ||glassdoor.com
 ||cloudfront.net
