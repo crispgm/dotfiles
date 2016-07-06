@@ -20,3 +20,4 @@
 ||atlassian.com
 ||bitbucket.org
 ||slid.es
+||mandrillapp.com
