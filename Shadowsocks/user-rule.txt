@@ -21,3 +21,4 @@
 ||bitbucket.org
 ||slid.es
 ||mandrillapp.com
+||waffle.io
