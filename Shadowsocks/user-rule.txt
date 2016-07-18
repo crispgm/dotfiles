@@ -23,3 +23,4 @@
 ||mandrillapp.com
 ||waffle.io
 ||cloudflare.com
+||codeclimate.com
