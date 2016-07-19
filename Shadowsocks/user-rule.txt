@@ -24,3 +24,5 @@
 ||waffle.io
 ||cloudflare.com
 ||codeclimate.com
+||jquery.com
+||jquery.org
