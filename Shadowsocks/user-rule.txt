@@ -26,3 +26,4 @@
 ||codeclimate.com
 ||jquery.com
 ||jquery.org
+||awsstatic.com
