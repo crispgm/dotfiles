@@ -27,3 +27,4 @@
 ||jquery.com
 ||jquery.org
 ||awsstatic.com
+||rubydoc.info
