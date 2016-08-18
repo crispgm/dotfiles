@@ -28,3 +28,4 @@
 ||jquery.org
 ||awsstatic.com
 ||rubydoc.info
+||disqus.com
