@@ -1,0 +1,20 @@
+# coding: utf-8
+task default: %w[update]
+
+desc "walk all dirs and git pull"
+task :update do
+  d = Dir.new("./")
+  d.each do |sub|
+    next if sub == "." || sub == ".." || File.file?(sub)
+    Dir.chdir(sub) do
+      begin
+      	puts "======================="
+        puts "Update: #{sub}"
+        sh "git pull"
+        puts "======================="
+      rescue
+        puts "#{sub} is not a git repo, skip."
+      end
+    end
+  end
+end
