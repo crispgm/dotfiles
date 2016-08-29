@@ -29,3 +29,4 @@
 ||awsstatic.com
 ||rubydoc.info
 ||disqus.com
+||speakerdeck.com
