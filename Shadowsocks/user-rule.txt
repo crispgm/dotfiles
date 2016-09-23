@@ -8,7 +8,7 @@
 ||hhvm.com
 ||tumblr.com
 ||amazonaws.com
-||vip.vido.ws
+||vido.ws
 ||naturalhigh.co.jp
 ||fastly.net
 ||github.com
