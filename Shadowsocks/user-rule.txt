@@ -1,27 +1,29 @@
 ! Put user rules line by line in this file.
 ! See https://adblockplus.org/en/filter-cheatsheet
 
+! for entertainment
 ||twitch.tv
-||medium.com
-||newrelic.com
-||vsco.co
-||hhvm.com
-||tumblr.com
-||amazonaws.com
 ||vido.ws
 ||naturalhigh.co.jp
+||medium.com
+||vsco.co
+||glassdoor.com
+||tumblr.com
+
+! for programming
+||newrelic.com
+||hhvm.com
+||amazonaws.com
 ||fastly.net
 ||github.com
 ||githubusercontent.com
 ||github.io
 ||gitter.im
-||glassdoor.com
 ||cloudfront.net
 ||atlassian.com
 ||bitbucket.org
 ||slid.es
 ||mandrillapp.com
-||waffle.io
 ||cloudflare.com
 ||codeclimate.com
 ||jquery.com
@@ -32,3 +34,7 @@
 ||speakerdeck.com
 ||mapbox.com
 ||mozilla.net
+||jsfiddle.net
+||headwayapp.co
+||togetherjs.com
+||jshell.net
