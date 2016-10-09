@@ -1,0 +1,1 @@
+cat user-rule.txt | grep '||' | awk '{printf("\"%s\",\n",$1)}'
