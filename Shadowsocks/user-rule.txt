@@ -39,3 +39,4 @@
 ||togetherjs.com
 ||jshell.net
 ||rubyonrails.org
+||appveyor.com
