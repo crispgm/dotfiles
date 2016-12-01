@@ -82,13 +82,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim="/usr/local/Cellar/vim/7.4.1795/bin/vim"
 alias bc="bc -q -l"
-alias cnpm="npm --registry=https://registry.npm.taobao.org \
---cache=$HOME/.npm/.cache/cnpm \
---disturl=https://npm.taobao.org/dist \
---userconfig=$HOME/.cnpmrc"
-
+alias vim="/usr/local/Cellar/vim/8.0.0104/bin/vim"
 export EDITOR='vim'
+alias cnpm="npm --registry=https://registry.npm.taobao.org \
+    --cache=$HOME/.npm/.cache/cnpm \
+    --disturl=https://npm.taobao.org/dist \
+    --userconfig=$HOME/.cnpmrc"
 export GOPATH=/Users/baidu/Dev/Gopath
+export PATH="/usr/local/Cellar/ruby/2.3.3/bin/:$GOPATH/bin:$HOME/.yarn/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node_modules"
