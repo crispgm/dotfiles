@@ -84,7 +84,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias bc="bc -q -l"
 alias vim="/usr/local/Cellar/vim/8.0.0104/bin/vim"
-export EDITOR='vim'
 alias cnpm="npm --registry=https://registry.npm.taobao.org \
     --cache=$HOME/.npm/.cache/cnpm \
     --disturl=https://npm.taobao.org/dist \
@@ -92,3 +91,6 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 export GOPATH=/Users/baidu/Dev/Gopath
 export PATH="/usr/local/Cellar/ruby/2.3.3/bin/:$GOPATH/bin:$HOME/.yarn/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node_modules"
+export EDITOR='vim'
+
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
