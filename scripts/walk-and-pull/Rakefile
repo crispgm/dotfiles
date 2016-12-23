@@ -7,14 +7,14 @@ task :update do
   d.each do |sub|
     next if sub == "." || sub == ".." || File.file?(sub)
     Dir.chdir(sub) do
-      begin
-      	puts "======================="
-        puts "Update: #{sub}"
-        sh "git pull"
+      if !Dir.exist? ".git"
         puts "======================="
-      rescue
-        puts "#{sub} is not a git repo, skip."
+        puts "Ignore: #{sub}"
+        next
       end
+    	puts "======================="
+      puts "Update: #{sub}"
+      sh "git pull"
     end
   end
 end
