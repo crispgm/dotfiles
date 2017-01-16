@@ -3,7 +3,6 @@
 
 ! for entertainment
 ||twitch.tv
-||vido.ws
 ||naturalhigh.co.jp
 ||medium.com
 ||vsco.co
@@ -41,3 +40,4 @@
 ||jshell.net
 ||rubyonrails.org
 ||appveyor.com
+||hashnode.com
