@@ -41,3 +41,4 @@
 ||jshell.net
 ||rubyonrails.org
 ||appveyor.com
+||gitbooks.io
