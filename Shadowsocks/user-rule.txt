@@ -3,12 +3,12 @@
 
 ! for entertainment
 ||twitch.tv
-||vido.ws
 ||naturalhigh.co.jp
 ||medium.com
 ||vsco.co
 ||glassdoor.com
 ||tumblr.com
+||unsplash.com
 
 ! for programming
 ||newrelic.com
@@ -41,4 +41,6 @@
 ||jshell.net
 ||rubyonrails.org
 ||appveyor.com
+||hashnode.com
 ||gitbooks.io
+
