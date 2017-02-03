@@ -5,4 +5,4 @@
 - https://gems.ruby-china.org/
 :update_sources: true
 :verbose: true
-gem: --bindir /usr/local/bin
+gem: --no-document --bindir /usr/local/bin
