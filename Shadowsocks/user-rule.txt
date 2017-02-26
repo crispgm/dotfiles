@@ -44,3 +44,7 @@
 ||appveyor.com
 ||hashnode.com
 ||gitbooks.io
+||heroku.com
+||herokucdn.com
+||laravel.com
+||laracasts.com
