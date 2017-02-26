@@ -9,6 +9,7 @@
 ||glassdoor.com
 ||tumblr.com
 ||unsplash.com
+||imgur.com
 
 ! for programming
 ||newrelic.com
@@ -43,4 +44,3 @@
 ||appveyor.com
 ||hashnode.com
 ||gitbooks.io
-
