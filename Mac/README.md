@@ -7,12 +7,15 @@ Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 - [ ] Install [Homebrew](https://brew.sh)
 - [ ] Install [Brewfile](https://github.com/crispgm/dotfiles/blob/master/Mac/Brewfile)
 - [ ] Login locally on GitHub
+- [ ] Setup `.dotfiles`
 
 ## Apps
 
 - [ ] Install Shadowsocks-osx
 
 ## Sublime Text
+
+- [ ] Migrate settings
 
 ## Finder
 
