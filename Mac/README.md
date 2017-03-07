@@ -9,9 +9,10 @@ Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 - [ ] Login locally on GitHub
 - [ ] Setup `.dotfiles`
 
-## Apps
+## Shadowsocks
 
 - [ ] Install Shadowsocks-osx
+- [ ] Import custom [user-rules](https://github.com/crispgm/dotfiles/tree/master/Shadowsocks)
 
 ## Sublime Text
 
@@ -23,4 +24,3 @@ Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 - [ ] Remove labels and clean up Sidebar
 
 ## Dock
-
