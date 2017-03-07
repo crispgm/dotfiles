@@ -1,0 +1,9 @@
+brew install wget
+brew install autojump
+brew install mas
+brew install p7zip
+brew install dos2unix
+brew install vim
+brew install zsh
+brew install proxychains-ng
+brew install ruby
