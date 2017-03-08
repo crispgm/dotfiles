@@ -48,3 +48,4 @@
 ||herokucdn.com
 ||laravel.com
 ||laracasts.com
+||changelog.com
