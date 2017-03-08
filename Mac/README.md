@@ -16,7 +16,8 @@ Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 
 ## Sublime Text
 
-- [ ] Migrate settings
+- [ ] Migrate [.sublime-settings](https://github.com/crispgm/dotfiles/tree/master/Mac/Apps/Sublime)
+- [ ] Install `zenburn` and `RailsBase16` colorschemes
 
 ## Finder
 
