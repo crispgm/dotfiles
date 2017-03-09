@@ -10,6 +10,7 @@
 ||tumblr.com
 ||unsplash.com
 ||imgur.com
+||pinterest.com
 
 ! for programming
 ||newrelic.com
