@@ -1,4 +1,4 @@
-# Setup up a new Mac (WIP)
+# Setup up a new Mac
 
 Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 
