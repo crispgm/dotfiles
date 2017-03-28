@@ -20,7 +20,7 @@ chcp 65001
 
 ## Ruby
 
-* Setup Ruby ecology by: <https://gorails.com/setup/windows/10>
+- [ ] Setup Ruby ecology by: <https://gorails.com/setup/windows/10>
 
 To avoid ban from GFW:
 
