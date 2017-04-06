@@ -20,12 +20,14 @@ In non China mainland area, it should be ignored.
 
 ## Shadowsocks
 
-- [ ] Install Shadowsocks-osx
+- [ ] Install [ShadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG)
 - [ ] Import custom [user-rules](https://github.com/crispgm/dotfiles/tree/master/Shadowsocks)
 
 ## Sublime Text
 
 - [ ] Migrate [.sublime-settings](https://github.com/crispgm/dotfiles/tree/master/Mac/Apps/Sublime)
+- [ ] Install [PackageControl](https://packagecontrol.io/)
+- [ ] Install `vue-syntax-highlight` and `syntax-highlighting-for-sass` with `PackageControl`
 - [ ] Install [Tomorrow theme](https://github.com/chriskempson/tomorrow-theme.git)
 
 ## Finder

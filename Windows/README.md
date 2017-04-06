@@ -16,7 +16,7 @@ chcp 65001
 - [ ] Install [wsltty](https://github.com/mintty/wsltty)
 - [ ] Change Ubuntu aptitude source to a fast mirror: `/etc/apt/sources.list`
 - [ ] Install `git`, `zsh`, `oh-my-zsh`
-- [ ] Setup `.vimrc`
+- [ ] Setup `.dotfiles`
 
 ## Ruby
 
@@ -37,6 +37,8 @@ In non China mainland area, it should be ignored.
 ## Sublime Text
 
 - [ ] Migrate [.sublime-settings](https://github.com/crispgm/dotfiles/tree/master/Mac/Apps/Sublime)
+- [ ] Install [PackageControl](https://packagecontrol.io/)
+- [ ] Install `vue-syntax-highlight` and `syntax-highlighting-for-sass` with `PackageControl`
 - [ ] Install [Tomorrow theme](https://github.com/chriskempson/tomorrow-theme.git)
 
 ## Windows Explorer
