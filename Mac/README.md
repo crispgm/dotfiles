@@ -26,9 +26,10 @@ In non China mainland area, it should be ignored.
 ## Sublime Text
 
 - [ ] Migrate [.sublime-settings](https://github.com/crispgm/dotfiles/tree/master/Mac/Apps/Sublime)
+- [ ] Create `subl` in Terminal: `sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /Users/baidu/Applications/subl`
 - [ ] Install [PackageControl](https://packagecontrol.io/)
-- [ ] Install `vue-syntax-highlight` and `syntax-highlighting-for-sass` with `PackageControl`
 - [ ] Install [Tomorrow theme](https://github.com/chriskempson/tomorrow-theme.git)
+- [ ] Install `syntax-highlighting-for-sass`, `vue-syntax-highlight` and `React Templates` with `PackageControl`
 
 ## Finder
 
