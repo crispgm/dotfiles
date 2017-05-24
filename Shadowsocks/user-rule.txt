@@ -50,3 +50,5 @@
 ||laravel.com
 ||laracasts.com
 ||changelog.com
+||w3schools.com
+||producthunt.com
