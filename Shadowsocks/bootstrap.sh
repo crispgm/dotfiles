@@ -1,1 +1,1 @@
-cat user-rule.txt | grep '||' | awk '{printf("\"%s\",\n",$1)}'
+cat user-rule.txt > ~/.ShadowsocksX-NG/user-rule.txt
