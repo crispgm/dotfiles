@@ -2,18 +2,9 @@
 
 Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 
-## Console
-
-For a Chinese system, change to UTF-8 to have a better display.
-
-```
-chcp 65001
-```
-
 ## Windows Subsystem Linux
 
-- [ ] Install WSL
-- [ ] Install [wsltty](https://github.com/mintty/wsltty)
+- [ ] [Setup DSL and install Hyper](https://dev.to/lloydstubber/my-wsl-setup-for-development)
 - [ ] Change Ubuntu aptitude source to a fast mirror: `/etc/apt/sources.list`
 - [ ] Install `git`, `zsh`, `oh-my-zsh`
 - [ ] Setup `.dotfiles`
@@ -44,3 +35,4 @@ In non China mainland area, it should be ignored.
 ## Windows Explorer
 
 - [ ] Display extension name
+
