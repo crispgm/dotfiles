@@ -29,7 +29,7 @@ In non China mainland area, it should be ignored.
 - [ ] Create `subl` in Terminal: `sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /Users/baidu/Applications/subl`
 - [ ] Install [PackageControl](https://packagecontrol.io/)
 - [ ] Install [Tomorrow theme](https://github.com/chriskempson/tomorrow-theme.git)
-- [ ] Install `syntax-highlighting-for-sass`, `vue-syntax-highlight` and `React Templates` with `PackageControl`
+- [ ] Install `syntax-highlighting-for-sass`, `vue-syntax-highlight` and `babel-sublime` with `PackageControl`
 
 ## Finder
 

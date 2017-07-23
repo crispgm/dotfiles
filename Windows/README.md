@@ -29,10 +29,9 @@ In non China mainland area, it should be ignored.
 
 - [ ] Migrate [.sublime-settings](https://github.com/crispgm/dotfiles/tree/master/Mac/Apps/Sublime)
 - [ ] Install [PackageControl](https://packagecontrol.io/)
-- [ ] Install `vue-syntax-highlight` and `syntax-highlighting-for-sass` with `PackageControl`
+- [ ] Install `vue-syntax-highlight`, `syntax-highlighting-for-sass` and `bable-sublime` with `PackageControl`
 - [ ] Install [Tomorrow theme](https://github.com/chriskempson/tomorrow-theme.git)
 
 ## Windows Explorer
 
 - [ ] Display extension name
-
