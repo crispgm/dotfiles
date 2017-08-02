@@ -29,6 +29,7 @@ In non China mainland area, it should be ignored.
 
 - [ ] Migrate [.sublime-settings](https://github.com/crispgm/dotfiles/tree/master/Mac/Apps/Sublime)
 - [ ] Install [PackageControl](https://packagecontrol.io/)
+- [ ] Install `Monokai-Spacegrey` with `PackageControl`
 - [ ] Install `vue-syntax-highlight`, `syntax-highlighting-for-sass` and `bable-sublime` with `PackageControl`
 - [ ] Install [Tomorrow theme](https://github.com/chriskempson/tomorrow-theme.git)
 
