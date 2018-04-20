@@ -5,8 +5,8 @@ Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 ## Setup Shell
 
 - [ ] Install [Homebrew](https://brew.sh)
-- [ ] Install [Brewfile](https://github.com/crispgm/dotfiles/blob/master/Mac/Brewfile)
-- [ ] Setup theme of Terminal.app [osx-terminal-themes](https://github.com/lysyi3m/osx-terminal-themes)
+- [ ] Install [Brewfile](https://github.com/crispgm/dotfiles/blob/master/macOS/Brewfile)
+- [ ] Choose a theme of Terminal.app from [osx-terminal-themes](https://github.com/lysyi3m/osx-terminal-themes)
 - [ ] Login locally on GitHub
 - [ ] Setup `.dotfiles`
 
@@ -30,7 +30,7 @@ In non China mainland area, it should be ignored.
 
 ## Sublime Text
 
-- [ ] Migrate [.sublime-settings](https://github.com/crispgm/dotfiles/tree/master/Mac/Apps/Sublime)
+- [ ] Migrate [.sublime-settings](https://github.com/crispgm/dotfiles/tree/master/macOS/Apps/Sublime)
 - [ ] Create `subl` in Terminal: `sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /Users/baidu/Applications/subl`
 - [ ] Install [PackageControl](https://packagecontrol.io/)
 - [ ] Install `Monokai-Spacegrey` with `PackageControl`
