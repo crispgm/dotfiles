@@ -4,7 +4,6 @@
     "font_face": "Source Code Pro Regular",
     "font_options": [
         "no_round",
-        "gray_antialias",
         "subpixel_antialias"
     ],
     "font_size": 15,
