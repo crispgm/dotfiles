@@ -9,6 +9,12 @@ Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 - [ ] Login locally on GitHub
 - [ ] Setup `.dotfiles`
 
+## Install Fonts
+
+```
+- [ ] `brew tap caskroom/fonts && brew cask install font-source-code-pro font-fira-code`
+```
+
 ## Ruby
 
 To avoid ban from GFW:

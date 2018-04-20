@@ -1,8 +1,13 @@
 // Settings in here override those in "Default/Preferences.sublime-settings", and
 // are overridden in turn by file type specific settings.
 {
-    "font_face": "Menlo",
-    "font_size": 13,
+    "font_face": "Source Code Pro Regular",
+    "font_options": [
+        "no_round",
+        "gray_antialias",
+        "subpixel_antialias"
+    ],
+    "font_size": 15,
     "settings":
     {
         "default_line_ending": "unix",
