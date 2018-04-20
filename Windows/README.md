@@ -27,7 +27,7 @@ In non China mainland area, it should be ignored.
 
 ## Sublime Text
 
-- [ ] Migrate [.sublime-settings](https://github.com/crispgm/dotfiles/tree/master/Mac/Apps/Sublime)
+- [ ] Migrate [.sublime-settings](https://github.com/crispgm/dotfiles/tree/master/macOS/Apps/Sublime)
 - [ ] Install [PackageControl](https://packagecontrol.io/)
 - [ ] Install `Monokai-Spacegrey` with `PackageControl`
 - [ ] Install `vue-syntax-highlight`, `syntax-highlighting-for-sass` and `bable-sublime` with `PackageControl`
