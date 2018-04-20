@@ -12,9 +12,7 @@ Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 
 ## Install Fonts
 
-```
 - [ ] `brew tap caskroom/fonts && brew cask install font-source-code-pro font-fira-code`
-```
 
 ## Ruby
 
