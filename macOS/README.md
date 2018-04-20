@@ -6,6 +6,7 @@ Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 
 - [ ] Install [Homebrew](https://brew.sh)
 - [ ] Install [Brewfile](https://github.com/crispgm/dotfiles/blob/master/Mac/Brewfile)
+- [ ] Setup theme of Terminal.app [osx-terminal-themes](https://github.com/lysyi3m/osx-terminal-themes)
 - [ ] Login locally on GitHub
 - [ ] Setup `.dotfiles`
 
