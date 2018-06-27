@@ -10,6 +10,12 @@ Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 - [ ] Login locally on GitHub
 - [ ] Setup `.dotfiles`
 
+## Setup Git
+
+- [ ] User name `git config user.name "Your Name"`
+- [ ] User email `git config user.email "yourmail@example.com"`
+- [ ] Case sensitive `git config core.ignorecase false`
+
 ## Install Fonts
 
 - [ ] `brew tap caskroom/fonts && brew cask install font-source-code-pro font-fira-code`
