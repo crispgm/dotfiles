@@ -16,6 +16,12 @@ Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 - [ ] User email `git config user.email "yourmail@example.com"`
 - [ ] Case sensitive `git config core.ignorecase false`
 
+## Setup VIM
+
+- [ ] Install [customized zarniwoop theme](https://github.com/crispgm/zarniwoop.vim)
+- [ ] Install [Vundle](https://github.com/VundleVim/Vundle.vim)
+- [ ] Vundle install `Valloric/YouCompleteMe`
+
 ## Install Fonts
 
 - [ ] `brew tap caskroom/fonts && brew cask install font-source-code-pro font-fira-code`

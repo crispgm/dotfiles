@@ -8,4 +8,3 @@ brew install zsh
 brew install proxychains-ng
 brew install ruby
 brew install cmake
-
