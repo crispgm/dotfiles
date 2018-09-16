@@ -7,4 +7,8 @@ brew install vim
 brew install zsh
 brew install proxychains-ng
 brew install ruby
+brew install go
 brew install cmake
+brew install fzf
+brew cask install iina
+brew cask install font-source-code-pro
