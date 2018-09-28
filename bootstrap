@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+brew bundle
+
+cp .bash_profile ~/
+
+sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /Users/baidu/Applications/subl
