@@ -1,14 +1,36 @@
-brew install wget
-brew install autojump
-brew install mas
-brew install p7zip
-brew install dos2unix
-brew install vim
-brew install zsh
-brew install proxychains-ng
-brew install ruby
-brew install go
-brew install cmake
-brew install fzf
-brew cask install iina
-brew cask install font-source-code-pro
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+
+brew "wget"
+brew "mas"
+brew "p7zip"
+brew "dos2unix"
+brew "vim"
+brew "zsh"
+brew "proxychains-ng"
+brew "ruby"
+brew "go"
+brew "cmake"
+brew "fzf"
+brew "mysql"
+brew "sqlite"
+brew "postgresql"
+
+cask "visual-studio-code"
+cask "google-chrome"
+cask "iina"
+cask "font-source-code-pro"
+cask "font-fira-code"
+cask "quip"
+cask "caffeine"
+cask "dash"
+cask "shadowsocksx"
+cask "neteasemusic"
+cask "qqmusic"
+cask "google-trends"
+
+mas "WeChat", id: 836500024
+mas "Apple Configurator 2", id: 1037126344
+mas "Unsplash Wallpapers", id: 1284863847
+mas "Wunderlist", id: 410628904
+mas "Microsoft OneNote", id: 784801555

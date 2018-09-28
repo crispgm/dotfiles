@@ -5,7 +5,7 @@ Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 ## Setup Shell
 
 - [ ] Install [Homebrew](https://brew.sh)
-- [ ] Install [Brewfile](https://github.com/crispgm/dotfiles/blob/master/macOS/Brewfile)
+- [ ] Install softwares and fonts from [Brewfile](https://github.com/crispgm/dotfiles/blob/master/macOS/Brewfile) with `brew bundle`
 - [ ] Choose a theme of Terminal.app from [osx-terminal-themes](https://github.com/lysyi3m/osx-terminal-themes)
 - [ ] Login locally on GitHub
 - [ ] Setup `.dotfiles`
@@ -22,22 +22,17 @@ Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 - [ ] Install [Vundle](https://github.com/VundleVim/Vundle.vim)
 - [ ] Vundle install `Valloric/YouCompleteMe`
 
-## Install Fonts
-
-- [ ] `brew tap caskroom/fonts && brew cask install font-source-code-pro font-fira-code`
-
 ## Ruby
 
 To avoid ban from GFW:
 
-- [ ] Setup Gem sources: `gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/`
-- [ ] Setup bundler's mirror: `bundle config mirror.https://rubygems.org https://gems.ruby-china.org`
+- [ ] Setup Gem sources: `gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/`
+- [ ] Setup bundler's mirror: `bundle config mirror.https://rubygems.org https://gems.ruby-china.com`
 
 In non China mainland area, it should be ignored.
 
 ## Shadowsocks
 
-- [ ] Install [ShadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG)
 - [ ] Import custom [user-rules](https://github.com/crispgm/dotfiles/tree/master/Shadowsocks)
 
 ## Sublime Text
