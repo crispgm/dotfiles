@@ -16,8 +16,10 @@ brew "mysql"
 brew "sqlite"
 brew "postgresql"
 
-cask "visual-studio-code"
 cask "google-chrome"
+cask "visual-studio-code"
+cask "sublime-text"
+cask "sublime-merge"
 cask "iina"
 cask "font-source-code-pro"
 cask "font-fira-code"
@@ -28,8 +30,11 @@ cask "shadowsocksx"
 cask "neteasemusic"
 cask "qqmusic"
 cask "google-trends"
+cask "appcleaner"
+cask "spectacle"
 
 mas "WeChat", id: 836500024
+mas "Manico", id: 724472954
 mas "Apple Configurator 2", id: 1037126344
 mas "Unsplash Wallpapers", id: 1284863847
 mas "Wunderlist", id: 410628904
