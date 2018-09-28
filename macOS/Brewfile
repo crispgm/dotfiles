@@ -15,6 +15,7 @@ brew "fzf"
 brew "mysql"
 brew "sqlite"
 brew "postgresql"
+brew "youtube-dl"
 
 cask "google-chrome"
 cask "visual-studio-code"
