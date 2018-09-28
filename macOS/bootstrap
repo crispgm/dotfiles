@@ -8,4 +8,5 @@ brew bundle
 
 cp .bash_profile ~/
 
-sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /Users/baidu/Applications/subl
+sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/Applications/subl
+sudo ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code ~/Applications/code
