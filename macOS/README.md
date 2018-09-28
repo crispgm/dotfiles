@@ -4,6 +4,7 @@ Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 
 ## Setup Shell
 
+- [ ] `xcode-select --install`
 - [ ] Install [Homebrew](https://brew.sh)
 - [ ] Install softwares and fonts from [Brewfile](https://github.com/crispgm/dotfiles/blob/master/macOS/Brewfile) with `brew bundle`
 - [ ] Choose a theme of Terminal.app from [osx-terminal-themes](https://github.com/lysyi3m/osx-terminal-themes)
