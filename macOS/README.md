@@ -53,3 +53,7 @@ In non China mainland area, it should be ignored.
 ## Dock
 
 - [ ] Add blank seperator: `defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}`
+
+## Setup Karabiner if using HHKB
+
+- [ ] Setup `karabiner.json`
