@@ -53,9 +53,6 @@ plugins=(git gem brew vagrant emoji)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/baidu/Applications"
-# export MANPATH="/usr/local/man:$MANPATH"
-
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -83,14 +80,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias bc="bc -q -l"
-alias vim="/usr/local/Cellar/vim/8.0.0104/bin/vim"
-alias cnpm="npm --registry=https://registry.npm.taobao.org \
-    --cache=$HOME/.npm/.cache/cnpm \
-    --disturl=https://npm.taobao.org/dist \
-    --userconfig=$HOME/.cnpmrc"
-export GOPATH=/Users/baidu/Dev/Gopath
-export PATH="/usr/local/Cellar/ruby/2.3.3/bin/:$GOPATH/bin:$HOME/.yarn/bin:$PATH"
-export NODE_PATH="/usr/local/lib/node_modules"
 export EDITOR='vim'
 
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
