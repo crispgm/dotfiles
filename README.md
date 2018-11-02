@@ -2,7 +2,7 @@
 
 Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 
-## Setup Shell
+## Shell
 
 - [ ] `xcode-select --install`
 - [ ] Install [Homebrew](https://brew.sh)
@@ -11,13 +11,13 @@ Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 - [ ] Login locally on GitHub
 - [ ] Setup `.dotfiles`
 
-## Setup Git
+## Git
 
 - [ ] User name `git config user.name "Your Name"`
 - [ ] User email `git config user.email "yourmail@example.com"`
 - [ ] Case sensitive `git config core.ignorecase false`
 
-## Setup VIM
+## VIM
 
 - [ ] Install [customized zarniwoop theme](https://github.com/crispgm/zarniwoop.vim)
 - [ ] Install [Vundle](https://github.com/VundleVim/Vundle.vim)
@@ -25,12 +25,8 @@ Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 
 ## Ruby
 
-To avoid ban from GFW:
-
-- [ ] Setup Gem sources: `gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/`
-- [ ] Setup bundler's mirror: `bundle config mirror.https://rubygems.org https://gems.ruby-china.com`
-
-In non China mainland area, it should be ignored.
+- [ ] Setup `.gemrc`
+- [ ] Setup bundler's mirror: `bundle config mirror.https://rubygems.org https://gems.ruby-china.com` if you locate in China mainland
 
 ## Shadowsocks
 
@@ -54,6 +50,6 @@ In non China mainland area, it should be ignored.
 
 - [ ] Add blank seperator: `defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}`
 
-## Setup Karabiner if using HHKB
+## Karabiner
 
-- [ ] Setup `karabiner.json`
+- [ ] Setup `karabiner.json` if using HHKB

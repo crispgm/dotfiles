@@ -12,6 +12,11 @@
 ||imgur.com
 ||pinterest.com
 ||steampowered.com
+||huobipro.com
+||huobi.pro
+||huobi.com
+||planetrugby.com
+||earthroamer.com
 
 ! for programming
 ||newrelic.com
@@ -54,3 +59,18 @@
 ||w3schools.com
 ||producthunt.com
 ||stackoverflow.com
+||conoha.jp
+||devchat.tv
+||buymeacoffee.com
+||auth0.com
+||yarnpkg.com
+||cryptozombies.io
+||leetcode.com
+||myfonts.net
+||hshno.de
+||mapbox.com
+||discordapp.com
+||instapaper.com
+||vivaldi.com
+||vivaldi.net
+||workflowy.com
