@@ -1,0 +1,3 @@
+[submodule "zarniwoop.vim"]
+	path = zarniwoop.vim
+	url = https://github.com/crispgm/zarniwoop.vim.git
