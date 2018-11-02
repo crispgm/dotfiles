@@ -2,11 +2,17 @@
 
 Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 
+```shell
+$ git clone --recurse-submodules https://github.com/crispgm/dotfiles.git
+$ cd dotfiles
+$ ./bootstrap
+```
+
 ## Shell
 
 - [ ] `xcode-select --install`
 - [ ] Install [Homebrew](https://brew.sh)
-- [ ] Install softwares and fonts from [Brewfile](https://github.com/crispgm/dotfiles/blob/master/macOS/Brewfile) with `brew bundle`
+- [ ] Install softwares and fonts from [Brewfile](https://github.com/crispgm/dotfiles/blob/master/Brewfile) with `brew bundle`
 - [ ] Choose a theme of Terminal.app from [osx-terminal-themes](https://github.com/lysyi3m/osx-terminal-themes)
 - [ ] Login locally on GitHub
 - [ ] Setup `.dotfiles`
@@ -30,11 +36,11 @@ Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 
 ## Shadowsocks
 
-- [ ] Import custom [user-rules](https://github.com/crispgm/dotfiles/tree/master/Shadowsocks)
+- [ ] Import custom [user-rules](https://github.com/crispgm/dotfiles/tree/master/Apps/Shadowsocks)
 
 ## Sublime Text
 
-- [ ] Migrate [.sublime-settings](https://github.com/crispgm/dotfiles/tree/master/macOS/Apps/Sublime)
+- [ ] Migrate [.sublime-settings](https://github.com/crispgm/dotfiles/tree/master/Apps/Sublime)
 - [ ] Create `subl` in Terminal: `sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /Users/baidu/Applications/subl`
 - [ ] Install [PackageControl](https://packagecontrol.io/)
 - [ ] Install `Monokai-Spacegrey` with `PackageControl`

@@ -2,11 +2,27 @@
 
 set -e
 
+# install major applications with homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
 brew bundle
 
-cp .bash_profile ~/
+# make zsh default
+chsh -s $(which zsh)
 
+# setup dotfiles
+cp .bash_profile .zshrc .vimrc .gemrc ~/
+cp -r zarniwoop.vim/colors ~/.vim/
+
+# link to sublime & vscode
 sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/Applications/subl
 sudo ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code ~/Applications/code
+
+# ruby
+gem install bundler
+bundle config mirror.https://rubygems.org https://gems.ruby-china.com
+
+# go
+mkdir -p ~/go
+
+# shadowsocks
+cp Apps/Shadowsocks/user-rule.txt ~/.ShadowsocksX-NG/
