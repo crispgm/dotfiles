@@ -3,6 +3,7 @@
 Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 
 ```shell
+$ xcode-select --install
 $ git clone --recurse-submodules https://github.com/crispgm/dotfiles.git
 $ cd dotfiles
 $ ./bootstrap
