@@ -19,6 +19,7 @@ brew "mysql"
 brew "sqlite"
 brew "postgresql"
 brew "youtube-dl"
+brew "heroku/brew/heroku"
 
 cask "alfred"
 cask "google-chrome"
