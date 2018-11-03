@@ -35,3 +35,6 @@ mkdir -p ~/go
 # shadowsocks
 mkdir -p ~/.ShadowsocksX-NG
 cp Apps/Shadowsocks/user-rule.txt ~/.ShadowsocksX-NG/
+
+# install Xcode Command Line Tools in the end
+xcode-select --install
