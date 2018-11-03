@@ -58,10 +58,19 @@ $ ./bootstrap
 
 ## macOS Setups
 
+### Trackpad
+
+- [ ] Tap to click
+- [ ] Seconary click: Click in bottom right corner
+
+### Time
+
+- [ ] Set time zone automatically using current location
+- [ ] Use a 24-hour clock and show date
+
 ### Finder
 
 - [ ] New Finder show Desktop
-- [ ] Show Path Bar
 - [ ] Remove labels and clean up Sidebar
 
 ### Dock
