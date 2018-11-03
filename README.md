@@ -25,9 +25,9 @@ $ ./bootstrap
 
 ### Git
 
-- [ ] User name `git config user.name "Your Name"`
-- [ ] User email `git config user.email "yourmail@example.com"`
-- [ ] Case sensitive `git config core.ignorecase false`
+- [ ] User name `git config --global user.name "Your Name"`
+- [ ] User email `git config --global user.email "yourmail@example.com"`
+- [ ] Case sensitive `git config --global core.ignorecase false`
 
 ### Ruby
 
