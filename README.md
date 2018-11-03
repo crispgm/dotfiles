@@ -2,61 +2,68 @@
 
 Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 
+The checkbox denotes whether it is done by `bootstrap`.
+
+## Bootstrap
+
 ```shell
-$ xcode-select --install
-$ git clone --recurse-submodules https://github.com/crispgm/dotfiles.git
+$ git clone --recursive https://github.com/crispgm/dotfiles.git
 $ cd dotfiles
 $ ./bootstrap
 ```
 
-## Shell
+## Dev Setups
 
-- [ ] `xcode-select --install`
-- [ ] Install [Homebrew](https://brew.sh)
-- [ ] Install softwares and fonts from [Brewfile](https://github.com/crispgm/dotfiles/blob/master/Brewfile) with `brew bundle`
+### Terminal & Shell
+
+- [x] Install [Homebrew](https://brew.sh)
+- [x] Install softwares and fonts from [Brewfile](https://github.com/crispgm/dotfiles/blob/master/Brewfile) with `brew bundle`
+- [x] Install `zsh` and `oh-my-zsh`
+- [x] Install [customized zarniwoop theme](https://github.com/crispgm/zarniwoop.vim) for vim
+- [x] Setup `.bash_profile` `.zshrc` `.vimrc`
 - [ ] Choose a theme of Terminal.app from [osx-terminal-themes](https://github.com/lysyi3m/osx-terminal-themes)
-- [ ] Login locally on GitHub
-- [ ] Setup `.dotfiles`
 
-## Git
+### Git
 
 - [ ] User name `git config user.name "Your Name"`
 - [ ] User email `git config user.email "yourmail@example.com"`
 - [ ] Case sensitive `git config core.ignorecase false`
 
-## VIM
+### Ruby
 
-- [ ] Install [customized zarniwoop theme](https://github.com/crispgm/zarniwoop.vim)
-- [ ] Install [Vundle](https://github.com/VundleVim/Vundle.vim)
-- [ ] Vundle install `Valloric/YouCompleteMe`
+- [x] Setup `.gemrc`
+- [x] Setup bundler's mirror: `bundle config mirror.https://rubygems.org https://gems.ruby-china.com` if you locate in China mainland
 
-## Ruby
+#### Shadowsocks
 
-- [ ] Setup `.gemrc`
-- [ ] Setup bundler's mirror: `bundle config mirror.https://rubygems.org https://gems.ruby-china.com` if you locate in China mainland
+- [x] Import custom [user-rules](https://github.com/crispgm/dotfiles/tree/master/Apps/Shadowsocks)
 
-## Shadowsocks
+### Sublime Text
 
-- [ ] Import custom [user-rules](https://github.com/crispgm/dotfiles/tree/master/Apps/Shadowsocks)
-
-## Sublime Text
-
+- [x] Create `subl` in Terminal: `sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/Applications/subl`
 - [ ] Migrate [.sublime-settings](https://github.com/crispgm/dotfiles/tree/master/Apps/Sublime)
-- [ ] Create `subl` in Terminal: `sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /Users/baidu/Applications/subl`
 - [ ] Install [PackageControl](https://packagecontrol.io/)
 - [ ] Install `Monokai-Spacegrey` with `PackageControl`
-- [ ] Install [Tomorrow theme](https://github.com/chriskempson/tomorrow-theme.git)
+- [ ] Install [Tomorrow theme](https://github.com/chriskempson/tomorrow-theme.git)  with `PackageControl`
 - [ ] Install `syntax-highlighting-for-sass`, `vue-syntax-highlight` and `babel-sublime` with `PackageControl`
 
-## Finder
+### VSCode
 
+- [x] Create `code` in Terminal: `sudo ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code ~/Applications/code`
+
+### Karabiner
+
+- [x] Install `karabiner-elements`
+- [ ] Setup `karabiner.json` if using HHKB
+
+## macOS Setups
+
+### Finder
+
+- [ ] New Finder show Desktop
 - [ ] Show Path Bar
 - [ ] Remove labels and clean up Sidebar
 
-## Dock
+### Dock
 
 - [ ] Add blank seperator: `defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}`
-
-## Karabiner
-
-- [ ] Setup `karabiner.json` if using HHKB
