@@ -1,0 +1,5 @@
+{
+    "editor.fontSize": 12,
+    "workbench.colorTheme": "Nord",
+    "go.testFlags": ["-v"]
+}
