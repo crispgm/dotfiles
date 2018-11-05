@@ -7,6 +7,7 @@ The checkbox denotes whether it is done by `bootstrap`.
 ## Bootstrap
 
 ```shell
+$ xcode-select --install
 $ git clone --recursive https://github.com/crispgm/dotfiles.git
 $ cd dotfiles
 $ ./bootstrap
