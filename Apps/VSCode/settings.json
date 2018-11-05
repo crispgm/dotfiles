@@ -1,5 +1,11 @@
 {
     "editor.fontSize": 12,
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": false,
     "workbench.colorTheme": "Nord",
+    "go.languageServerExperimentalFeatures": {
+      "format": true,
+      "autoComplete": true
+    },
     "go.testFlags": ["-v"]
 }
