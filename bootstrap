@@ -38,3 +38,6 @@ cp Apps/Shadowsocks/user-rule.txt ~/.ShadowsocksX-NG/
 
 # install Xcode Command Line Tools in the end
 xcode-select --install
+
+# sync folder
+mkdir -p ~/sync

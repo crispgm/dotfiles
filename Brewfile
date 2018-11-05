@@ -40,6 +40,7 @@ cask "qqmusic"
 cask "google-trends"
 cask "appcleaner"
 cask "spectacle"
+cask "nutstore"
 cask "telegram"
 
 mas "WeChat", id: 836500024

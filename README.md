@@ -56,6 +56,11 @@ $ ./bootstrap
 - [x] Install `karabiner-elements`
 - [ ] Setup `karabiner.json` if using HHKB
 
+### Nutstore
+
+- [ ] Sync to `~/sync/Nutstore`
+- [ ] Setup syncing folder for apps (e.g. Alfred, Dash ...)
+
 ## macOS Setups
 
 ### Trackpad
