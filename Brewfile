@@ -22,6 +22,8 @@ brew "sqlite"
 brew "postgresql"
 brew "youtube-dl"
 brew "heroku"
+brew "node"
+brew "yarn"
 
 cask "alfred"
 cask "google-chrome"
