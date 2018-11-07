@@ -34,7 +34,7 @@ mkdir -p ~/go
 
 # shadowsocks
 mkdir -p ~/.ShadowsocksX-NG
-cp Apps/Shadowsocks/user-rule.txt ~/.ShadowsocksX-NG/
+cp ./Shadowsocks/user-rule.txt ~/.ShadowsocksX-NG/
 
 # sync folder
 mkdir -p ~/sync

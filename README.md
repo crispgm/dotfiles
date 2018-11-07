@@ -37,12 +37,12 @@ $ ./bootstrap
 
 #### Shadowsocks
 
-- [x] Import custom [user-rules](https://github.com/crispgm/dotfiles/tree/master/Apps/Shadowsocks)
+- [x] Import custom [user-rules](https://github.com/crispgm/dotfiles/tree/master/Shadowsocks)
 
 ### Sublime Text
 
 - [x] Create `subl` in Terminal: `sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/Applications/subl`
-- [ ] Migrate [.sublime-settings](https://github.com/crispgm/dotfiles/tree/master/Apps/Sublime)
+- [ ] Migrate [.sublime-settings](https://github.com/crispgm/dotfiles/tree/master/Sublime)
 - [ ] Install [PackageControl](https://packagecontrol.io/)
 - [ ] Install `Monokai-Spacegrey` with `PackageControl`
 - [ ] Install [Tomorrow theme](https://github.com/chriskempson/tomorrow-theme.git)  with `PackageControl`
