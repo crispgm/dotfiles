@@ -49,20 +49,22 @@ CASE_SENSITIVE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git gem brew vagrant emoji)
+plugins=(brew docker emoji gem git golang heroku osx redis-cli zsh_reload)
 
 # User configuration
-
 source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-alias bc="bc -q -l"
 export EDITOR='vim'
+
+# Go
 export GOROOT=`brew --prefix go`/libexec
 export GOPATH=~/go
+
+# PATH
 export PATH=$PATH:$GOPATH/bin
 
+# Alias
+alias bc="bc -q -l"
+
+# fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
