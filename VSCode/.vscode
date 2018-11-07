@@ -1,0 +1,16 @@
+code --install-extension arcticicestudio.nord-visual-studio-code
+code --install-extension castwide.solargraph
+code --install-extension DavidAnson.vscode-markdownlint
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension dzannotti.vscode-babel-coloring
+code --install-extension ecmel.vscode-html-css
+code --install-extension eg2.tslint
+code --install-extension ms-vscode.Go
+code --install-extension ms-vscode.Theme-TomorrowKit
+code --install-extension ms-vsliveshare.vsliveshare
+code --install-extension octref.vetur
+code --install-extension rebornix.ruby
+code --install-extension robinbentley.sass-indented
+code --install-extension Shan.code-settings-sync
+code --install-extension shanoor.vscode-nginx
+code --install-extension wix.vscode-import-cost

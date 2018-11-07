@@ -24,6 +24,7 @@ $(brew --prefix)/opt/fzf/install
 # link to sublime & vscode
 sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/Applications/subl
 sudo ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code ~/Applications/code
+./VSCode/.vscode
 
 # ruby
 gem install bundler

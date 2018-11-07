@@ -51,6 +51,7 @@ $ ./bootstrap
 ### VSCode
 
 - [x] Create `code` in Terminal: `sudo ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code ~/Applications/code`
+- [x] Install extensions
 
 ### Karabiner
 
