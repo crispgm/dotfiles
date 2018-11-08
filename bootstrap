@@ -16,12 +16,14 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # setup dotfiles
 cp .bash_profile .zshrc .vimrc .gemrc ~/
+mkdir -p ~/.vim
 cp -r zarniwoop.vim/colors ~/.vim/
 
 # fzf
 $(brew --prefix)/opt/fzf/install
 
 # link to sublime & vscode
+mkdir -p ~/Applications/
 sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/Applications/subl
 sudo ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code ~/Applications/code
 ./VSCode/.vscode
