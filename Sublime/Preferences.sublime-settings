@@ -6,7 +6,7 @@
         "no_round",
         "subpixel_antialias"
     ],
-    "font_size": 15,
+    "font_size": 12,
     "settings":
     {
         "default_line_ending": "unix",
