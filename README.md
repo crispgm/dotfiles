@@ -8,6 +8,8 @@ Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 
 The checkbox denotes whether it is done by `bootstrap`.
 
+关于：[我是如何初始化 Mac 环境的](https://crispgm.com/page/provisioning-a-new-mac.html)
+
 ## Bootstrap
 
 ```shell
