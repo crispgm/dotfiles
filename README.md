@@ -1,5 +1,9 @@
 # Setup up a new Mac
 
+![](https://img.shields.io/badge/.-dotfiles-green.svg)
+![](https://img.shields.io/badge/OS-macOS-1793D1.svg)
+![](https://img.shields.io/badge/License-MIT-5E81AC.svg)
+
 Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 
 The checkbox denotes whether it is done by `bootstrap`.
