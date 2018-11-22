@@ -17,6 +17,7 @@
 ||huobi.com
 ||planetrugby.com
 ||earthroamer.com
+||carryology.com
 
 ! for programming
 ||newrelic.com
@@ -68,6 +69,7 @@
 ||leetcode.com
 ||myfonts.net
 ||hshno.de
+||hashnode.com
 ||mapbox.com
 ||discordapp.com
 ||instapaper.com
