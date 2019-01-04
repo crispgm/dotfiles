@@ -48,8 +48,7 @@ cask "nutstore"
 cask "telegram"
 
 mas "WeChat", id: 836500024
-mas "Apple Configurator 2", id: 1037126344
 mas "Unsplash Wallpapers", id: 1284863847
 mas "Wunderlist", id: 410628904
 mas "Microsoft OneNote", id: 784801555
-mas "Reeder", id: 880001334
+mas "Bear", id: 1091189122
