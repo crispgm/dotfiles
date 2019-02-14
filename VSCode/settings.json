@@ -25,5 +25,6 @@
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.rendererType": "dom",
     "ruby.format": "rubocop",
-    "ruby.intellisense": "rubyLocate"
+    "ruby.intellisense": "rubyLocate",
+    "breadcrumbs.enabled": true
 }
