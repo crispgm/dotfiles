@@ -4,6 +4,7 @@ code --install-extension DavidAnson.vscode-markdownlint
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension dzannotti.vscode-babel-coloring
 code --install-extension ecmel.vscode-html-css
+code --install-extension EditorConfig.EditorConfig
 code --install-extension eg2.tslint
 code --install-extension ms-vscode.Go
 code --install-extension ms-vscode.Theme-TomorrowKit
@@ -14,3 +15,4 @@ code --install-extension robinbentley.sass-indented
 code --install-extension Shan.code-settings-sync
 code --install-extension shanoor.vscode-nginx
 code --install-extension wix.vscode-import-cost
+code --install-extension quicktype.quicktype
