@@ -32,7 +32,6 @@ cask "sublime-text"
 cask "visual-studio-code"
 cask "font-source-code-pro"
 cask "font-fira-code"
-cask "caffeine"
 cask "workflowy"
 cask "dash"
 cask "karabiner-elements"
@@ -51,3 +50,4 @@ mas "Unsplash Wallpapers", id: 1284863847
 mas "Wunderlist", id: 410628904
 mas "Microsoft OneNote", id: 784801555
 mas "Bear", id: 1091189122
+mas "Lungo", id: 1263070803
