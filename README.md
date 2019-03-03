@@ -24,11 +24,11 @@ $ ./bootstrap
 ### Terminal & Shell
 
 - [x] Install [Homebrew](https://brew.sh)
-- [x] Install softwares and fonts from [Brewfile](https://github.com/crispgm/dotfiles/blob/master/Brewfile) with `brew bundle`
+- [x] Install softwares and fonts from [Brewfile](https://github.com/crispgm/dotfiles/blob/master/Brewfile) with `brew bundle`. HINT: some applications from Mac App Store need purchase.
+- [ ] Choose a theme of `Terminal.app` from [osx-terminal-themes](https://github.com/lysyi3m/osx-terminal-themes)
 - [x] Install `zsh` and `oh-my-zsh`
 - [x] Install [customized zarniwoop theme](https://github.com/crispgm/zarniwoop.vim) for vim
 - [x] Setup `.bash_profile` `.zshrc` `.vimrc`
-- [ ] Choose a theme of Terminal.app from [osx-terminal-themes](https://github.com/lysyi3m/osx-terminal-themes)
 
 ### Git
 
