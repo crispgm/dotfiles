@@ -31,7 +31,7 @@ $(brew --prefix)/opt/fzf/install
 mkdir -p ~/Applications/
 sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/Applications/subl
 sudo ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code ~/Applications/code
-./VSCode/.vscode
+./VSCode/vscode
 
 # ruby
 gem install bundler
@@ -48,4 +48,4 @@ cp ./Shadowsocks/user-rule.txt ~/.ShadowsocksX-NG/
 mkdir -p ~/sync
 
 # macOS setups
-./.mac
+./mac
