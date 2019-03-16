@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# setup GIT_USERNAME and GIT_EMAIL before execution
+GIT_NAME="your name"
+GIT_EMAIL="your_email@example.com"
+
+git config --global user.name "$GIT_NAME"
+git config --global user.email "$GIT_EMAIL"
+git config --global core.ignorecase false
