@@ -52,3 +52,6 @@ mas "Wunderlist", id: 410628904
 mas "Microsoft OneNote", id: 784801555
 mas "Bear", id: 1091189122
 mas "Lungo", id: 1263070803
+mas "Pages", id: 409201541
+mas "Numbers", id: 409203825
+mas "Keynote", id: 409183694
