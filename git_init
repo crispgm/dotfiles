@@ -7,3 +7,6 @@ GIT_EMAIL="your_email@example.com"
 git config --global user.name "$GIT_NAME"
 git config --global user.email "$GIT_EMAIL"
 git config --global core.ignorecase false
+git config --global color.ui true
+git config --global format.pretty oneline
+
