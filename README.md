@@ -23,6 +23,7 @@ $ ./bootstrap
 
 ### Terminal & Shell
 
+- [x] Setup Hostname `sudo scutil --set HostName david-macbook`
 - [x] Install [Homebrew](https://brew.sh)
 - [x] Install softwares and fonts from [Brewfile](https://github.com/crispgm/dotfiles/blob/master/Brewfile) with `brew bundle`. HINT: some applications from Mac App Store need purchase.
 - [ ] Choose a theme of `Terminal.app` from [osx-terminal-themes](https://github.com/lysyi3m/osx-terminal-themes)
