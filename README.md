@@ -51,9 +51,9 @@ $ ./bootstrap
 - [x] Create `subl` in Terminal: `sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/Applications/subl`
 - [ ] Migrate [.sublime-settings](https://github.com/crispgm/dotfiles/tree/master/Sublime)
 - [ ] Install [PackageControl](https://packagecontrol.io/)
-- [ ] Install `Monokai-Spacegrey` with `PackageControl`
-- [ ] Install [Tomorrow theme](https://github.com/chriskempson/tomorrow-theme.git)  with `PackageControl`
-- [ ] Install `syntax-highlighting-for-sass`, `vue-syntax-highlight` and `babel-sublime` with `PackageControl`
+- [ ] `PackageControl`: Install `Monokai - Spacegrey`
+- [ ] `PackageControl`: Install `[Tomorrow Color Schemes](https://github.com/chriskempson/tomorrow-theme.git)`
+- [ ] `PackageControl`: Install `syntax-highlighting-for-sass`, `vue-syntax-highlight`, and `babel-sublime`
 
 ### VSCode
 
