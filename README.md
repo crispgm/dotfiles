@@ -52,7 +52,7 @@ $ ./bootstrap
 - [ ] Migrate [.sublime-settings](https://github.com/crispgm/dotfiles/tree/master/Sublime)
 - [ ] Install [PackageControl](https://packagecontrol.io/)
 - [ ] `PackageControl`: Install `Monokai - Spacegrey`
-- [ ] `PackageControl`: Install `[Tomorrow Color Schemes](https://github.com/chriskempson/tomorrow-theme.git)`
+- [ ] `PackageControl`: Install `Tomorrow Color Schemes`
 - [ ] `PackageControl`: Install `syntax-highlighting-for-sass`, `vue-syntax-highlight`, and `babel-sublime`
 
 ### VSCode
