@@ -89,7 +89,11 @@ $ ./bootstrap
 
 ### Dock
 
-- [x] Change to the size you like
-- [x] Cancel: Show recent application in Dock
+- [ ] Change to the size you like
+- [ ] Cancel: Show recent application in Dock
 - [ ] Downloads: View content as Grid
 - [ ] Add blank seperator: `defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}`
+
+### Siri
+
+- [ ] Disable Siri system wide and remove Siri button from Touch Bar
