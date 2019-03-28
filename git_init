@@ -8,5 +8,4 @@ git config --global user.name "$GIT_NAME"
 git config --global user.email "$GIT_EMAIL"
 git config --global core.ignorecase false
 git config --global color.ui true
-git config --global format.pretty oneline
 git config --global pull.rebase true

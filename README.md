@@ -40,7 +40,6 @@ $ ./bootstrap
 ```shell
 git config --global core.ignorecase false`
 git config --global color.ui true
-git config --global format.pretty oneline
 git config --global pull.rebase true
 ```
 
