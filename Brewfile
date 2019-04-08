@@ -43,7 +43,7 @@ cask "neteasemusic"
 cask "qqmusic"
 cask "google-trends"
 cask "appcleaner"
-cask "spectacle"
+cask "oversight"
 cask "nutstore"
 cask "telegram"
 
