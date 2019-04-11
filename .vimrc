@@ -14,4 +14,5 @@ set ignorecase
 set autoindent
 set whichwrap=b,s,<,>,[,]
 set backspace=2
+set enc=utf-8
 colorscheme zarniwoop
