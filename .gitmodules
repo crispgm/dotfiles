@@ -4,3 +4,6 @@
 [submodule "macos-terminal-themes"]
 	path = macos-terminal-themes
 	url = https://github.com/lysyi3m/macos-terminal-themes.git
+[submodule "nord-iterm2"]
+	path = nord-iterm2
+	url = https://github.com/arcticicestudio/nord-iterm2
