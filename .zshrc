@@ -64,6 +64,7 @@ export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
 
 # Alias
+alias vim="nvim"
 alias bc="bc -q -l"
 
 # fzf

@@ -16,6 +16,7 @@ set +e
 brew bundle
 set -e
 
+# init git
 ./git_init
 
 # make zsh default
@@ -25,11 +26,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # setup dotfiles
 cp .bash_profile .zshrc .vimrc .gemrc ~/
-mkdir -p ~/.vim
-cp -r zarniwoop.vim/colors ~/.vim/
 
 # fzf
 $(brew --prefix)/opt/fzf/install
+
+# neovim
+./neovim/neovim
 
 # link to sublime & vscode
 mkdir -p ~/Applications/

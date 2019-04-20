@@ -28,8 +28,8 @@ $ ./bootstrap
 - [x] Install softwares and fonts from [Brewfile](https://github.com/crispgm/dotfiles/blob/master/Brewfile) with `brew bundle`. HINT: some applications from Mac App Store need purchase.
 - [ ] Install [nord theme](https://github.com/arcticicestudio/nord-iterm2) for iTerm2
 - [x] Install `zsh` and `oh-my-zsh`
-- [x] Install [customized zarniwoop theme](https://github.com/crispgm/zarniwoop.vim) for vim
-- [x] Setup `.bash_profile` `.zshrc` `.vimrc`
+- [x] Setup `.bash_profile` `.zshrc`
+- [x] Setup NeoVim
 
 ### Git
 
