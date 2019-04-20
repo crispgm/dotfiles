@@ -1,9 +1,3 @@
-[submodule "zarniwoop.vim"]
-	path = zarniwoop.vim
-	url = https://github.com/crispgm/zarniwoop.vim.git
-[submodule "macos-terminal-themes"]
-	path = macos-terminal-themes
-	url = https://github.com/lysyi3m/macos-terminal-themes.git
 [submodule "nord-iterm2"]
 	path = nord-iterm2
 	url = https://github.com/arcticicestudio/nord-iterm2
