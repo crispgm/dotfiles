@@ -37,8 +37,8 @@ set ignorecase
 set autoindent
 set whichwrap=b,s,<,>,[,]
 set backspace=2
+set encoding=utf-8
 colorscheme nord
-" colorscheme zarniwoop
 
 " Plugins
 let g:deoplete#enable_at_startup = 1
