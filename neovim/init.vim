@@ -43,4 +43,5 @@ colorscheme nord
 " Plugins
 let g:deoplete#enable_at_startup = 1
 map <C-n> :NERDTreeToggle<CR>
+autocmd BufWinEnter * NERDTreeMirror
 
