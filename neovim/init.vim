@@ -13,9 +13,9 @@ if dein#load_state('~/.cache/dein')
     call dein#add('roxma/vim-hug-neovim-rpc')
   endif
   call dein#add('deoplete-plugins/deoplete-go', {'build': 'make'})
-  call dein#add('crispgm/zarniwoop.vim')
   call dein#add('arcticicestudio/nord-vim')
   call dein#add('vim-airline/vim-airline')
+  call dein#add('scrooloose/nerdtree')
 
   call dein#end()
   call dein#save_state()
@@ -42,4 +42,5 @@ colorscheme nord
 
 " Plugins
 let g:deoplete#enable_at_startup = 1
+map <C-n> :NERDTreeToggle<CR>
 
