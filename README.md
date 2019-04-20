@@ -38,7 +38,7 @@ $ ./bootstrap
 - [x] Git global config
 
 ```shell
-git config --global core.ignorecase false`
+git config --global core.ignorecase false
 git config --global color.ui true
 git config --global pull.rebase true
 ```
