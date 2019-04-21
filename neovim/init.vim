@@ -45,4 +45,4 @@ colorscheme nord
 let g:deoplete#enable_at_startup = 1
 map <C-n> :NERDTreeToggle<CR>
 autocmd BufWinEnter * NERDTreeMirror
-
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
