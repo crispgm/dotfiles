@@ -38,6 +38,7 @@ set autoindent
 set whichwrap=b,s,<,>,[,]
 set backspace=2
 set encoding=utf-8
+set list
 colorscheme nord
 
 " Plugins
