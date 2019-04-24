@@ -33,15 +33,8 @@ $ ./bootstrap
 
 ### Git
 
-- [x] User name `git config --global user.name "Your Name"`
-- [x] User email `git config --global user.email "yourmail@example.com"`
 - [x] Git global config
-
-```shell
-git config --global core.ignorecase false
-git config --global color.ui true
-git config --global pull.rebase true
-```
+- [x] Git work config
 
 ### Ruby
 

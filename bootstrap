@@ -16,8 +16,13 @@ set +e
 brew bundle
 set -e
 
+# setup workspace
+mkdir -p ~/dev
+mkdir -p ~/work
+
 # init git
-./git_init
+cp ./git/work.gitconfig ~/work/.gitconfig
+cp ./git/global.gitconfig ~/.gitconfig
 
 # make zsh default
 sudo sh -c 'echo /usr/local/bin/zsh >> /etc/shells'

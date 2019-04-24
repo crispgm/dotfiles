@@ -1,0 +1,13 @@
+[user]
+	name = David Zhang
+	email = crispgm@gmail.com
+[core]
+	ignorecase = false
+[credential]
+	helper = osxkeychain
+[color]
+	ui = true
+[pull]
+	rebase = true
+[includeIf "gitdir:~/work/"]
+	path = ~/work/.gitconfig
