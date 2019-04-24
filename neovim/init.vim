@@ -16,6 +16,8 @@ if dein#load_state('~/.cache/dein')
   call dein#add('arcticicestudio/nord-vim')
   call dein#add('vim-airline/vim-airline')
   call dein#add('scrooloose/nerdtree')
+  call dein#add('mhinz/vim-startify')
+  call dein#add('Yggdroot/indentLine')
 
   call dein#end()
   call dein#save_state()
