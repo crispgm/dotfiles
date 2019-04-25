@@ -13,11 +13,13 @@ if dein#load_state('~/.cache/dein')
     call dein#add('roxma/vim-hug-neovim-rpc')
   endif
   call dein#add('deoplete-plugins/deoplete-go', {'build': 'make'})
+  call dein#add('deoplete-plugins/deoplete-jedi')
   call dein#add('arcticicestudio/nord-vim')
   call dein#add('vim-airline/vim-airline')
   call dein#add('scrooloose/nerdtree')
   call dein#add('mhinz/vim-startify')
   call dein#add('Yggdroot/indentLine')
+  call dein#add('mattn/emmet-vim')
 
   call dein#end()
   call dein#save_state()
@@ -41,6 +43,7 @@ set whichwrap=b,s,<,>,[,]
 set backspace=2
 set encoding=utf-8
 set list
+set completeopt-=preview
 colorscheme nord
 
 " Plugins
@@ -48,3 +51,6 @@ let g:deoplete#enable_at_startup = 1
 map <C-n> :NERDTreeToggle<CR>
 autocmd BufWinEnter * NERDTreeMirror
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+let g:user_emmet_install_global = 0
+let g:user_emmet_leader_key='<C-E>'
+autocmd FileType html,css EmmetInstall
