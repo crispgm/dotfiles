@@ -1,18 +1,20 @@
-// Settings in here override those in "Default/Preferences.sublime-settings", and
-// are overridden in turn by file type specific settings.
 {
+    "theme": "Spacegray Light.sublime-theme",
+    "color_scheme": "Packages/nord/Nord.tmTheme",
     "font_face": "Source Code Pro Regular",
-    "font_options": [
+    "font_options":
+    [
         "no_round",
         "subpixel_antialias"
     ],
     "font_size": 12,
-    "settings":
-    {
-        "default_line_ending": "unix",
-        "ensure_newline_at_eof_on_save": true,
-        "tab_size": 4,
-        "translate_tabs_to_spaces": true,
-        "trim_trailing_white_space_on_save": true
-    }
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "default_line_ending": "unix",
+    "ensure_newline_at_eof_on_save": true,
+    "tab_size": 4,
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true
 }
