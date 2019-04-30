@@ -20,6 +20,7 @@ if dein#load_state('~/.cache/dein')
   call dein#add('mhinz/vim-startify')
   call dein#add('Yggdroot/indentLine')
   call dein#add('editorconfig/editorconfig-vim')
+  call dein#add('fatih/vim-go')
   call dein#add('mattn/emmet-vim')
   call dein#add('ap/vim-css-color')
 
