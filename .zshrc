@@ -54,7 +54,7 @@ plugins=(brew docker emoji gem git golang heroku osx redis-cli zsh_reload)
 # User configuration
 source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
-export EDITOR='vim'
+export EDITOR='nvim'
 
 # Go
 export GOROOT=`brew --prefix go`/libexec
