@@ -48,7 +48,7 @@ $ ./bootstrap
 ### Sublime Text
 
 - [x] Create `subl` in Terminal: `sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/Applications/subl`
-- [ ] Migrate [.sublime-settings](https://github.com/crispgm/dotfiles/tree/master/Sublime)
+- [x] Migrate [.sublime-settings](https://github.com/crispgm/dotfiles/tree/master/Sublime)
 - [ ] Install [PackageControl](https://packagecontrol.io/)
 - [ ] `PackageControl`: Install `Monokai - Spacegrey`, `syntax-highlighting-for-sass`, and `SublimeLinter`
 
