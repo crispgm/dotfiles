@@ -41,6 +41,7 @@ $(brew --prefix)/opt/fzf/install
 # link to sublime & vscode
 mkdir -p ~/Applications/
 sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/Applications/subl
+./Sublime/sublime
 sudo ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code ~/Applications/code
 ./VSCode/vscode
 
