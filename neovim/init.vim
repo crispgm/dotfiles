@@ -61,6 +61,7 @@ noremap <c-k> <c-w>k
 noremap <c-h> <c-w>h
 noremap <c-l> <c-w>l
 
+autocmd Filetype go setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd Filetype css setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype scss setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype html setlocal ts=2 sts=2 sw=2 expandtab
@@ -82,6 +83,8 @@ noremap <leader>n :NERDTreeFocus<CR>
 noremap <leader>c :NERDTreeFind<CR>
 autocmd BufWinEnter * NERDTreeMirror
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+""" vim-go
+let g:go_metalinter_autosave = 1
 """ Emmet
 let g:user_emmet_install_global = 0
 let g:user_emmet_leader_key='<C-E>'
