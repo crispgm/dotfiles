@@ -36,7 +36,7 @@ set expandtab
 set ts=4
 set sw=4
 set t_Co=256
-set termguicolors
+set background=dark
 set nobackup
 set number
 set cursorline
