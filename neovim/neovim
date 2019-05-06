@@ -4,4 +4,4 @@ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh >
 sh ./installer.sh ~/.cache/dein
 
 mkdir -p ~/.config/nvim
-cp ./init.vim ~/.config/nvim/
+cp ./neovim/init.vim ~/.config/nvim/
