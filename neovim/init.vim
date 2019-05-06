@@ -32,6 +32,8 @@ endif
 filetype plugin indent on
 syntax enable
 
+set nobackup
+set noswapfile
 set expandtab
 set ts=4
 set sw=4
