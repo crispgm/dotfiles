@@ -20,6 +20,8 @@ if dein#load_state('~/.cache/dein')
   call dein#add('mhinz/vim-startify')
   call dein#add('Yggdroot/indentLine')
   call dein#add('tpope/vim-surround')
+  call dein#add('/usr/local/opt/fzf')
+  call dein#add('junegunn/fzf.vim')
   call dein#add('editorconfig/editorconfig-vim')
   call dein#add('fatih/vim-go')
   call dein#add('mattn/emmet-vim')
@@ -52,12 +54,35 @@ set list
 set completeopt-=preview
 colorscheme nord
 
+nnoremap <leader>r :source ~/.config/nvim/init.vim<cr>
+noremap <leader>s <c-w>w
+noremap <c-j> <c-w>j
+noremap <c-k> <c-w>k
+noremap <c-h> <c-w>h
+noremap <c-l> <c-w>l
+
+autocmd Filetype css setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype scss setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype html setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype yml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype yaml setlocal ts=2 sts=2 sw=2 expandtab
+
 " Plugins
+""" dein
+noremap <leader>i :call dein#install()<cr>
+""" deoplete
 let g:deoplete#enable_at_startup = 1
+""" FZF
+nnoremap <leader>h :History<CR>
+nnoremap <leader>b :Buffers<CR>
+nnoremap <leader>t :Files<CR>
+""" NERDTree
 map <C-n> :NERDTreeToggle<CR>
-nnoremap <silent> <leader>n :NERDTreeFocus<CR>
+noremap <leader>n :NERDTreeFocus<CR>
+noremap <leader>c :NERDTreeFind<CR>
 autocmd BufWinEnter * NERDTreeMirror
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+""" Emmet
 let g:user_emmet_install_global = 0
 let g:user_emmet_leader_key='<C-E>'
 autocmd FileType html,css EmmetInstall
