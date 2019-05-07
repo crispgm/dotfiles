@@ -1,4 +1,8 @@
 # !/bin/bash
+# themes & plugins
 git clone https://github.com/arcticicestudio/nord-tmux ~/.tmux/themes/nord-tmux
+git clone git clone https://github.com/tmux-plugins/tmux-resurrect /.tmux/plugins/tmux-resurrect
+# .tmux.conf
 cp ./tmux/.tmux.conf ~/
+# reload
 tmux source-file ~/.tmux.conf
