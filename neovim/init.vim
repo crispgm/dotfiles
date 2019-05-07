@@ -51,6 +51,8 @@ set whichwrap=b,s,<,>,[,]
 set backspace=2
 set encoding=utf-8
 set list
+set hlsearch
+set noincsearch
 set completeopt-=preview
 colorscheme nord
 
@@ -73,7 +75,9 @@ autocmd Filetype yaml setlocal ts=2 sts=2 sw=2 expandtab
 noremap <leader>i :call dein#install()<cr>
 """ deoplete
 let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
 """ FZF
+let g:fzf_layout = { 'up': '~30%' }
 nnoremap <leader>h :History<CR>
 nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>t :Files<CR>
