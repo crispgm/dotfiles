@@ -58,7 +58,7 @@ colorscheme nord
 
 nnoremap <leader>r :source ~/.config/nvim/init.vim<cr>
 noremap <leader>s <c-w>w
-noremap <leader># :noh<cr>
+noremap <leader># :let @/ = ""<cr><esc>
 noremap <c-j> <c-w>j
 noremap <c-k> <c-w>k
 noremap <c-h> <c-w>h
