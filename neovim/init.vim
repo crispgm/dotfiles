@@ -54,6 +54,7 @@ set list
 set hlsearch
 set noincsearch
 set completeopt-=preview
+set guitablabel=%t
 colorscheme nord
 
 " Shortcuts
