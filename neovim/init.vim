@@ -56,14 +56,20 @@ set noincsearch
 set completeopt-=preview
 colorscheme nord
 
+" Shortcuts
 nnoremap <leader>r :source ~/.config/nvim/init.vim<cr>
-noremap <leader>s <c-w>w
 noremap <leader># :let @/ = ""<cr><esc>
+noremap <leader>] gt<cr>
+noremap <leader>[ gT<cr>
+noremap <leader>q :qa<cr>
+noremap <leader>w :wqa<cr>
+noremap <leader>s <c-w>w
 noremap <c-j> <c-w>j
 noremap <c-k> <c-w>k
 noremap <c-h> <c-w>h
 noremap <c-l> <c-w>l
 
+" Indent/tabs
 autocmd Filetype go setlocal ts=4 sts=4 sw=4 noexpandtab
 autocmd Filetype css setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype scss setlocal ts=2 sts=2 sw=2 expandtab
