@@ -72,6 +72,8 @@ noremap <c-k> <c-w>k
 noremap <c-h> <c-w>h
 noremap <c-l> <c-w>l
 inoremap <c-d> <esc>ddi
+nnoremap <A-Up> :m .-2<CR>
+nnoremap <A-Down> :m .+1<CR>
 
 " Indent/tabs
 autocmd Filetype go setlocal ts=4 sts=4 sw=4 noexpandtab
