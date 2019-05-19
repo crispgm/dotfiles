@@ -16,7 +16,6 @@ if dein#load_state('~/.cache/dein')
   call dein#add('deoplete-plugins/deoplete-jedi')
   call dein#add('arcticicestudio/nord-vim')
   call dein#add('vim-airline/vim-airline')
-  call dein#add('scrooloose/nerdtree')
   call dein#add('mhinz/vim-startify')
   call dein#add('Yggdroot/indentLine')
   call dein#add('tpope/vim-surround')
@@ -90,16 +89,13 @@ noremap <leader>i :call dein#install()<cr>
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
 """ FZF
-let g:fzf_layout = { 'up': '~30%' }
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'vsplit' }
+let g:fzf_layout = { 'left': '~25%' }
 nnoremap <leader>h :History<CR>
 nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>t :Files<CR>
-""" NERDTree
-map <C-n> :NERDTreeToggle<CR>
-noremap <leader>n :NERDTreeFocus<CR>
-noremap <leader>c :NERDTreeFind<CR>
-autocmd BufWinEnter * NERDTreeMirror
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 """ vim-go
 let g:go_metalinter_autosave = 1
 """ Emmet
