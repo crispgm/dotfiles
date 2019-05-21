@@ -46,7 +46,7 @@ set nobackup
 set number
 set cursorline
 set ruler
-set ignorecase
+set noignorecase
 set autoindent
 set whichwrap=b,s,<,>,[,]
 set backspace=2
