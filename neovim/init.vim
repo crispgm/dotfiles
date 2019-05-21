@@ -42,7 +42,6 @@ set ts=4
 set sw=4
 set t_Co=256
 set background=dark
-set nobackup
 set number
 set cursorline
 set ruler
