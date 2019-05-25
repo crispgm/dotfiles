@@ -136,7 +136,7 @@ function! s:show_documentation()
   endif
 endfunction
 
-augroup mygroup
+augroup coc
   autocmd!
   " Setup formatexpr specified filetype(s).
   autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
