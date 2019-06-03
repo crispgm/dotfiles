@@ -15,6 +15,7 @@ Plug 'fatih/vim-go'
 Plug 'mattn/emmet-vim'
 Plug 'ap/vim-css-color'
 Plug 'christoomey/vim-system-copy'
+Plug 'junegunn/goyo.vim'
 call plug#end()
 noremap <leader>i :PlugInstall<cr>
 
@@ -92,6 +93,9 @@ let g:go_metalinter_autosave = 1
 let g:user_emmet_install_global = 0
 let g:user_emmet_leader_key='<C-E>'
 autocmd FileType html,css EmmetInstall
+
+""" Goyo
+nnoremap <leader>g :Goyo<CR>
 
 """ CoC
 " Ref: <https://github.com/neoclide/coc.nvim#example-vim-configuration>
