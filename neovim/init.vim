@@ -90,9 +90,7 @@ augroup END
 " Plugins
 """ dein
 noremap <leader>i :call dein#install()<cr>
-""" deoplete
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
+
 """ FZF
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
@@ -101,8 +99,10 @@ let g:fzf_layout = { 'left': '~25%' }
 nnoremap <leader>h :History<CR>
 nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>t :Files<CR>
+
 """ vim-go
 let g:go_metalinter_autosave = 1
+
 """ Emmet
 let g:user_emmet_install_global = 0
 let g:user_emmet_leader_key='<C-E>'
