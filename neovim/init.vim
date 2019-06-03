@@ -1,34 +1,22 @@
-set nocompatible              " be iMproved, required
+set nocompatible " be iMproved, required
 
-" Add the dein installation directory into runtimepath
-set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
-
-if dein#load_state('~/.cache/dein')
-  call dein#begin('~/.cache/dein')
-
-  call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
-  if !has('nvim')
-    call dein#add('roxma/nvim-yarp')
-    call dein#add('roxma/vim-hug-neovim-rpc')
-  endif
-  call dein#add('neoclide/coc.nvim', {'merge':0, 'build': './install.sh nightly'})
-  call dein#add('arcticicestudio/nord-vim')
-  call dein#add('vim-airline/vim-airline')
-  call dein#add('mhinz/vim-startify')
-  call dein#add('Yggdroot/indentLine')
-  call dein#add('tpope/vim-surround')
-  call dein#add('tpope/vim-commentary')
-  call dein#add('/usr/local/opt/fzf')
-  call dein#add('junegunn/fzf.vim')
-  call dein#add('editorconfig/editorconfig-vim')
-  call dein#add('fatih/vim-go')
-  call dein#add('mattn/emmet-vim')
-  call dein#add('ap/vim-css-color')
-  call dein#add('christoomey/vim-system-copy')
-
-  call dein#end()
-  call dein#save_state()
-endif
+call plug#begin('~/.vim/plugged')
+Plug 'arcticicestudio/nord-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'mhinz/vim-startify'
+Plug 'Yggdroot/indentLine'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+  Plug 'junegunn/fzf.vim'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'fatih/vim-go'
+Plug 'mattn/emmet-vim'
+Plug 'ap/vim-css-color'
+Plug 'christoomey/vim-system-copy'
+call plug#end()
+noremap <leader>i :PlugInstall<cr>
 
 filetype plugin indent on
 syntax enable
@@ -88,9 +76,6 @@ augroup filetype_options
 augroup END
 
 " Plugins
-""" dein
-noremap <leader>i :call dein#install()<cr>
-
 """ FZF
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
