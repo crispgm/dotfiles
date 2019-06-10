@@ -30,7 +30,7 @@ chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # setup dotfiles
-cp .bash_profile .zshrc .vimrc .gemrc ~/
+cp .bash_profile .zshrc .bashrc .gemrc ~/
 
 # fzf
 $(brew --prefix)/opt/fzf/install
