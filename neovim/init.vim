@@ -8,6 +8,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+Plug 'liuchengxu/vista.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
 Plug 'editorconfig/editorconfig-vim'
@@ -133,3 +134,16 @@ augroup coc
   " Update signature help on jump placeholder
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
+
+" Vista
+nnoremap <leader>a :Vista<CR>
+let g:vista_sidebar_width = 60
+let g:vista_icon_indent = ["* ", "-> "]
+let g:vista_default_executive = 'coc'
+let g:vista#executives = ['coc']
+let g:vista#renderer#enable_icon = 1
+let g:vista#renderer#icons = {
+\   "function": "f",
+\   "variable": "v",
+\   "method": "m",
+\  }
