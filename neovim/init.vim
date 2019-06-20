@@ -60,6 +60,7 @@ noremap <leader>[ gT<cr>
 noremap <leader>q :q!<cr>
 noremap <leader>Q :qa!<cr>
 noremap <leader>w :wq!<cr>
+noremap <leader>n :set nonu<cr>
 noremap <leader>s <c-w>w
 noremap <c-j> <c-w>j
 noremap <c-k> <c-w>k
