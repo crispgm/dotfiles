@@ -1,22 +1,22 @@
 set nocompatible " be iMproved, required
 
 call plug#begin('~/.vim/plugged')
-Plug 'arcticicestudio/nord-vim'
-Plug 'vim-airline/vim-airline'
-Plug 'mhinz/vim-startify'
-Plug 'Yggdroot/indentLine'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-commentary'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
-Plug 'liuchengxu/vista.vim'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-  Plug 'junegunn/fzf.vim'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'fatih/vim-go'
-Plug 'mattn/emmet-vim'
-Plug 'ap/vim-css-color'
-Plug 'christoomey/vim-system-copy'
-Plug 'junegunn/goyo.vim'
+  Plug 'arcticicestudio/nord-vim'
+  Plug 'vim-airline/vim-airline'
+  Plug 'mhinz/vim-startify'
+  Plug 'Yggdroot/indentLine'
+  Plug 'tpope/vim-surround'
+  Plug 'tpope/vim-commentary'
+  Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+  Plug 'liuchengxu/vista.vim'
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+    Plug 'junegunn/fzf.vim'
+  Plug 'editorconfig/editorconfig-vim'
+  Plug 'fatih/vim-go'
+  Plug 'mattn/emmet-vim'
+  Plug 'ap/vim-css-color'
+  Plug 'christoomey/vim-system-copy'
+  Plug 'junegunn/goyo.vim'
 call plug#end()
 noremap <leader>i :PlugInstall<cr>
 
