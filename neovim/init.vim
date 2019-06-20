@@ -93,6 +93,9 @@ nnoremap <leader>t :Files<CR>
 
 """ vim-go
 let g:go_metalinter_autosave = 1
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+let g:go_format_autosave = 1
+let g:go_fmt_command = "goimports"
 
 """ Emmet
 let g:user_emmet_install_global = 0
