@@ -3,6 +3,7 @@
 	email = crispgm@gmail.com
 [core]
 	ignorecase = false
+	editor = nvim
 [credential]
 	helper = osxkeychain
 [color]
