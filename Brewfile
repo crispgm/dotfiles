@@ -49,7 +49,6 @@ cask "google-trends"
 cask "appcleaner"
 cask "oversight"
 cask "nutstore"
-cask "telegram"
 
 mas "WeChat", id: 836500024
 mas "Unsplash Wallpapers", id: 1284863847
