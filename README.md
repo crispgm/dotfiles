@@ -1,14 +1,12 @@
-# Setup up a new Mac
+# dotfiles
 
 ![](https://img.shields.io/badge/.-dotfiles-green.svg)
 ![](https://img.shields.io/badge/OS-macOS-1793D1.svg)
 ![](https://img.shields.io/badge/License-MIT-5E81AC.svg)
 
-Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
+Provision a new Mac and dotfiles. Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac). The checkbox denotes whether it is done by `bootstrap`.
 
-The checkbox denotes whether it is done by `bootstrap`.
-
-关于：[我是如何初始化 Mac 环境的](https://crispgm.com/page/provisioning-a-new-mac.html)
+For Arch Linux, please see <https://github.com/crispgm/arch-linux-dotfiles>.
 
 ## Bootstrap
 
@@ -94,3 +92,7 @@ $ ./bootstrap
 ### Siri
 
 - [ ] Disable Siri system wide and remove Siri button from Touch Bar
+
+## Related Blog
+
+[我是如何初始化 Mac 环境的](https://crispgm.com/page/provisioning-a-new-mac.html)
