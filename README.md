@@ -4,6 +4,8 @@
 ![](https://img.shields.io/badge/OS-macOS-1793D1.svg)
 ![](https://img.shields.io/badge/License-MIT-5E81AC.svg)
 
+![](screenshot.jpg)
+
 Provision a new Mac and dotfiles. Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac). The checkbox denotes whether it is done by `bootstrap`.
 
 For Arch Linux, please see [crispgm/arch-linux-dotfiles](https://github.com/crispgm/arch-linux-dotfiles).
