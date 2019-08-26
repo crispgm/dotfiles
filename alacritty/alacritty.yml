@@ -323,7 +323,7 @@ cursor:
   #   - ▇ Block
   #   - _ Underline
   #   - | Beam
-  style: Beam
+  style: Block
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
