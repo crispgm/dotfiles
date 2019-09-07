@@ -66,6 +66,7 @@ export PATH=$PATH:$GOPATH/bin
 # Alias
 alias vim="nvim"
 alias bc="bc -q -l"
+alias zshconf="nvim ~/.zshrc"
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
