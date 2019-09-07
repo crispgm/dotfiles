@@ -28,7 +28,7 @@ cp ./git/global.gitconfig ~/.gitconfig
 sudo sh -c 'echo /usr/local/bin/zsh >> /etc/shells'
 chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-cp ./zsh/minimal.zsh-theme ~/.oh-my-zsh/themes/
+cp ./zsh/gentoo_minimal.zsh-theme ~/.oh-my-zsh/themes/
 cp ./zsh/.zshrc ~/
 
 # setup dotfiles
