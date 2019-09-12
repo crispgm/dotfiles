@@ -2,3 +2,5 @@ tap "homebrew/cask"
 
 cask "charles"
 cask "zoomus"
+
+mas "Trello", id: 1278508951
