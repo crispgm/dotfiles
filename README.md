@@ -25,7 +25,7 @@ $ ./bootstrap
 
 - [x] Setup Hostname `sudo scutil --set HostName david-macbook`
 - [x] Install [Homebrew](https://brew.sh)
-- [x] Install softwares and fonts from [Brewfile](https://github.com/crispgm/dotfiles/blob/master/Brewfile) with `brew bundle`. HINT: Applications from Mac App Store may need purchase.
+- [x] Install softwares and fonts from [Brewfile](https://github.com/crispgm/dotfiles/blob/master/Brewfile) with `brew bundle`. HINT: Login to AppStore at first. Some of the applications from Mac App Store may need purchase.
 - [ ] Install [nord theme](https://github.com/arcticicestudio/nord-iterm2) for iTerm2
 - [x] Install `zsh` and `oh-my-zsh`
 - [x] Setup `.bash_profile` `.bashrc` `.zshrc`
