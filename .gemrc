@@ -4,5 +4,6 @@
 :sources:
 - https://gems.ruby-china.com/
 :update_sources: true
+:ssl_verify_mode: 0
 :verbose: true
 gem: --no-document --bindir /usr/local/bin
