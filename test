@@ -1,0 +1,31 @@
+# !/usr/bin/env bash
+
+set -e
+
+echo "Test hostname"
+HOSTNAME=`hostname`
+test $HOSTNAME = "david-macbook"
+
+echo "Test brews"
+test -x `which git`
+test -x `which nvim`
+
+echo "Test folders"
+test -d ~/dev
+test -d ~/work
+
+echo "Test zsh/oh-my-zsh"
+test -x `which zsh`
+test -d ~/.oh-my-zsh
+
+echo "Test Git"
+GIT_NAME=`git config --global --get user.name`
+test "$GIT_NAME" = "David Zhang"
+
+echo "Test other applications"
+test -x `which wget`
+test -x `which ruby`
+test -x `which go`
+test -x `which fzf`
+test -x `which rg`
+test -x `which sqlite3`
