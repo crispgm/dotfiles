@@ -12,6 +12,7 @@ brew "zsh"
 brew "zsh-completions"
 brew "tmux"
 
+if ENV.key? 'CI_MODE'
 # tools
 brew "wget"
 brew "mas"
@@ -42,7 +43,6 @@ brew "heroku"
 brew "node"
 brew "yarn"
 
-if ENV.key? 'CI_MODE'
 cask "1password"
 cask "alfred"
 cask "google-chrome"
