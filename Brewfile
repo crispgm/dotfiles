@@ -42,6 +42,7 @@ brew "heroku"
 brew "node"
 brew "yarn"
 
+if ENV.key? 'CI_MODE'
 cask "1password"
 cask "alfred"
 cask "google-chrome"
@@ -72,3 +73,4 @@ mas "Lungo", id: 1263070803
 mas "Pages", id: 409201541
 mas "Numbers", id: 409203825
 mas "Keynote", id: 409183694
+end
