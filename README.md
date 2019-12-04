@@ -1,5 +1,6 @@
 # dotfiles
 
+![GitHub CI](https://github.com/crispgm/dotfiles/workflows/build/badge.svg)
 ![](https://img.shields.io/badge/.-dotfiles-green.svg)
 ![](https://img.shields.io/badge/OS-macOS-1793D1.svg)
 ![](https://img.shields.io/badge/License-MIT-5E81AC.svg)
