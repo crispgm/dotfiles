@@ -16,13 +16,12 @@ set +e
 brew bundle
 set -e
 
-# setup workspace
-mkdir -p ~/dev
-mkdir -p ~/work
-
 # init git
 cp ./git/work.gitconfig ~/work/.gitconfig
 cp ./git/global.gitconfig ~/.gitconfig
+
+# setup bash
+cp .bash_profile .bashrc ~/
 
 # make zsh default
 sudo sh -c 'echo /usr/local/bin/zsh >> /etc/shells'
@@ -31,8 +30,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 cp ./zsh/gentoo_minimal.zsh-theme ~/.oh-my-zsh/themes/
 cp ./zsh/.zshrc ~/
 
-# setup dotfiles
-cp .bash_profile .bashrc .gemrc ~/
+# setup workspace
+mkdir -p ~/dev
+mkdir -p ~/work
 
 # fzf
 $(brew --prefix)/opt/fzf/install
@@ -40,13 +40,14 @@ $(brew --prefix)/opt/fzf/install
 # neovim
 ./neovim/neovim
 
-# link to sublime & vscode
+# link sublime & vscode
 mkdir -p ~/Applications/
 sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 sudo ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /usr/local/bin/code
 
 # ruby
 gem install bundler
+cp .gemrc ~/
 bundle config mirror.https://rubygems.org https://gems.ruby-china.com
 
 # go
