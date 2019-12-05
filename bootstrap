@@ -16,6 +16,10 @@ set +e
 brew bundle
 set -e
 
+# setup workspace
+mkdir -p ~/dev
+mkdir -p ~/work
+
 # init git
 cp ./git/work.gitconfig ~/work/.gitconfig
 cp ./git/global.gitconfig ~/.gitconfig
@@ -29,10 +33,6 @@ sudo chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 cp ./zsh/gentoo_minimal.zsh-theme ~/.oh-my-zsh/themes/
 cp ./zsh/.zshrc ~/
-
-# setup workspace
-mkdir -p ~/dev
-mkdir -p ~/work
 
 # fzf
 $(brew --prefix)/opt/fzf/install
