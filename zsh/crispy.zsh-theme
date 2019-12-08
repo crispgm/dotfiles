@@ -1,6 +1,6 @@
 function prompt_char {
-	if [ $UID -eq 0 ]; then CH=#; else CH=$; fi
-	echo "%(?..%{$fg[red]%})$CH"
+    if [ $UID -eq 0 ]; then CH=#; else CH=$; fi
+    echo "%(?..%{$fg[red]%})$CH"
 }
 
 function prompt_exitcode {
