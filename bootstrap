@@ -25,7 +25,7 @@ cp ./git/work.gitconfig ~/work/.gitconfig
 cp ./git/global.gitconfig ~/.gitconfig
 
 # setup bash
-cp .bash_profile .bashrc ~/
+cp ./bash/.* ~/
 
 # make zsh default
 sudo sh -c 'echo /usr/local/bin/zsh >> /etc/shells'
