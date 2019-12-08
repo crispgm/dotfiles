@@ -59,6 +59,7 @@ noremap <leader># :let @/ = ""<cr><esc>
 noremap <leader>] gt<cr>
 noremap <leader>[ gT<cr>
 noremap <leader>q :q!<cr>
+noremap <leader>e :e!<cr>
 noremap <leader>Q :qa!<cr>
 noremap <leader>w :wq!<cr>
 noremap <leader>n :set nonu<cr>
