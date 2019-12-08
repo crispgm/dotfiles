@@ -7,7 +7,9 @@
 
 ![](screenshot.jpg)
 
-Provision a new Mac and dotfiles. Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac). The checkbox denotes whether it is done by `bootstrap`.
+This is a dotfiles project which may be used to provision a new macOS with cosy dev setups. And it is tested with GitHub Actions CI.
+
+Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac). The checkbox denotes whether it is done by `bootstrap`.
 
 For Arch Linux, please see [crispgm/arch-linux-dotfiles](https://github.com/crispgm/arch-linux-dotfiles).
 
