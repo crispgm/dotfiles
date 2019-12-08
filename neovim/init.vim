@@ -12,6 +12,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
   Plug 'editorconfig/editorconfig-vim'
+  Plug 'tpope/vim-fugitive'
   Plug 'airblade/vim-gitgutter'
   Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
   Plug 'mattn/emmet-vim'
