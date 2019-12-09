@@ -47,9 +47,7 @@ sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/
 sudo ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /usr/local/bin/code
 
 echo "Setup Ruby"
-gem install bundler
-cp .gemrc ~/
-bundle config mirror.https://rubygems.org https://gems.ruby-china.com
+./ruby/ruby
 
 echo "Setup Go"
 mkdir -p ~/go

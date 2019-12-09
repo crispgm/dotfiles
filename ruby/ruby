@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+gem install bundler
+cp ruby/.gemrc ~/
+bundle config mirror.https://rubygems.org https://gems.ruby-china.com
