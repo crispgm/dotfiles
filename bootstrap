@@ -53,8 +53,7 @@ echo "Setup Go"
 mkdir -p ~/go
 
 echo "Setup Shadowsocks"
-mkdir -p ~/.ShadowsocksX-NG
-cp ./Shadowsocks/user-rule.txt ~/.ShadowsocksX-NG/
+./Shadowsocks/init
 
 echo "Setup sync folder"
 mkdir -p ~/sync
