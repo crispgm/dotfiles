@@ -10,5 +10,7 @@
 	ui = true
 [pull]
 	rebase = true
+[alias]
+	sw = "! git switch $(git branch | fzf)"
 [includeIf "gitdir:~/work/"]
 	path = ~/work/.gitconfig
