@@ -11,6 +11,7 @@
 [pull]
 	rebase = true
 [alias]
-	sw = "! git switch $(git branch | fzf)"
+	sf = "! git switch $(git branch | fzf)"
+	sc = "switch -c"
 [includeIf "gitdir:~/work/"]
 	path = ~/work/.gitconfig
