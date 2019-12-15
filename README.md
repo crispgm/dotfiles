@@ -18,6 +18,7 @@ For Arch Linux, please refer to [crispgm/arch-linux-dotfiles](https://github.com
 ```shell
 $ xcode-select --install # or download here <https://developer.apple.com/download/more/>
 $ git clone --recursive https://github.com/crispgm/dotfiles.git
+# Login to AppStore with Apple ID, since there are MAS apps in Brewfile
 $ cd dotfiles
 $ ./bootstrap
 ```
