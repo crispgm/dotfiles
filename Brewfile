@@ -66,7 +66,7 @@ cask "nutstore"
 
 mas "WeChat", id: 836500024
 mas "Unsplash Wallpapers", id: 1284863847
-mas "Wunderlist", id: 410628904
+mas "Microsoft ToDo", id: 1274495053
 mas "Microsoft OneNote", id: 784801555
 mas "Bear", id: 1091189122
 mas "Lungo", id: 1263070803
