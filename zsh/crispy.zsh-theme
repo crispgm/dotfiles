@@ -1,3 +1,7 @@
+# Crispy.zsh-theme is a minimal theme for oh-my-zsh
+# Support exit code coloring and timestamp.
+# It's based on gentoo.zsh-theme
+
 function prompt_char {
     if [ $UID -eq 0 ]; then CH=#; else CH=$; fi
     echo "%(?..%{$fg[red]%})$CH"
