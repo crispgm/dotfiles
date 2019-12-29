@@ -68,8 +68,7 @@ $ ./bootstrap
 
 ### File Sync
 
-- [x] Install your favorite file sync service (e.g. Dropbox, Google Drive, One Drive ...)
-- [ ] Sync to `~/sync`
+- [x] Install your favorite file sync service (e.g. Dropbox, Google Drive, One Drive ... I prefer Dropbox because it works with Alfred)
 - [ ] Setup syncing folder for apps (e.g. Alfred, Dash ...)
 
 ## macOS Setups

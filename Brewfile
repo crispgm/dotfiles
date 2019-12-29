@@ -62,7 +62,7 @@ cask "qqmusic"
 cask "google-trends"
 cask "appcleaner"
 cask "oversight"
-cask "google-backup-and-sync"
+cask "dropbox"
 
 mas "WeChat", id: 836500024
 mas "Unsplash Wallpapers", id: 1284863847
