@@ -66,9 +66,10 @@ $ ./bootstrap
 - [x] Install `karabiner-elements`
 - [ ] Setup `karabiner.json` if using HHKB
 
-### Nutstore
+### File Sync
 
-- [ ] Sync to `~/sync/Nutstore`
+- [x] Install your favorite file sync service (e.g. Dropbox, Google Drive, One Drive ...)
+- [ ] Sync to `~/sync`
 - [ ] Setup syncing folder for apps (e.g. Alfred, Dash ...)
 
 ## macOS Setups
