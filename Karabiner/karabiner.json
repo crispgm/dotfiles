@@ -89,14 +89,14 @@
                         ]
                     },
                     {
-                        "description": "Ctrl + Esc to `",
+                        "description": "Option + Esc to `",
                         "manipulators": [
                             {
                                 "from": {
                                     "key_code": "escape",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_control"
+                                            "left_option"
                                         ]
                                     }
                                 },
