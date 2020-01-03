@@ -29,6 +29,7 @@ brew "fd"
 brew "hexyl"
 brew "xsv"
 brew "jq"
+brew "hledger"
 
 # dev
 brew "ruby"
