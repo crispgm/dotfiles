@@ -42,6 +42,7 @@ brew "youtube-dl"
 brew "heroku"
 brew "node"
 brew "yarn"
+brew "wrk"
 
 if ENV.key? 'CI_MODE'
 cask "1password"
