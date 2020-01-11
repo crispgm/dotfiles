@@ -65,6 +65,7 @@ cask "google-trends"
 cask "appcleaner"
 cask "oversight"
 cask "dropbox"
+cask "nitroshare"
 
 mas "WeChat", id: 836500024
 mas "Unsplash Wallpapers", id: 1284863847
