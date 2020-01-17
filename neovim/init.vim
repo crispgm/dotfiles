@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'vim-airline/vim-airline'
   Plug 'mhinz/vim-startify'
   Plug 'Yggdroot/indentLine'
+  Plug 'RRethy/vim-illuminate'
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-commentary'
   Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
