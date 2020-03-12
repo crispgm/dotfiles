@@ -1,7 +1,7 @@
 ! Put user rules line by line in this file.
 ! See https://adblockplus.org/en/filter-cheatsheet
 
-! for entertainment
+! for daily life
 ||twitch.tv
 ||naturalhigh.co.jp
 ||medium.com
@@ -18,6 +18,13 @@
 ||planetrugby.com
 ||earthroamer.com
 ||carryology.com
+||gumroad.com
+||substack.com
+||ticket.rakuten.co.jp
+||buymeacoffee.com
+||reddit.com
+||discord.gg
+||discordapp.com
 
 ! for programming
 ||newrelic.com
