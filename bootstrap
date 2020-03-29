@@ -25,6 +25,7 @@ cp ./git/work.gitconfig ~/work/.gitconfig
 cp ./git/global.gitconfig ~/.gitconfig
 
 echo "Setup Bash"
+sudo cp ./motd /etc/motd
 cp ./bash/.bashrc ~/.bashrc
 cp ./bash/.bash_profile ~/.bash_profile
 
