@@ -32,6 +32,7 @@ $ ./bootstrap
 - [x] Install softwares and fonts from [Brewfile](https://github.com/crispgm/dotfiles/blob/master/Brewfile) with `brew bundle`. HINT: Login to AppStore at first. Some of the applications from Mac App Store may need purchase.
 - [ ] Install [nord theme](https://github.com/arcticicestudio/nord-iterm2) for iTerm2
 - [x] Install `zsh` and `oh-my-zsh`
+- [x] Setup shell login promtp with `motd`: ASCII art is generated with <http://patorjk.com/software/taag/> 
 - [x] Setup `.bash_profile` `.bashrc` `.zshrc`
 - [x] Setup NeoVim
 
