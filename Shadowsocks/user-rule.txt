@@ -4,6 +4,10 @@
 ! for daily life
 ||twitch.tv
 ||naturalhigh.co.jp
+||sokmil.com
+||ideapocket.com
+||choi-waru.com
+||rakuten.co.jp
 ||medium.com
 ||vsco.co
 ||glassdoor.com
@@ -25,6 +29,15 @@
 ||reddit.com
 ||discord.gg
 ||discordapp.com
+||protonvpn.com
+||wikipedia.org
+||justmysock.net
+||justmysock1.net
+||justmysock2.net
+||hackmd.io
+||nzxt.com
+||geekhack.org
+||pia.jp
 
 ! for programming
 ||newrelic.com
@@ -83,3 +96,7 @@
 ||vivaldi.com
 ||vivaldi.net
 ||workflowy.com
+||golang.org
+||slack.com
+||slackmsgs.com
+||thoughtbot.com
