@@ -15,6 +15,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'editorconfig/editorconfig-vim'
   Plug 'tpope/vim-fugitive'
   Plug 'airblade/vim-gitgutter'
+  Plug 'rhysd/git-messenger.vim'
   Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
   Plug 'mattn/emmet-vim'
   Plug 'ap/vim-css-color'
@@ -65,6 +66,7 @@ noremap <leader>e :e!<cr>
 noremap <leader>Q :qa!<cr>
 noremap <leader>w :wq!<cr>
 noremap <leader>n :set nonu<cr>
+nnoremap <leader>m :GitMessenger<cr>
 noremap <leader>s <c-w>w
 noremap <c-j> <c-w>j
 noremap <c-k> <c-w>k
