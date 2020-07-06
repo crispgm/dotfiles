@@ -3,6 +3,7 @@ tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "homebrew/cask-versions"
+tap "homebrew/cask-drivers"
 tap "heroku/brew"
 
 # primitives
@@ -66,6 +67,8 @@ cask "appcleaner"
 cask "oversight"
 cask "dropbox"
 cask "nitroshare"
+cask "qmk-toolbox"
+cask "via"
 
 mas "WeChat", id: 836500024
 mas "Unsplash Wallpapers", id: 1284863847
