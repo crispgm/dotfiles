@@ -32,7 +32,7 @@ $ ./bootstrap
 - [x] Install softwares and fonts from [Brewfile](https://github.com/crispgm/dotfiles/blob/master/Brewfile) with `brew bundle`. HINT: Login to AppStore at first. Some of the applications from Mac App Store may need purchase.
 - [ ] Install [nord theme](https://github.com/arcticicestudio/nord-iterm2) for iTerm2
 - [x] Install `zsh` and `oh-my-zsh`
-- [x] Setup shell login promtp with `motd`: ASCII art is generated with <http://patorjk.com/software/taag/> 
+- [x] Setup shell login promtp with `motd`: ASCII art is generated with <http://patorjk.com/software/taag/>
 - [x] Setup `.bash_profile` `.bashrc` `.zshrc`
 - [x] Setup NeoVim
 
@@ -46,10 +46,6 @@ $ ./bootstrap
 - [x] Setup `.gemrc`
 - [x] Setup bundler's mirror: `bundle config mirror.https://rubygems.org https://gems.ruby-china.com` if you locate in China mainland
 
-#### Shadowsocks
-
-- [x] Import custom [user-rules](https://github.com/crispgm/dotfiles/tree/master/Shadowsocks)
-
 ### Sublime Text
 
 - [x] Create `subl` in Terminal: `sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/Applications/subl`
@@ -62,10 +58,9 @@ $ ./bootstrap
 - [x] Create `code` in Terminal: `sudo ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code ~/Applications/code`
 - [x] Install `Setting Sync` extensions and then sync settings
 
-### Karabiner
+### Shadowsocks
 
-- [x] Install `karabiner-elements`
-- [ ] Setup `karabiner.json` if using HHKB
+- [x] Import custom [user-rules](https://github.com/crispgm/dotfiles/tree/master/Shadowsocks)
 
 ### File Sync
 
@@ -99,6 +94,12 @@ $ ./bootstrap
 ### Siri
 
 - [ ] Disable Siri system wide and remove Siri button from Touch Bar
+
+## Optional Setups
+
+### Karabiner
+
+- [ ] Setup `karabiner.json`
 
 ## Related Blog
 
