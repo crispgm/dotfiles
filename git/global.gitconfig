@@ -13,5 +13,6 @@
 [alias]
 	sf = "! git switch $(git branch | fzf)"
 	sc = "switch -c"
+	sm = "switch master"
 [includeIf "gitdir:~/work/"]
 	path = ~/work/.gitconfig
