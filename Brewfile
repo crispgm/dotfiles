@@ -30,7 +30,8 @@ brew "fd"
 brew "hexyl"
 brew "xsv"
 brew "jq"
-brew "hledger"
+brew "beancount"
+brew "fava"
 
 # dev
 brew "ruby"
