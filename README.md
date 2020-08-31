@@ -89,7 +89,7 @@ $ ./bootstrap
 - [ ] Change to the size you like
 - [ ] Cancel: Show recent application in Dock
 - [ ] Downloads: View content as Grid
-- [ ] Add blank seperator: `defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}`
+- [ ] Add blank seperator: `defaults write com.apple.dock persistent-apps -array-add '{tile-type="spacer-tile";}'`
 
 ### Siri
 
