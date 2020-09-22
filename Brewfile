@@ -21,6 +21,7 @@ brew "dos2unix"
 brew "proxychains-ng"
 brew "htop"
 brew "neofetch"
+brew "onefetch"
 
 # productivity
 brew "exa"
