@@ -51,7 +51,7 @@ if ENV.key? 'CI_MODE'
 cask "1password"
 cask "alfred"
 cask "google-chrome"
-cask "firefox-developer-edition"
+cask "brave-browser"
 cask "sublime-text"
 cask "visual-studio-code"
 cask "iterm2"
