@@ -48,6 +48,12 @@ brew "yarn"
 brew "wrk"
 
 if ENV.key? 'CI_MODE'
+# for code editor
+cask "font-noto-mono"
+cask "font-hack"
+# for web rendering
+cask "font-fira-code"
+
 cask "1password"
 cask "alfred"
 cask "google-chrome"
@@ -55,22 +61,21 @@ cask "brave-browser"
 cask "sublime-text"
 cask "visual-studio-code"
 cask "iterm2"
-cask "font-source-code-pro"
-cask "font-fira-code"
 cask "dash3"
 cask "karabiner-elements"
 cask "hiddenbar"
 cask "snipaste"
 cask "rectangle"
 cask "shadowsocksx-ng"
+cask "dropbox"
+cask "qmk-toolbox"
+cask "via"
+
 cask "iina"
 cask "neteasemusic"
 cask "qqmusic"
 cask "google-trends"
 cask "appcleaner"
-cask "dropbox"
-cask "qmk-toolbox"
-cask "via"
 
 mas "WeChat", id: 836500024
 mas "Unsplash Wallpapers", id: 1284863847
