@@ -13,6 +13,21 @@ brew "zsh"
 brew "zsh-completions"
 brew "tmux"
 
+# dev
+brew "ruby"
+brew "go"
+brew "cmake"
+brew "mysql@5.7"
+brew "sqlite"
+brew "postgresql"
+brew "youtube-dl"
+brew "heroku"
+brew "node"
+brew "yarn"
+brew "wrk"
+
+unless ENV.key? 'CI_MODE'
+
 # tools
 brew "wget"
 brew "mas"
@@ -34,34 +49,20 @@ brew "jq"
 brew "beancount"
 brew "fava"
 
-# dev
-brew "ruby"
-brew "go"
-brew "cmake"
-brew "mysql@5.7"
-brew "sqlite"
-brew "postgresql"
-brew "youtube-dl"
-brew "heroku"
-brew "node"
-brew "yarn"
-brew "wrk"
-
-if ENV.key? 'CI_MODE'
-# for code editor
+# [fonts] for code editor
 cask "font-noto-mono"
 cask "font-hack"
-# for web rendering
+# [fonts] for web rendering
 cask "font-fira-code"
 
-# dev
+# [cask] dev
 cask "sublime-text"
 cask "visual-studio-code"
 cask "iterm2"
 cask "dash3"
 cask "figma"
 
-# productivity
+# [cask] productivity
 cask "1password"
 cask "alfred"
 cask "google-chrome"
@@ -77,11 +78,12 @@ cask "via"
 cask "appcleaner"
 cask "google-trends"
 
-# entertainment
+# [cask] entertainment
 cask "iina"
 cask "neteasemusic"
 cask "qqmusic"
 
+# mas app
 mas "WeChat", id: 836500024
 mas "Unsplash Wallpapers", id: 1284863847
 mas "Microsoft ToDo", id: 1274495053
