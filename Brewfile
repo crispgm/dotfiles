@@ -54,28 +54,33 @@ cask "font-hack"
 # for web rendering
 cask "font-fira-code"
 
-cask "1password"
-cask "alfred"
-cask "google-chrome"
-cask "brave-browser"
+# dev
 cask "sublime-text"
 cask "visual-studio-code"
 cask "iterm2"
 cask "dash3"
+cask "figma"
+
+# productivity
+cask "1password"
+cask "alfred"
+cask "google-chrome"
+cask "brave-browser"
+cask "dropbox"
 cask "karabiner-elements"
 cask "hiddenbar"
 cask "snipaste"
 cask "rectangle"
 cask "shadowsocksx-ng"
-cask "dropbox"
 cask "qmk-toolbox"
 cask "via"
+cask "appcleaner"
+cask "google-trends"
 
+# entertainment
 cask "iina"
 cask "neteasemusic"
 cask "qqmusic"
-cask "google-trends"
-cask "appcleaner"
 
 mas "WeChat", id: 836500024
 mas "Unsplash Wallpapers", id: 1284863847
