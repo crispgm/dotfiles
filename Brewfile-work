@@ -1,7 +1,6 @@
 tap "homebrew/cask"
 
 cask "charles"
-cask "zoomus"
 cask "postman"
 cask "workflowy"
 
