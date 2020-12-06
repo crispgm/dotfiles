@@ -12,13 +12,14 @@ brew "neovim"
 brew "zsh"
 brew "zsh-completions"
 brew "tmux"
+brew "fzf"
 
 # dev
 brew "ruby"
 brew "go"
 # dev: CI testing
 unless ENV.key? "CI_MODE"
-  puts "in CI mode, ignore non-essential brew"
+  puts "In CI mode, skip non-essential brews"
 else
   brew "cmake"
   brew "mysql@5.7"
@@ -42,7 +43,6 @@ else
 
   # productivity
   brew "exa"
-  brew "fzf"
   brew "ripgrep"
   brew "fd"
   brew "hexyl"
