@@ -15,6 +15,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'editorconfig/editorconfig-vim'
   Plug 'tpope/vim-fugitive'
   Plug 'airblade/vim-gitgutter'
+  Plug 'voldikss/vim-floaterm'
   Plug 'rhysd/git-messenger.vim'
   Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
   Plug 'mattn/emmet-vim'
@@ -66,6 +67,7 @@ noremap <leader>e :e!<cr>
 noremap <leader>Q :qa!<cr>
 noremap <leader>w :wq!<cr>
 noremap <leader>n :set nonu<cr>
+noremap <leader>N :set nu<cr>
 nnoremap <leader>m :GitMessenger<cr>
 noremap <leader>s <c-w>w
 noremap <c-j> <c-w>j
@@ -159,3 +161,10 @@ let g:vista#renderer#icons = {
 \   "variable": "v",
 \   "method": "m",
 \  }
+
+" Floaterm
+nnoremap <leader>fn :FloatermNew<CR>
+let g:floaterm_height = 0.4
+let g:floaterm_width = 0.5
+let g:floaterm_position = 'topright'
+let g:floaterm_autoclose = 1
