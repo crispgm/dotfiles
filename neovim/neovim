@@ -1,10 +1,18 @@
 #!/bin/sh
 
+# vim-plug
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+# conf
 mkdir -p ~/.config/nvim
 cp ./neovim/init.vim ./neovim/coc-settings.json ~/.config/nvim/
 
+# golang LSP
+go get golang.org/x/tools/gopls@latest
+
+# bash LSP
 yarn global add bash-language-server
 
+# ruby LSP
+gem install solargraph
