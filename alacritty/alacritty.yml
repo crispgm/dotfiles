@@ -83,7 +83,8 @@ scrolling:
 # Font configuration (changes require restart)
 font:
   # Normal (roman) font face
-  #normal:
+  normal:
+    family: 'Menlo'
     # Font family
     #
     # Default:
@@ -487,6 +488,7 @@ key_bindings:
   #- { key: Q,      mods: Command,         action: Quit             }
   #- { key: W,      mods: Command,         action: Quit             }
   - { key: F,      mods: Command|Control, action: ToggleFullscreen }
+  - { key: Comma,  mods: Command,   chars: "$EDITOR ~/.config/alacritty/alacritty.yml\r" }
 
   - { key: Paste,                   action: Paste                            }
   - { key: Copy,                    action: Copy                             }
