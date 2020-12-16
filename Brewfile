@@ -58,6 +58,7 @@ if ENV.key? 'CI_MODE'
   # [cask] dev
   cask 'sublime-text'
   cask 'visual-studio-code'
+  cask 'alacritty'
   cask 'iterm2'
   cask 'dash3'
   cask 'figma'
