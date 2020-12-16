@@ -5,3 +5,6 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 mkdir -p ~/.config/nvim
 cp ./neovim/init.vim ./neovim/coc-settings.json ~/.config/nvim/
+
+yarn global add bash-language-server
+
