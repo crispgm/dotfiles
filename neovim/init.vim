@@ -22,6 +22,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'ap/vim-css-color'
   Plug 'christoomey/vim-system-copy'
   Plug 'junegunn/goyo.vim'
+  Plug 'nathangrigg/vim-beancount'
 call plug#end()
 noremap <leader>i :PlugInstall<cr>
 
