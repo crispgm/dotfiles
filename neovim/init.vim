@@ -78,6 +78,17 @@ inoremap <c-d> <esc>ddi
 nnoremap <A-Up> :m .-2<CR>
 nnoremap <A-Down> :m .+1<CR>
 
+fun! TrimWhitespace()
+  let l:save = winsaveview()
+  keeppatterns %s/\s\+$//e
+  call winrestview(l:save)
+endfun
+
+augroup common
+  autocmd!
+  autocmd BufWritePre * :call TrimWhitespace()
+augroup END
+
 " Indent/tabs
 augroup filetype_options
   autocmd Filetype vim  setlocal ts=2 sts=2 sw=2 expandtab
