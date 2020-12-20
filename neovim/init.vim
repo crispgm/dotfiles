@@ -78,11 +78,11 @@ inoremap <c-d> <esc>ddi
 nnoremap <A-Up> :m .-2<CR>
 nnoremap <A-Down> :m .+1<CR>
 
-fun! TrimWhitespace()
+function! TrimWhitespace()
   let l:save = winsaveview()
   keeppatterns %s/\s\+$//e
   call winrestview(l:save)
-endfun
+endfunction
 
 augroup common
   autocmd!
