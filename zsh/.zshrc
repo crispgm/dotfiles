@@ -64,9 +64,7 @@ export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
 
 # Alias
-alias vim="nvim"
-alias bc="bc -q -l"
-alias zshconf="nvim ~/.zshrc"
+source ~/.zsh_reload
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
