@@ -1,5 +1,11 @@
 # Neovim Setups
 
+## Install Plugin
+
+```sh
+nvim +PlugInstall
+```
+
 ## coc.nvim
 
 ```sh

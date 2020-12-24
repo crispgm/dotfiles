@@ -104,12 +104,14 @@ augroup END
 " Plugins
 """ FZF
 let g:fzf_action = {
+  \ 'ctrl-q': 'wall | bdelete',
   \ 'ctrl-t': 'tab split',
-  \ 'ctrl-x': 'vsplit' }
+  \ 'ctrl-v': 'vsplit' }
 let g:fzf_layout = { 'left': '~25%' }
+let g:fzf_preview_window = ['up:40%:hidden', 'ctrl-p']
 nnoremap <leader>h :History<CR>
 nnoremap <leader>b :Buffers<CR>
-nnoremap <leader>t :Files<CR>
+nnoremap <leader>f :Files<CR>
 
 """ vim-go
 let g:go_metalinter_autosave = 1
@@ -175,13 +177,15 @@ augroup end
 " Vista
 nnoremap <leader>a :Vista<CR>
 let g:vista_sidebar_width = 60
-let g:vista_icon_indent = ["* ", "-> "]
+let g:vista_echo_cursor = 0
 let g:vista_default_executive = 'coc'
 let g:vista#executives = ['coc']
+let g:vista_icon_indent = ["* ", "-> "]
 let g:vista#renderer#enable_icon = 1
 let g:vista#renderer#icons = {
 \   "function": "f",
 \   "variable": "v",
+\   "constant": "c",
 \   "method": "m",
 \  }
 
