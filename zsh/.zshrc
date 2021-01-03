@@ -64,7 +64,7 @@ export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
 
 # Alias
-source ~/.zsh_reload
+source ~/.zsh_alias
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
