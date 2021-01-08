@@ -55,7 +55,7 @@ if ENV.key? 'CI_MODE'
   cask 'font-fira-code'
 
   # [cask] dev
-  cask 'sublime-text'
+  # cask 'sublime-text'
   cask 'visual-studio-code'
   cask 'alacritty'
   cask 'iterm2'
