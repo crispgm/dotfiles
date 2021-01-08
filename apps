@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+echo "Shadowsocks: setup rules"
+./Shadowsocks/init
+
+echo "Install fzf"
+$(brew --prefix)/opt/fzf/install
+
+echo "Ruby: setup gems and bundler"
+./ruby/init
+
+echo "Go"
+mkdir -p ~/go
+
+echo "neovim: setup"
+./neovim/init
+
+echo "Dropbox: setup sync folder"
+mkdir -p ~/sync

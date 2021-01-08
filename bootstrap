@@ -4,8 +4,8 @@ set -e
 
 echo "Install Homebrew"
 if test ! $(which brew); then
-  echo "Installing homebrew..."
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    echo "Installing homebrew..."
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 echo "Setup hostname"
@@ -36,28 +36,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 cp ./zsh/crispy.zsh-theme ~/.oh-my-zsh/themes/
 cp ./zsh/.zshrc ~/
 
-echo "Setup applications"
-echo "- fzf"
-$(brew --prefix)/opt/fzf/install
-echo "- neovim"
-./neovim/neovim
-
-echo "Link editors"
-mkdir -p ~/Applications/
-sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
-sudo ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code /usr/local/bin/code
-
-echo "Setup Ruby"
-./ruby/ruby
-
-echo "Setup Go"
-mkdir -p ~/go
-
-echo "Setup Shadowsocks"
-./Shadowsocks/init
-
-echo "Setup sync folder"
-mkdir -p ~/sync
-
 echo "Setup macOS defaults"
 ./mac
+
+echo "Create ~/Applications"
+mkdir -p ~/Applications/
