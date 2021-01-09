@@ -3,17 +3,20 @@
 echo "Shadowsocks: setup rules"
 ./Shadowsocks/init
 
-echo "Install fzf"
+echo "Alacritty"
+./alacritty/init
+
+echo "tmux"
+./tmux/init
+
+echo "fzf"
 $(brew --prefix)/opt/fzf/install
 
-echo "Ruby: setup gems and bundler"
+echo "Ruby"
 ./ruby/init
 
 echo "Go"
 mkdir -p ~/go
 
-echo "neovim: setup"
+echo "neovim"
 ./neovim/init
-
-echo "Dropbox: setup sync folder"
-mkdir -p ~/sync
