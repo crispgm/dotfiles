@@ -56,12 +56,12 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 export EDITOR='nvim'
 
+# PATH
+export PATH=$PATH:$GOPATH/bin:/opt/homebrew/bin
+
 # Go
 export GOROOT=`brew --prefix go`/libexec
 export GOPATH=~/go
-
-# PATH
-export PATH=$PATH:$GOPATH/bin:/opt/homebrew/bin
 
 # Alias
 source ~/.zsh_alias
