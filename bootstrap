@@ -13,6 +13,7 @@ sudo scutil --set HostName david-macbook
 
 echo "Install with Brew Bundle"
 set +e
+export PATH=$PATH:/opt/homebrew/bin
 brew bundle
 set -e
 

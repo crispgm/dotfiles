@@ -61,7 +61,7 @@ export GOROOT=`brew --prefix go`/libexec
 export GOPATH=~/go
 
 # PATH
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin:/opt/homebrew/bin
 
 # Alias
 source ~/.zsh_alias
