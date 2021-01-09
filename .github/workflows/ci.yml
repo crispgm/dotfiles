@@ -5,13 +5,11 @@ jobs:
     name: run
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@master
-    - uses: mstachniuk/ci-skip@v1
-      with:
-        fail-fast: true
-    - name: build
-      env:
-        CI_MODE: true
-      run: bash ./bootstrap
-    - name: CI
-      run: bash ./test
+      - uses: actions/checkout@master
+      - uses: mstachniuk/ci-skip@v1
+        with:
+          fail-fast: true
+      - name: build
+        run: bash ./bootstrap
+      - name: CI
+        run: bash ./test

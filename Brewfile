@@ -18,7 +18,9 @@ brew 'fzf'
 brew 'ruby'
 brew 'go'
 # dev: CI testing
-if ENV.key? 'CI_MODE'
+if ENV.key? 'CI'
+  puts 'In CI mode, skip non-primitive brews'
+else
   brew 'cmake'
   brew 'mysql@5.7'
   brew 'sqlite'
@@ -95,6 +97,4 @@ if ENV.key? 'CI_MODE'
   mas 'Pages', id: 409_201_541
   mas 'Numbers', id: 409_203_825
   mas 'Keynote', id: 409_183_694
-else
-  puts 'In CI mode, skip non-primitive brews'
 end
