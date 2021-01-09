@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+mkdir -p ~/.snipaste/
+cp ./snipaste/config.init ~/.snipaste/

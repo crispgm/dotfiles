@@ -20,3 +20,9 @@ mkdir -p ~/go
 
 echo "neovim"
 ./neovim/init
+
+echo "Karabiner"
+./Karabiner/init
+
+echo "Snipaste"
+./snipaste/init
