@@ -49,7 +49,7 @@ export UPDATE_ZSH_DAYS=30
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew docker emoji gem git golang heroku osx redis-cli zsh_reload)
+plugins=(docker emoji heroku osx redis-cli zsh_reload)
 
 # User configuration
 source $ZSH/oh-my-zsh.sh
