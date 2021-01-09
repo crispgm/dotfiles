@@ -29,7 +29,7 @@ else
   brew 'heroku'
   brew 'node'
   brew 'yarn'
-  brew 'wrk'
+  # brew 'wrk'
 
   # tools
   brew 'wget'
@@ -60,8 +60,8 @@ else
   # cask 'sublime-text'
   cask 'visual-studio-code'
   cask 'alacritty'
-  cask 'iterm2'
-  cask 'dash3'
+  # cask 'iterm2'
+  # cask 'dash3'
   cask 'figma'
 
   # [cask] productivity
