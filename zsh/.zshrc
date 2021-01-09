@@ -57,7 +57,7 @@ export LANG=en_US.UTF-8
 export EDITOR='nvim'
 
 # PATH
-export PATH=$PATH:$GOPATH/bin:/opt/homebrew/bin
+export PATH=$GOPATH/bin:/opt/homebrew/bin:/opt/homebrew/opt/ruby/bin:$PATH
 
 # Go
 export GOROOT=`brew --prefix go`/libexec
