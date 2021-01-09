@@ -28,8 +28,8 @@ $ ./apps
 
 ### Terminal & Shell
 
-- [x] Setup Hostname `sudo scutil --set HostName david-macbook`
 - [x] Install [Homebrew](https://brew.sh)
+- [x] Setup Hostname `sudo scutil --set HostName david-macbook`
 - [x] Install softwares and fonts from [Brewfile](https://github.com/crispgm/dotfiles/blob/master/Brewfile) with `brew bundle`. HINT: Login to AppStore at first. Some of the applications from Mac App Store may need purchase.
 - [x] Install `zsh` and `oh-my-zsh`
 - [x] Setup shell login promtp with `motd`: ASCII art is generated with <http://patorjk.com/software/taag/>
@@ -73,10 +73,21 @@ $ ./apps
 - [ ] Tap to click
 - [ ] Seconary click: Click in bottom right corner
 
-### Time
+### Control Center
+
+#### Battery
+
+- [ ] Show Battery in Control Center
+- [ ] Show percentage
+
+#### Time
 
 - [ ] Set time zone automatically using current location
 - [ ] Use a 24-hour clock and show date
+
+#### Siri
+
+- [ ] Disable Siri system wide and remove Siri button from Touch Bar
 
 ### Finder
 
@@ -89,10 +100,6 @@ $ ./apps
 - [ ] Cancel: Show recent application in Dock
 - [ ] Downloads: View content as Grid
 - [ ] Add blank seperator: `defaults write com.apple.dock persistent-apps -array-add '{tile-type="spacer-tile";}'`
-
-### Siri
-
-- [ ] Disable Siri system wide and remove Siri button from Touch Bar
 
 ## Optional Setups
 

@@ -36,8 +36,5 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 cp ./zsh/crispy.zsh-theme ~/.oh-my-zsh/themes/
 cp ./zsh/.zshrc ~/
 
-echo "Setup macOS defaults"
-./mac
-
 echo "Create ~/Applications"
 mkdir -p ~/Applications/
