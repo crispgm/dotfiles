@@ -51,8 +51,7 @@ else
   brew 'fava'
 
   # [fonts] for code editor
-  cask 'font-noto-mono'
-  cask 'font-hack'
+  cask 'font-menlo-for-powerline'
   # [fonts] for web rendering
   cask 'font-fira-code'
 
