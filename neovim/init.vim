@@ -12,6 +12,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'liuchengxu/vista.vim'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
+  Plug 'machakann/vim-highlightedyank'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'tpope/vim-fugitive'
   Plug 'airblade/vim-gitgutter'
