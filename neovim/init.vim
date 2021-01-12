@@ -29,6 +29,7 @@ noremap <leader>i :PlugInstall<cr>
 filetype plugin indent on
 syntax enable
 
+set exrc
 set nobackup
 set noswapfile
 set expandtab
