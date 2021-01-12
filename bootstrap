@@ -21,21 +21,6 @@ echo "Setup workspace"
 mkdir -p ~/dev
 mkdir -p ~/work
 
-echo "Setup Git"
-cp ./git/work.gitconfig ~/work/.gitconfig
-cp ./git/global.gitconfig ~/.gitconfig
-
-echo "Setup Bash"
-sudo cp ./motd /etc/motd
-cp ./bash/.bashrc ~/.bashrc
-cp ./bash/.bash_profile ~/.bash_profile
-
-echo "Setup Zsh"
-sudo sh -c 'echo /usr/local/bin/zsh >> /etc/shells'
-sudo chsh -s $(which zsh)
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-cp ./zsh/crispy.zsh-theme ~/.oh-my-zsh/themes/
-cp ./zsh/.zshrc ~/
-
-echo "Create ~/Applications"
-mkdir -p ~/Applications/
+./bash/init
+./zsh/init
+./git/init

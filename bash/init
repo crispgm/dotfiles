@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+echo "Setup Bash"
+sudo cp ./motd /etc/motd
+cp ./bash/.bashrc ~/.bashrc
+cp ./bash/.bash_profile ~/.bash_profile
