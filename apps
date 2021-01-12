@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo "Create ~/Applications"
+mkdir -p ~/Applications/
+
 echo "Shadowsocks: setup rules"
 ./Shadowsocks/init
 
