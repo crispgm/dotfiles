@@ -1,4 +1,3 @@
-alias vim="nvim"
 alias bc="bc -q -l"
+alias nvimconf="nvim ~/.config/nvim/init.vim"
 alias zshconf="nvim ~/.zshrc"
-alias vimconf="nvim ~/.config/nvim/init.vim"
