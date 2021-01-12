@@ -35,7 +35,9 @@ set noswapfile
 set expandtab
 set ts=4
 set sw=4
-set t_Co=256
+if !has('gui_running')
+  set t_Co=256
+endif
 set background=dark
 set number
 set cursorline
@@ -57,6 +59,8 @@ set shortmess+=c
 set signcolumn=yes
 set mousehide
 set showmatch
+set undodir=~/.vim/undodir
+set undofile
 colorscheme nord
 
 " Shortcuts
