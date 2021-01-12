@@ -86,7 +86,7 @@ function! TrimWhitespace()
   call winrestview(l:save)
 endfunction
 
-augroup common
+augroup trim_whitespace
   autocmd!
   autocmd BufWritePre * :call TrimWhitespace()
 augroup END
