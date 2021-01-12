@@ -62,6 +62,8 @@ set mousehide
 set showmatch
 set undodir=~/.vim/undodir
 set undofile
+set wildmenu
+set wildmode=longest,full
 colorscheme nord
 
 " Shortcuts
@@ -84,6 +86,10 @@ noremap <c-l> <c-w>l
 inoremap <c-d> <esc>ddi
 nnoremap <A-Up> :m .-2<CR>
 nnoremap <A-Down> :m .+1<CR>
+if &wildoptions =~ "pum"
+  cnoremap <expr> <up> pumvisible() ? "<C-p>" : "\\<up>"
+  cnoremap <expr> <down> pumvisible() ? "<C-n>" : "\\<down>"
+endif
 
 function! TrimWhitespace()
   let l:save = winsaveview()
