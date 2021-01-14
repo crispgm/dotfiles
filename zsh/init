@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
 echo "Setup Zsh"
-sudo sh -c 'echo /usr/local/bin/zsh >> /etc/shells'
-sudo chsh -s $(which zsh)
+ZSH_PATH="$(brew --prefix)/bin/zsh"
+sudo sh -c 'echo $ZSH_PATH >> /etc/shells'
+sudo chsh -s ZSH_PATH
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 cp ./zsh/crispy.zsh-theme ~/.oh-my-zsh/themes/
 cp ./zsh/.zshrc ~/
