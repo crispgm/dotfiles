@@ -1,29 +1,33 @@
 set nocompatible " be iMproved, required
 
 call plug#begin('~/.vim/plugged')
+  " UI & theme
   Plug 'arcticicestudio/nord-vim'
   Plug 'vim-airline/vim-airline'
   Plug 'mhinz/vim-startify'
   Plug 'Yggdroot/indentLine'
   Plug 'RRethy/vim-illuminate'
+  Plug 'machakann/vim-highlightedyank'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'liuchengxu/vista.vim'
+  " editing
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-commentary'
-  Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
-  Plug 'liuchengxu/vista.vim'
+  Plug 'editorconfig/editorconfig-vim'
+  Plug 'junegunn/goyo.vim'
+  " utility
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
-  Plug 'machakann/vim-highlightedyank'
-  Plug 'editorconfig/editorconfig-vim'
   Plug 'tpope/vim-fugitive'
-  Plug 'airblade/vim-gitgutter'
-  Plug 'voldikss/vim-floaterm'
   Plug 'rhysd/git-messenger.vim'
-  Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-  Plug 'mattn/emmet-vim'
-  Plug 'ap/vim-css-color'
+  Plug 'voldikss/vim-floaterm'
   Plug 'christoomey/vim-system-copy'
-  Plug 'junegunn/goyo.vim'
+  " language
+  Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+  Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
   Plug 'nathangrigg/vim-beancount'
+  Plug 'ap/vim-css-color'
+  Plug 'mattn/emmet-vim'
 call plug#end()
 noremap <leader>i :PlugInstall<cr>
 
@@ -206,3 +210,6 @@ let g:floaterm_height = 0.4
 let g:floaterm_width = 0.5
 let g:floaterm_position = 'topright'
 let g:floaterm_autoclose = 1
+
+" Git Messenger
+nnoremap <leader>gm :GitMessenger<CR>
