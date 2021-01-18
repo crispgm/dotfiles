@@ -15,7 +15,7 @@ brew 'tmux'
 brew 'fzf'
 
 # dev
-brew 'ruby'
+brew 'ruby@2.7'
 brew 'go'
 # dev: CI testing
 if ENV.key? 'CI'
@@ -29,7 +29,6 @@ else
   brew 'heroku'
   brew 'node'
   brew 'yarn'
-  # brew 'wrk'
 
   # tools
   brew 'wget'
@@ -59,8 +58,6 @@ else
   # cask 'sublime-text'
   cask 'visual-studio-code'
   cask 'alacritty'
-  # cask 'iterm2'
-  # cask 'dash3'
   cask 'figma'
 
   # [cask] productivity
@@ -83,7 +80,6 @@ else
   # [cask] entertainment
   cask 'iina'
   cask 'neteasemusic'
-  cask 'qqmusic'
 
   # mas app
   mas 'WeChat', id: 836_500_024
