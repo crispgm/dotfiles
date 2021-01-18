@@ -29,7 +29,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'ap/vim-css-color'
   Plug 'mattn/emmet-vim'
 call plug#end()
-noremap <leader>i :PlugInstall<cr>
+noremap <leader>pi :PlugInstall<cr>
+noremap <leader>pc :PlugClean<cr>
 
 filetype plugin indent on
 syntax enable
@@ -80,8 +81,8 @@ noremap <leader>e :e!<cr>
 noremap <leader>Q :qa!<cr>
 noremap <leader>w :wq!<cr>
 noremap <leader>n :set nonu<cr>
-noremap <leader>N :set nu<cr>
-nnoremap <leader>m :GitMessenger<cr>
+noremap <leader>N :set number<cr>
+noremap <leader>R :set relativenumber<cr>
 noremap <leader>s <c-w>w
 noremap <c-j> <c-w>j
 noremap <c-k> <c-w>k
@@ -111,7 +112,7 @@ augroup filetype_options
   autocmd Filetype html setlocal ts=2 sts=2 sw=2 expandtab
   autocmd Filetype yml  setlocal ts=2 sts=2 sw=2 expandtab
   autocmd Filetype yaml setlocal ts=2 sts=2 sw=2 expandtab
-  autocmd Filetype beancount setlocal nofoldenable
+  autocmd Filetype beancount setlocal nofoldenable relativenumber
 augroup END
 
 " Plugins
@@ -122,9 +123,9 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit' }
 let g:fzf_layout = { 'left': '~25%' }
 let g:fzf_preview_window = ['up:40%:hidden', 'ctrl-p']
-nnoremap <leader>h :History<CR>
-nnoremap <leader>b :Buffers<CR>
-nnoremap <leader>f :Files<CR>
+nnoremap <leader>fh :History<CR>
+nnoremap <leader>fb :Buffers<CR>
+nnoremap <leader>ff :Files<CR>
 
 """ vim-go
 let g:go_def_mode='gopls'
@@ -140,7 +141,7 @@ let g:user_emmet_leader_key='<C-E>'
 autocmd FileType html,css EmmetInstall
 
 """ Goyo
-nnoremap <leader>g :Goyo<CR>
+nnoremap <leader>go :Goyo<CR>
 let g:goyo_width = 120
 
 function! s:goyo_enter()
@@ -190,7 +191,7 @@ augroup coc
 augroup end
 
 " Vista
-nnoremap <leader>a :Vista<CR>
+nnoremap <leader>va :Vista<CR>
 let g:vista_sidebar_width = 60
 let g:vista_echo_cursor = 0
 let g:vista_default_executive = 'coc'
