@@ -46,6 +46,7 @@ else
   brew 'hexyl'
   brew 'xsv'
   brew 'jq'
+  brew 'dust'
   brew 'beancount'
   brew 'fava'
 
