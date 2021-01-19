@@ -88,6 +88,8 @@ noremap <c-j> <c-w>j
 noremap <c-k> <c-w>k
 noremap <c-h> <c-w>h
 noremap <c-l> <c-w>l
+noremap <leader>t[ :tabmove -1<cr>
+noremap <leader>t] :tabmove +1<cr>
 inoremap <c-d> <esc>ddi
 nnoremap <A-Up> :m .-2<CR>
 nnoremap <A-Down> :m .+1<CR>
