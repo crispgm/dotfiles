@@ -1,3 +1,7 @@
+alias l='exa'
+alias la='exa -a'
+alias ll='exa -lah'
+alias ls='exa --color=auto'
 alias bc="bc -q -l"
 alias nvimconf="nvim ~/.config/nvim/init.vim"
 alias zshconf="nvim ~/.zshrc"
