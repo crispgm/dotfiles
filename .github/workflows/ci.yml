@@ -9,5 +9,7 @@ jobs:
       - uses: actions/checkout@master
       - name: build
         run: bash ./bootstrap
+      - name: App Init
+        run: bash ./apps
       - name: CI
         run: bash ./test

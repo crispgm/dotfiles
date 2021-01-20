@@ -2,7 +2,11 @@
 
 set -e
 
-declare -a apps=("fzf" "alacritty" "tmux" "neovim" "ruby" "go" "VSCode" "Shadowsocks" "Karabiner" "Snipaste")
+if [[ -z "${ENV}" ]]; then
+    declare -a apps=("fzf" "alacritty" "tmux" "neovim" "ruby" "go" "VSCode" "Shadowsocks" "Karabiner" "Snipaste")
+else
+    declare -a apps=("fzf" "ruby" "go")
+fi
 
 for app in "${apps[@]}"; do
     echo "Initializing $app"
