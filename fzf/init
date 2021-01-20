@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+$(brew --prefix)/opt/fzf/install
