@@ -10,5 +10,5 @@ fi
 
 for app in "${apps[@]}"; do
     echo "Initializing $app"
-    `./$app/init`
+    bash ./$app/init
 done
