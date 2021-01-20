@@ -24,4 +24,6 @@ test "$GIT_NAME" = "David Zhang"
 
 echo "Test applications"
 test -x `which ruby`
+test -x `which bundle`
 test -x `which go`
+test -d ~/go

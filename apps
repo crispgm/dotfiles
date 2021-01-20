@@ -1,31 +1,14 @@
 #!/usr/bin/env bash
 
-echo "Create ~/Applications"
-mkdir -p ~/Applications/
+set -e
 
-echo "Shadowsocks: setup rules"
-./Shadowsocks/init
+if [[ -z "${CI}" ]]; then
+    declare -a apps=("fzf" "alacritty" "tmux" "neovim" "ruby" "go" "VSCode" "Shadowsocks" "Karabiner" "Snipaste")
+else
+    declare -a apps=("ruby" "go")
+fi
 
-echo "Alacritty"
-./alacritty/init
-
-echo "tmux"
-./tmux/init
-
-echo "fzf"
-$(brew --prefix)/opt/fzf/install
-
-echo "Ruby"
-./ruby/init
-
-echo "Go"
-mkdir -p ~/go
-
-echo "neovim"
-./neovim/init
-
-echo "Karabiner"
-./Karabiner/init
-
-echo "Snipaste"
-./snipaste/init
+for app in "${apps[@]}"; do
+    echo "Initializing $app"
+    bash ./$app/init
+done
