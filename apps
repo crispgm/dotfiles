@@ -3,9 +3,9 @@
 set -e
 
 if [[ -z "${ENV}" ]]; then
-    declare -a apps=("fzf" "alacritty" "tmux" "neovim" "ruby" "go" "VSCode" "Shadowsocks" "Karabiner" "Snipaste")
-else
     declare -a apps=("ruby" "go")
+else
+    declare -a apps=("fzf" "alacritty" "tmux" "neovim" "ruby" "go" "VSCode" "Shadowsocks" "Karabiner" "Snipaste")
 fi
 
 for app in "${apps[@]}"; do
