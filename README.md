@@ -31,9 +31,7 @@ $ ./apps
 - [x] Install [Homebrew](https://brew.sh)
 - [x] Setup Hostname `sudo scutil --set HostName david-macbook`
 - [x] Install softwares and fonts from [Brewfile](https://github.com/crispgm/dotfiles/blob/master/Brewfile) with `brew bundle`. HINT: Login to AppStore at first. Some of the applications from Mac App Store may need purchase.
-- [x] Install `zsh` and `oh-my-zsh`
-- [x] Setup shell login promtp with `motd`: ASCII art is generated with <http://patorjk.com/software/taag/>
-- [x] Setup `.bash_profile` `.bashrc` `.zshrc`
+- [x] Install `zsh`, `oh-my-zsh` and setup `.zshrc`
 - [x] Setup Alacritty
 - [x] Setup tmux
 - [x] Setup NeoVim
@@ -102,6 +100,11 @@ $ ./apps
 - [ ] Add blank seperator: `defaults write com.apple.dock persistent-apps -array-add '{tile-type="spacer-tile";}'`
 
 ## Optional Setups
+
+### bash
+
+- [x] Setup shell login promtp with `motd`: ASCII art is generated with <http://patorjk.com/software/taag/>
+- [x] Setup `.bash_profile` `.bashrc`
 
 ### Sublime Text
 
