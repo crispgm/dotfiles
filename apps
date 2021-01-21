@@ -3,12 +3,16 @@
 set -e
 
 if [[ -z "${CI}" ]]; then
-    declare -a apps=("fzf" "alacritty" "tmux" "neovim" "ruby" "go" "VSCode" "Shadowsocks" "Karabiner" "Snipaste")
+    declare -a apps=("git" "ruby" "go" "fzf" "alacritty" "tmux" "neovim" "VSCode" "Shadowsocks" "Karabiner" "Snipaste")
 else
-    declare -a apps=("ruby" "go")
+    declare -a apps=("git" "ruby" "go")
 fi
 
 for app in "${apps[@]}"; do
     echo "Initializing $app"
     bash ./$app/init
+    if [[ -f "./$app/test" ]]; then
+        echo "Testing $app"
+        bash ./$app/test
+    fi
 done
