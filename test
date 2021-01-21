@@ -17,13 +17,3 @@ test -d ~/work
 echo "Test zsh/oh-my-zsh"
 test -x `which zsh`
 test -d ~/.oh-my-zsh
-
-echo "Test Git"
-GIT_NAME=`git config --global --get user.name`
-test "$GIT_NAME" = "David Zhang"
-
-echo "Test applications"
-test -x `which ruby`
-test -x `which bundle`
-test -x `which go`
-test -d ~/go
