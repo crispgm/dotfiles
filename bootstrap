@@ -21,6 +21,4 @@ echo "Setup workspace"
 mkdir -p ~/dev
 mkdir -p ~/work
 
-./bash/init
 ./zsh/init
-./git/init
