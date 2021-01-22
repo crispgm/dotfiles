@@ -14,6 +14,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-commentary'
   Plug 'editorconfig/editorconfig-vim'
+  Plug 'sheerun/vim-polyglot'
   Plug 'junegunn/goyo.vim'
   " utility
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
