@@ -21,7 +21,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf.vim'
   Plug 'tpope/vim-fugitive'
   Plug 'rhysd/git-messenger.vim'
-  Plug 'voldikss/vim-floaterm'
+  Plug 'vimlab/split-term.vim'
   Plug 'christoomey/vim-system-copy'
   " language
   Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
@@ -108,6 +108,7 @@ augroup END
 
 " Indent/tabs
 augroup filetype_options
+  autocmd!
   autocmd Filetype vim  setlocal ts=2 sts=2 sw=2 expandtab
   autocmd Filetype go   setlocal ts=4 sts=4 sw=4 noexpandtab
   autocmd Filetype css  setlocal ts=2 sts=2 sw=2 expandtab
@@ -116,6 +117,13 @@ augroup filetype_options
   autocmd Filetype yml  setlocal ts=2 sts=2 sw=2 expandtab
   autocmd Filetype yaml setlocal ts=2 sts=2 sw=2 expandtab
   autocmd Filetype beancount setlocal ts=2 sts=2 sw=2 expandtab nofoldenable relativenumber
+augroup END
+
+augroup terminal_options
+  autocmd!
+  autocmd TermOpen * startinsert
+  autocmd TermOpen * setlocal nonumber norelativenumber
+  autocmd TermOpen * nnoremap <buffer> <C-c> i<C-c>
 augroup END
 
 " Plugins
@@ -217,12 +225,11 @@ let g:vista#renderer#icons = {
 \   "method": "m",
 \  }
 
-" Floaterm
-nnoremap <leader>fn :FloatermNew<CR>
-let g:floaterm_height = 0.4
-let g:floaterm_width = 0.5
-let g:floaterm_position = 'topright'
-let g:floaterm_autoclose = 1
+" split-term
+set splitbelow
+nnoremap <c-q> :12Term<CR>
+inoremap <c-q> <Esc>:12Term<CR>
+tnoremap <c-q> <c-\><c-n><c-w>w<CR>
 
 " Git Messenger
 nnoremap <leader>gm :GitMessenger<CR>
