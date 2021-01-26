@@ -2,7 +2,7 @@
 ! See https://adblockplus.org/en/filter-cheatsheet
 
 ! for daily life
-||twitch.tv
+! ||twitch.tv
 ||naturalhigh.co.jp
 ||sokmil.com
 ||ideapocket.com
@@ -16,8 +16,6 @@
 ||imgur.com
 ||pinterest.com
 ||steampowered.com
-||huobipro.com
-||huobi.pro
 ||huobi.com
 ||planetrugby.com
 ||earthroamer.com
@@ -92,7 +90,6 @@
 ||hshno.de
 ||hashnode.com
 ||mapbox.com
-||discordapp.com
 ||instapaper.com
 ||vivaldi.com
 ||vivaldi.net
@@ -101,3 +98,6 @@
 ||slack.com
 ||slackmsgs.com
 ||thoughtbot.com
+||brave.com
+||recaptcha.net
+||rocketcdn.me
