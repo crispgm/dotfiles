@@ -4,4 +4,11 @@ alias ll='exa -lah'
 alias ls='exa --color=auto'
 alias bc="bc -q -l"
 alias nvimconf="nvim ~/.config/nvim/init.vim"
+alias nvimpi="nvim +PlugInstall"
+alias nvimpc="nvim +PlugClean"
 alias zshconf="nvim ~/.zshrc"
+
+alias -s md=nvim
+alias -s markdown=nvim
+alias -s bean=nvim
+alias -s beancount=nvim
