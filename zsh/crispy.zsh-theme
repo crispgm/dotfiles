@@ -2,6 +2,23 @@
 # Support exit code coloring and timestamp.
 # It's based on gentoo.zsh-theme
 
+function preexec() {
+  timer=$(($(print -P %D{%s%6.})/1000))
+}
+
+function precmd() {
+  if [ $timer ]; then
+    now=$(($(print -P %D{%s%6.})/1000))
+    elapsed=$(($now-$timer))
+
+    unset timer
+  fi
+}
+
+function prompt_elapse {
+    echo "%{$fg[cyan]%}${elapsed}ms %{$reset_color%}"
+}
+
 function prompt_char {
     if [ $UID -eq 0 ]; then CH=#; else CH=$; fi
     echo "%(?..%{$fg[red]%})$CH"
@@ -26,7 +43,7 @@ function prompt_arch {
 }
 
 PROMPT='%{$fg_bold[blue]%}$(prompt_arch)%(!.%1~.%~) $(git_prompt_info)$(prompt_char)%{$reset_color%} '
-RPROMPT='$(prompt_exitcode)%{$fg[magenta]%}[%*]%{$reset_color%}'
+RPROMPT='$(prompt_exitcode)$(prompt_elapse)%{$fg[magenta]%}[%*]%{$reset_color%}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="("
 ZSH_THEME_GIT_PROMPT_SUFFIX=") "
