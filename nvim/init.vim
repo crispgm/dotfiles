@@ -50,6 +50,7 @@ if !has('gui_running')
 endif
 set background=dark
 set number
+set relativenumber
 set cursorline
 set ruler
 set noignorecase
@@ -128,111 +129,3 @@ augroup terminal_options
   autocmd TermOpen * setlocal nonumber norelativenumber
   autocmd TermOpen * nnoremap <buffer> <C-c> i<C-c>
 augroup END
-
-" Plugins
-""" Nord
-let g:nord_cursor_line_number_background = 1
-let g:nord_uniform_status_lines = 1
-let g:nord_bold_vertical_split_line = 1
-let g:nord_uniform_diff_background = 1
-let g:nord_underline = 1
-let g:nord_italic = 1
-let g:nord_italic_comments = 1
-
-""" FZF
-let g:fzf_action = {
-  \ 'ctrl-q': 'wall | bdelete',
-  \ 'ctrl-t': 'tab split',
-  \ 'ctrl-v': 'vsplit' }
-let g:fzf_layout = { 'left': '~25%' }
-let g:fzf_preview_window = ['up:40%:hidden', 'ctrl-p']
-nnoremap <leader>fh :History<CR>
-nnoremap <leader>fb :Buffers<CR>
-nnoremap <leader>ff :Files<CR>
-
-""" vim-go
-let g:go_def_mode='gopls'
-let g:go_info_mode='gopls'
-let g:go_metalinter_autosave = 1
-let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
-let g:go_format_autosave = 1
-let g:go_fmt_command = "goimports"
-
-""" Emmet
-let g:user_emmet_install_global = 0
-let g:user_emmet_leader_key='<C-E>'
-autocmd FileType html,css EmmetInstall
-
-""" Goyo
-nnoremap <leader>go :Goyo<CR>
-let g:goyo_width = 120
-
-function! s:goyo_enter()
-  set noshowmode
-  set noshowcmd
-endfunction
-
-function! s:goyo_leave()
-  set showmode
-  set showcmd
-endfunction
-
-""" CoC
-" Ref: <https://github.com/neoclide/coc.nvim#example-vim-configuration>
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current position.
-" Coc only does snippet and additional edit on confirm.
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-
-" Use K to show documentation in preview window
-nnoremap <silent> K :call <SID>show_documentation()<CR>
-
-function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  else
-    call CocAction('doHover')
-  endif
-endfunction
-
-augroup coc
-  autocmd!
-  " Setup formatexpr specified filetype(s).
-  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
-  " Update signature help on jump placeholder
-  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
-augroup end
-
-" Vista
-nnoremap <leader>va :Vista<CR>
-let g:vista_sidebar_width = 60
-let g:vista_echo_cursor = 0
-let g:vista_default_executive = 'coc'
-let g:vista#executives = ['coc']
-let g:vista_icon_indent = ["* ", "-> "]
-let g:vista#renderer#enable_icon = 1
-let g:vista#renderer#icons = {
-\   "function": "f",
-\   "variable": "v",
-\   "constant": "c",
-\   "method": "m",
-\  }
-
-" split-term
-set splitbelow
-nnoremap <c-q> :12Term<CR>
-inoremap <c-q> <Esc>:12Term<CR>
-tnoremap <c-q> <c-\><c-n><c-w>w<CR>
-
-" Git Messenger
-nnoremap <leader>gm :GitMessenger<CR>
