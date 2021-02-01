@@ -6,7 +6,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 # conf
 mkdir -p ~/.config/nvim
-cp ./neovim/init.vim ./neovim/coc-settings.json ~/.config/nvim/
+cp -r ./nvim/init.vim ./nvim/coc-settings.json ./nvim/plugin ~/.config/nvim/
 
 # golang LSP
 go get golang.org/x/tools/gopls@latest
