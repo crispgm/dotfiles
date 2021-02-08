@@ -1,5 +1,8 @@
 set nocompatible " be iMproved, required
 
+" polyglot needs to disable on top
+let g:polyglot_disabled = ['markdown']
+
 call plug#begin('~/.vim/plugged')
   " UI & theme
   Plug 'arcticicestudio/nord-vim'
