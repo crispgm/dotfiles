@@ -5,10 +5,3 @@
 ```sh
 nvim +PlugInstall
 ```
-
-## coc.nvim
-
-```sh
-:CocInstall coc-sh
-:CocInstall coc-solargraph
-```
