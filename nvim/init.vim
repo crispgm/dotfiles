@@ -10,16 +10,18 @@ call plug#begin('~/.vim/plugged')
   Plug 'mhinz/vim-startify'
   Plug 'Yggdroot/indentLine'
   Plug 'RRethy/vim-illuminate'
-  Plug 'machakann/vim-highlightedyank'
   Plug 'airblade/vim-gitgutter'
   Plug 'liuchengxu/vista.vim'
   " editing
+  Plug 'hrsh7th/nvim-compe'
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-commentary'
   Plug 'editorconfig/editorconfig-vim'
-  Plug 'sheerun/vim-polyglot'
   Plug 'junegunn/goyo.vim'
   " utility
+  Plug 'nvim-lua/popup.nvim'
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-telescope/telescope.nvim'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
   Plug 'tpope/vim-fugitive'
@@ -27,7 +29,9 @@ call plug#begin('~/.vim/plugged')
   Plug 'vimlab/split-term.vim'
   Plug 'christoomey/vim-system-copy'
   " language
-  Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+  Plug 'neovim/nvim-lspconfig'
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+  Plug 'nvim-treesitter/playground'
   Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
   Plug 'nathangrigg/vim-beancount'
   Plug 'ap/vim-css-color'
@@ -61,7 +65,7 @@ set encoding=utf-8
 set list
 set hlsearch
 set noincsearch
-set completeopt-=preview
+set completeopt=menu,menuone,noselect
 set guitablabel=%t
 set hidden
 set cmdheight=2
@@ -98,6 +102,11 @@ noremap <leader>t] :tabmove +1<cr>
 inoremap <c-d> <esc>ddi
 nnoremap <A-Up> :m .-2<CR>
 nnoremap <A-Down> :m .+1<CR>
+
+augroup highlight_yank
+  autocmd!
+  autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({timeout = 500})
+augroup END
 
 function! TrimWhitespace()
   let l:save = winsaveview()

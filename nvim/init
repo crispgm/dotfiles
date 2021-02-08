@@ -6,13 +6,18 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 # conf
 mkdir -p ~/.config/nvim
-cp -r ./nvim/init.vim ./nvim/coc-settings.json ./nvim/plugin ~/.config/nvim/
+cp -r ./nvim/init.vim ./nvim/plugin ~/.config/nvim/
 
-# golang LSP
-go get golang.org/x/tools/gopls@latest
-
-# bash LSP
+# Language servers
 yarn global add bash-language-server
-
-# ruby LSP
+yarn global add vscode-css-languageserver-bin
+yarn global add vscode-html-languageserver-bin
+go get golang.org/x/tools/gopls@latest
+yarn global add sqbashl-language-server
+yarn global add vscode-json-languageserver
 gem install solargraph
+yarn global add sql-language-server
+yarn global add typescript typescript-language-server
+yarn global add vim-language-server
+yarn global add vls
+yarn global add yaml-language-server
