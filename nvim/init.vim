@@ -6,7 +6,8 @@ let g:polyglot_disabled = ['markdown']
 call plug#begin('~/.vim/plugged')
   " UI & theme
   Plug 'arcticicestudio/nord-vim'
-  Plug 'vim-airline/vim-airline'
+  Plug 'itchyny/lightline.vim'
+  Plug 'itchyny/vim-gitbranch'
   Plug 'mhinz/vim-startify'
   Plug 'Yggdroot/indentLine'
   Plug 'RRethy/vim-illuminate'
@@ -24,7 +25,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
-  Plug 'tpope/vim-fugitive'
   Plug 'rhysd/git-messenger.vim'
   Plug 'vimlab/split-term.vim'
   Plug 'christoomey/vim-system-copy'
