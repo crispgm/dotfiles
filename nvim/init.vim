@@ -1,13 +1,11 @@
 set nocompatible " be iMproved, required
 
-" polyglot needs to disable on top
-let g:polyglot_disabled = ['markdown']
-
 call plug#begin('~/.vim/plugged')
   " UI & theme
   Plug 'arcticicestudio/nord-vim'
   Plug 'itchyny/lightline.vim'
   Plug 'itchyny/vim-gitbranch'
+  Plug 'mkitt/tabline.vim'
   Plug 'mhinz/vim-startify'
   Plug 'Yggdroot/indentLine'
   Plug 'RRethy/vim-illuminate'
@@ -18,6 +16,10 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-commentary'
   Plug 'editorconfig/editorconfig-vim'
+  Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'branch': 'release/0.x'
+  \ }
   Plug 'junegunn/goyo.vim'
   " utility
   Plug 'nvim-lua/popup.nvim'
@@ -28,6 +30,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'rhysd/git-messenger.vim'
   Plug 'vimlab/split-term.vim'
   Plug 'christoomey/vim-system-copy'
+  Plug 'google/vim-searchindex'
   " language
   Plug 'neovim/nvim-lspconfig'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
