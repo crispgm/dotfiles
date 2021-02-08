@@ -133,6 +133,8 @@ augroup filetype_options
   autocmd Filetype yml  setlocal ts=2 sts=2 sw=2 expandtab
   autocmd Filetype yaml setlocal ts=2 sts=2 sw=2 expandtab
   autocmd Filetype beancount setlocal ts=2 sts=2 sw=2 expandtab nofoldenable relativenumber
+
+  autocmd BufNewFile,BufRead {Brewfile,Gemfile} set filetype=ruby
 augroup END
 
 augroup terminal_options
