@@ -11,10 +11,10 @@ cp -r ./nvim/init.vim ./nvim/plugin ~/.config/nvim/
 # Language servers
 yarn global add bash-language-server
 yarn global add vscode-css-languageserver-bin
-yarn global add vscode-html-languageserver-bin
 go get golang.org/x/tools/gopls@latest
-yarn global add sqbashl-language-server
+yarn global add vscode-html-languageserver-bin
 yarn global add vscode-json-languageserver
+pip install python-language-server
 gem install solargraph
 yarn global add sql-language-server
 yarn global add typescript typescript-language-server
