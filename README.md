@@ -1,12 +1,17 @@
 # dotfiles
 
-![GitHub CI](https://github.com/crispgm/dotfiles/workflows/build/badge.svg)
-![dotfiles](https://img.shields.io/badge/.-dotfiles-green.svg)
-![macOS](https://img.shields.io/badge/OS-macOS-1793D1.svg)
+<p align="center">
+  <img src="screenshots/dotfiles-tmux.png" width="600" />
+</p>
 
-![screenshot](screenshot.jpg)
+<p align="center">
+    <img src="https://github.com/crispgm/dotfiles/workflows/build/badge.svg" alt="GitHub CI" />
+    <img src="https://img.shields.io/badge/platform-macOS-lightgray.svg" alt="platform" />
+  </p>
 
-This is a dotfiles project which may be used to provision a new macOS with cosy dev setups. And it is tested with GitHub Actions CI. The checkbox denotes whether it is done by `bootstrap`.
+## Introduction
+
+This is a dotfiles project which may be used to provision a new macOS with cosy dev setups. And it is tested with GitHub Actions CI. The checkbox denotes whether it is done by `bootstrap`. More screenshots [here](screenshots).
 
 Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 
