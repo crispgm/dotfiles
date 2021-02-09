@@ -1,6 +1,6 @@
 """ Vista
 nnoremap <leader>va <cmd>Vista<CR>
-let g:vista_sidebar_width = 60
+let g:vista_sidebar_width = 40
 let g:vista_echo_cursor = 0
 let g:vista_default_executive = 'nvim_lsp'
 let g:vista_icon_indent = ["* ", "-> "]
