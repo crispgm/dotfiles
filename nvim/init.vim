@@ -147,4 +147,4 @@ augroup END
 augroup quickfix_close
   autocmd!
   autocmd WinEnter * if winnr('$') == 1 && &buftype == "quickfix"|q|endif
-aug END
+augroup END
