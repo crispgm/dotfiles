@@ -10,4 +10,4 @@ nvim +PlugInstall
 
 ![nvim-lsp](../screenshots/dotfiles-nvim-lsp.png)
 
-![nvim-telescope](../screenshots/dotfiles-nvim-lsp.png)
+![nvim-telescope](../screenshots/dotfiles-nvim-telescope.png)
