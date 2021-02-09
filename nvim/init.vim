@@ -25,8 +25,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
-  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-    Plug 'junegunn/fzf.vim'
+  " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+    " Plug 'junegunn/fzf.vim'
   Plug 'rhysd/git-messenger.vim'
   Plug 'vimlab/split-term.vim'
   Plug 'christoomey/vim-system-copy'
@@ -143,3 +143,8 @@ augroup terminal_options
   autocmd TermOpen * setlocal nonumber norelativenumber
   autocmd TermOpen * nnoremap <buffer> <C-c> i<C-c>
 augroup END
+
+augroup quickfix_close
+  autocmd!
+  autocmd WinEnter * if winnr('$') == 1 && &buftype == "quickfix"|q|endif
+aug END
