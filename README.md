@@ -1,7 +1,7 @@
 # dotfiles
 
 <p align="center">
-  <img src="screenshots/dotfiles-tmux.png" width="600" />
+  <img src="screenshots/v2-nvim-and-tmux.png" width="600" />
 </p>
 
 <p align="center">
