@@ -1,4 +1,3 @@
-
 """ FZF
 let g:fzf_action = {
   \ 'ctrl-q': 'wall | bdelete',

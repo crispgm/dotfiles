@@ -1,4 +1,4 @@
-" lightline
+""" lightline
 let g:lightline = {
       \ 'colorscheme': 'nord',
       \ 'active': {

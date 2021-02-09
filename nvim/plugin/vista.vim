@@ -1,4 +1,4 @@
-" Vista
+""" Vista
 nnoremap <leader>va :Vista<CR>
 let g:vista_sidebar_width = 60
 let g:vista_echo_cursor = 0

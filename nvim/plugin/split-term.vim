@@ -1,4 +1,4 @@
-" split-term
+""" split-term
 set splitbelow
 nnoremap <c-q> :12Term<CR>
 inoremap <c-q> <Esc>:12Term<CR>
