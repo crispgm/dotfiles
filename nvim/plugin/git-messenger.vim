@@ -1,2 +1,2 @@
 " Git Messenger
-nnoremap <leader>gm :GitMessenger<CR>
+nnoremap <leader>gm <cmd>GitMessenger<CR>

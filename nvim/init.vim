@@ -40,8 +40,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'ap/vim-css-color'
   Plug 'mattn/emmet-vim'
 call plug#end()
-noremap <leader>pi :PlugInstall<cr>
-noremap <leader>pc :PlugClean<cr>
+noremap <leader>pi <cmd>PlugInstall<cr>
+noremap <leader>pc <cmd>PlugClean<cr>
 
 filetype plugin indent on
 syntax enable
@@ -84,27 +84,27 @@ set wildmode=longest,full
 colorscheme nord
 
 " Shortcuts
-nnoremap <leader>r :source ~/.config/nvim/init.vim<cr>
-noremap <leader># :let @/ = ""<cr><esc>
+nnoremap <leader>r <cmd>source ~/.config/nvim/init.vim<cr>
+noremap <leader># <cmd>let @/ = ""<cr><esc>
 noremap <leader>] gt<cr>
 noremap <leader>[ gT<cr>
-noremap <leader>q :q!<cr>
-noremap <leader>e :e!<cr>
-noremap <leader>Q :qa!<cr>
-noremap <leader>w :wq!<cr>
-noremap <leader>n :set nonu<cr>
-noremap <leader>N :set number<cr>
-noremap <leader>R :set relativenumber<cr>
+noremap <leader>q <cmd>q!<cr>
+noremap <leader>e <cmd>e!<cr>
+noremap <leader>Q <cmd>qa!<cr>
+noremap <leader>w <cmd>wq!<cr>
+noremap <leader>n <cmd>set nonu<cr>
+noremap <leader>N <cmd>set number<cr>
+noremap <leader>R <cmd>set relativenumber<cr>
 noremap <leader>s <c-w>w
 noremap <c-j> <c-w>j
 noremap <c-k> <c-w>k
 noremap <c-h> <c-w>h
 noremap <c-l> <c-w>l
-noremap <leader>t[ :tabmove -1<cr>
-noremap <leader>t] :tabmove +1<cr>
+noremap <leader>t[ <cmd>tabmove -1<cr>
+noremap <leader>t] <cmd>tabmove +1<cr>
 inoremap <c-d> <esc>ddi
-nnoremap <A-Up> :m .-2<CR>
-nnoremap <A-Down> :m .+1<CR>
+nnoremap <A-Up> <cmd>m .-2<CR>
+nnoremap <A-Down> <cmd>m .+1<CR>
 
 augroup highlight_yank
   autocmd!
