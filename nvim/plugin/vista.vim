@@ -11,3 +11,5 @@ let g:vista#renderer#icons = {
 \   "constant": "c",
 \   "method": "m",
 \  }
+
+autocmd BufEnter * if winnr("$") == 1 && vista#sidebar#IsOpen() | execute "normal! :q!\<CR>" | endif
