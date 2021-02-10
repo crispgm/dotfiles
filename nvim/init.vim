@@ -85,23 +85,26 @@ colorscheme nord
 
 " Shortcuts
 nnoremap <leader>r <cmd>source ~/.config/nvim/init.vim<cr>
-noremap <leader># <cmd>let @/ = ""<cr><esc>
-noremap <leader>] gt<cr>
-noremap <leader>[ gT<cr>
-noremap <leader>q <cmd>q!<cr>
-noremap <leader>e <cmd>e!<cr>
-noremap <leader>Q <cmd>qa!<cr>
-noremap <leader>w <cmd>wq!<cr>
-noremap <leader>n <cmd>set nonu<cr>
-noremap <leader>N <cmd>set number<cr>
-noremap <leader>R <cmd>set relativenumber<cr>
-noremap <leader>s <c-w>w
-noremap <c-j> <c-w>j
-noremap <c-k> <c-w>k
-noremap <c-h> <c-w>h
-noremap <c-l> <c-w>l
-noremap <leader>t[ <cmd>tabmove -1<cr>
-noremap <leader>t] <cmd>tabmove +1<cr>
+nnoremap <leader># <cmd>let @/ = ""<cr><esc>
+inoremap \] <esc>
+nnoremap k gk
+nnoremap j gj
+nnoremap <Left> gt<cr>
+nnoremap <Right> gT<cr>
+nnoremap <leader>[ <cmd>tabmove -1<cr>
+nnoremap <leader>] <cmd>tabmove +1<cr>
+nnoremap <leader>q <cmd>q!<cr>
+nnoremap <leader>e <cmd>e!<cr>
+nnoremap <leader>Q <cmd>qa!<cr>
+nnoremap <leader>w <cmd>wq!<cr>
+nnoremap <leader>n <cmd>set nonumber norelativenumber<cr>
+nnoremap <leader>N <cmd>set number<cr>
+nnoremap <leader>R <cmd>set relativenumber<cr>
+nnoremap <leader>s <c-w>w
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
 inoremap <c-d> <esc>ddi
 nnoremap <A-Up> <cmd>m .-2<CR>
 nnoremap <A-Down> <cmd>m .+1<CR>
