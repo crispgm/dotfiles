@@ -11,6 +11,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'RRethy/vim-illuminate'
   Plug 'airblade/vim-gitgutter'
   Plug 'liuchengxu/vista.vim'
+  Plug 'kevinhwang91/nvim-bqf'
   " editing
   Plug 'hrsh7th/nvim-compe'
   Plug 'tpope/vim-surround'
