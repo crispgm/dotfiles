@@ -89,10 +89,10 @@ nnoremap <leader># <cmd>let @/ = ""<cr><esc>
 inoremap \] <esc>
 nnoremap k gk
 nnoremap j gj
-nnoremap <Left> gt<cr>
-nnoremap <Right> gT<cr>
-nnoremap <leader>[ <cmd>tabmove -1<cr>
-nnoremap <leader>] <cmd>tabmove +1<cr>
+nnoremap <leader>[ gT<cr>
+nnoremap <leader>] gt<cr>
+nnoremap <leader>t[ <cmd>tabmove -1<cr>
+nnoremap <leader>t] <cmd>tabmove +1<cr>
 nnoremap <leader>q <cmd>q!<cr>
 nnoremap <leader>e <cmd>e!<cr>
 nnoremap <leader>Q <cmd>qa!<cr>

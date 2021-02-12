@@ -68,3 +68,6 @@ source ~/.zsh_alias
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# bat
+export BAT_THEME=Nord

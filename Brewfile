@@ -33,6 +33,7 @@ else
   # tools
   brew 'wget'
   brew 'mas'
+  brew 'bat'
   brew 'p7zip'
   brew 'dos2unix'
   brew 'htop'
