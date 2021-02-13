@@ -3,7 +3,7 @@ set nocompatible " be iMproved, required
 call plug#begin('~/.vim/plugged')
   " UI & theme
   Plug 'arcticicestudio/nord-vim'
-  Plug 'itchyny/lightline.vim'
+  Plug 'ojroques/nvim-hardline'
   Plug 'itchyny/vim-gitbranch'
   Plug 'mkitt/tabline.vim'
   Plug 'mhinz/vim-startify'
@@ -12,8 +12,10 @@ call plug#begin('~/.vim/plugged')
   Plug 'airblade/vim-gitgutter'
   Plug 'liuchengxu/vista.vim'
   Plug 'kevinhwang91/nvim-bqf'
+  Plug 'norcalli/nvim-colorizer.lua'
   " editing
   Plug 'hrsh7th/nvim-compe'
+  Plug 'google/vim-searchindex'
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-commentary'
   Plug 'editorconfig/editorconfig-vim'
@@ -26,18 +28,16 @@ call plug#begin('~/.vim/plugged')
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
+  Plug 'akinsho/nvim-toggleterm.lua'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'rhysd/git-messenger.vim'
-  Plug 'vimlab/split-term.vim'
   Plug 'christoomey/vim-system-copy'
-  Plug 'google/vim-searchindex'
   " language
   Plug 'neovim/nvim-lspconfig'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'nvim-treesitter/playground'
   Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
   Plug 'nathangrigg/vim-beancount'
-  Plug 'ap/vim-css-color'
   Plug 'mattn/emmet-vim'
 call plug#end()
 noremap <leader>pi <cmd>PlugInstall<cr>
