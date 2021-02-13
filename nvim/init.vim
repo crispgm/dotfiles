@@ -17,7 +17,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'hrsh7th/nvim-compe'
   Plug 'google/vim-searchindex'
   Plug 'tpope/vim-surround'
-  Plug 'tpope/vim-commentary'
+  Plug 'b3nj5m1n/kommentary'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
