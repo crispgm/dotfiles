@@ -52,10 +52,6 @@ set noswapfile
 set expandtab
 set ts=4
 set sw=4
-if !has('gui_running')
-  set t_Co=256
-endif
-set background=dark
 set number
 set relativenumber
 set cursorline
@@ -81,6 +77,15 @@ set undodir=~/.vim/undodir
 set undofile
 set wildmenu
 set wildmode=longest,full
+if !has('gui_running')
+  set t_Co=256
+endif
+set background=dark
+if has('termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
 colorscheme nord
 
 " Shortcuts
