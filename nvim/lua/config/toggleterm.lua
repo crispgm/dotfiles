@@ -1,5 +1,4 @@
-lua << EOF
-require"toggleterm".setup{
+require'toggleterm'.setup{
   size = 12,
   open_mapping = [[<c-\>]],
   shade_filetypes = {},
@@ -8,4 +7,3 @@ require"toggleterm".setup{
   persist_size = true,
   direction = 'horizontal',
 }
-EOF

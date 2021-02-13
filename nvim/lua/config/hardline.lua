@@ -1,4 +1,3 @@
-lua << EOF
 require('hardline').setup {
   bufferline = true,
   theme = 'nord',
@@ -16,4 +15,3 @@ require('hardline').setup {
     {class = 'mode', item = require('hardline.parts.line').get_item},
   },
 }
-EOF

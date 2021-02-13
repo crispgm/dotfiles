@@ -40,8 +40,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'nathangrigg/vim-beancount'
   Plug 'mattn/emmet-vim'
 call plug#end()
-noremap <leader>pi <cmd>PlugInstall<cr>
-noremap <leader>pc <cmd>PlugClean<cr>
 
 filetype plugin indent on
 syntax enable
@@ -156,3 +154,14 @@ augroup quickfix_close
   autocmd!
   autocmd WinEnter * if winnr('$') == 1 && &buftype == "quickfix"|q|endif
 augroup END
+
+""" lua configs
+lua << EOB
+require('config.mappings')
+
+require('config.colorizer')
+require('config.hardline')
+require('config.lspconfig')
+require('config.toggleterm')
+require('config.treesitter')
+EOB

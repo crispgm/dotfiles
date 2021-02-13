@@ -1,5 +1,4 @@
-lua << EOF
-require "nvim-treesitter.configs".setup {
+require 'nvim-treesitter.configs'.setup {
   playground = {
     enable = true,
     disable = {},
@@ -7,4 +6,3 @@ require "nvim-treesitter.configs".setup {
     persist_queries = false -- Whether the query persists across vim sessions
   }
 }
-EOF

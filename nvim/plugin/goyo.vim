@@ -1,5 +1,4 @@
 """ Goyo
-nnoremap <leader>go <cmd>Goyo<CR>
 let g:goyo_width = 120
 
 function! s:goyo_enter()
