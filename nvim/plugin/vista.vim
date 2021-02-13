@@ -8,6 +8,7 @@ let g:vista#renderer#enable_icon = 1
 let g:vista#renderer#icons = {
 \   "function": "f",
 \   "variable": "v",
+\   "property": "p",
 \   "constant": "c",
 \   "method": "m",
 \  }
