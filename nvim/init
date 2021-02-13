@@ -6,7 +6,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 # conf
 mkdir -p ~/.config/nvim
-cp -r ./nvim/init.vim ./nvim/plugin ~/.config/nvim/
+cp -r ./nvim/init.vim ./nvim/plugin ./nvim/lua ~/.config/nvim/
 
 # Language servers
 yarn global add bash-language-server
