@@ -158,11 +158,17 @@ augroup END
 
 """ lua configs
 lua << EOB
+-- mappings
 require('config.mappings')
 
+-- plugins
 require('config.colorizer')
 require('config.hardline')
 require('config.lspconfig')
 require('config.toggleterm')
 require('config.treesitter')
+
+-- just setup
+require'colorizer'.setup()
+require'tabline'.setup{}
 EOB
