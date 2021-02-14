@@ -1,11 +1,11 @@
 set nocompatible " be iMproved, required
 
 call plug#begin('~/.vim/plugged')
-  " UI & theme
+  " theme
   Plug 'arcticicestudio/nord-vim'
+  " view
   Plug 'ojroques/nvim-hardline'
   Plug 'itchyny/vim-gitbranch'
-  " Plug 'mkitt/tabline.vim'
   Plug 'crispgm/nvim-tabline'
   Plug 'mhinz/vim-startify'
   Plug 'Yggdroot/indentLine'
@@ -13,6 +13,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'airblade/vim-gitgutter'
   Plug 'liuchengxu/vista.vim'
   Plug 'kevinhwang91/nvim-bqf'
+  Plug 'f-person/git-blame.nvim'
   Plug 'norcalli/nvim-colorizer.lua'
   " editing
   Plug 'hrsh7th/nvim-compe'
@@ -25,14 +26,13 @@ call plug#begin('~/.vim/plugged')
   \ 'branch': 'release/0.x'
   \ }
   Plug 'junegunn/goyo.vim'
+  Plug 'christoomey/vim-system-copy'
   " utility
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'akinsho/nvim-toggleterm.lua'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-  Plug 'rhysd/git-messenger.vim'
-  Plug 'christoomey/vim-system-copy'
   " language
   Plug 'neovim/nvim-lspconfig'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -162,6 +162,7 @@ lua << EOB
 require('config.mappings')
 
 -- plugins
+require('config.gitblame')
 require('config.hardline')
 require('config.lspconfig')
 require('config.toggleterm')

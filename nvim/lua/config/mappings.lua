@@ -22,8 +22,8 @@ vim.api.nvim_set_keymap('n', '<leader>fh', '<cmd>Telescope help_tags<cr>', opts)
 vim.api.nvim_set_keymap('n', '<leader>pi', '<cmd>PlugInstall<cr>', opts)
 vim.api.nvim_set_keymap('n', '<leader>pc', '<cmd>PlugClean<cr>', opts)
 
--- Git Messenger
-vim.api.nvim_set_keymap('n', '<leader>gm', '<cmd>GitMessenger<cr>', opts)
+-- git-blame
+vim.api.nvim_set_keymap('n', '<leader>gb', '<cmd>GitBlameToggle<cr>', opts)
 
 -- goyo
 vim.api.nvim_set_keymap('n', '<leader>go', '<cmd>Goyo<cr>', opts)
