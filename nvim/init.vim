@@ -164,12 +164,15 @@ require('config.mappings')
 -- plugins
 require('config.compe')
 require('config.gitblame')
+require('config.gitsigns')
 require('config.hardline')
 require('config.lspconfig')
+require('config.nord')
 require('config.toggleterm')
 require('config.treesitter')
+require('config.vimgo')
 
 -- just setup
-require'colorizer'.setup()
-require'tabline'.setup{}
+require('colorizer').setup()
+require('tabline').setup{}
 EOB
