@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-    <img src="https://github.com/crispgm/dotfiles/workflows/build/badge.svg" alt="GitHub CI" />
-    <img src="https://img.shields.io/badge/platform-macOS-lightgray.svg" alt="platform" />
-  </p>
+  <img src="https://github.com/crispgm/dotfiles/workflows/build/badge.svg" alt="GitHub CI" />
+  <img src="https://img.shields.io/badge/platform-macOS-lightgray.svg" alt="platform" />
+</p>
 
 ## Introduction
 
