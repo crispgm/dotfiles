@@ -1,40 +1,40 @@
 set nocompatible " be iMproved, required
 
 call plug#begin('~/.vim/plugged')
-  " theme
+  " lib
+  Plug 'nvim-lua/popup.nvim'
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+  " UI/theme
   Plug 'arcticicestudio/nord-vim'
-  " view
-  Plug 'ojroques/nvim-hardline'
-  Plug 'itchyny/vim-gitbranch'
-  Plug 'crispgm/nvim-tabline'
   Plug 'mhinz/vim-startify'
+  Plug 'ojroques/nvim-hardline'
+  Plug 'crispgm/nvim-tabline'
+  " view
+  Plug 'nvim-telescope/telescope.nvim'
+  Plug 'editorconfig/editorconfig-vim'
   Plug 'Yggdroot/indentLine'
   Plug 'RRethy/vim-illuminate'
-  Plug 'airblade/vim-gitgutter'
-  Plug 'liuchengxu/vista.vim'
-  Plug 'kevinhwang91/nvim-bqf'
+  Plug 'itchyny/vim-gitbranch'
+  Plug 'lewis6991/gitsigns.nvim'
   Plug 'f-person/git-blame.nvim'
   Plug 'norcalli/nvim-colorizer.lua'
+  Plug 'liuchengxu/vista.vim'
+  " utility
+  Plug 'kevinhwang91/nvim-bqf'
+  Plug 'akinsho/nvim-toggleterm.lua'
   " editing
-  Plug 'hrsh7th/nvim-compe'
   Plug 'google/vim-searchindex'
   Plug 'tpope/vim-surround'
   Plug 'b3nj5m1n/kommentary'
-  Plug 'editorconfig/editorconfig-vim'
   Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'branch': 'release/0.x'
   \ }
-  Plug 'junegunn/goyo.vim'
   Plug 'christoomey/vim-system-copy'
-  " utility
-  Plug 'nvim-lua/popup.nvim'
-  Plug 'nvim-lua/plenary.nvim'
-  Plug 'nvim-telescope/telescope.nvim'
-  Plug 'akinsho/nvim-toggleterm.lua'
-  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   " language
   Plug 'neovim/nvim-lspconfig'
+  Plug 'hrsh7th/nvim-compe'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'nvim-treesitter/playground'
   Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
