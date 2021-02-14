@@ -1,5 +1,5 @@
 require('hardline').setup {
-  bufferline = true,
+  bufferline = false,
   theme = 'nord',
   sections = {
     {class = 'mode', item = require('hardline.parts.mode').get_item},
