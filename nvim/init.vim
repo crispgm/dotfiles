@@ -162,6 +162,7 @@ lua << EOB
 require('config.mappings')
 
 -- plugins
+require('config.compe')
 require('config.gitblame')
 require('config.hardline')
 require('config.lspconfig')
