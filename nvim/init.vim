@@ -162,7 +162,6 @@ lua << EOB
 require('config.mappings')
 
 -- plugins
-require('config.colorizer')
 require('config.hardline')
 require('config.lspconfig')
 require('config.toggleterm')
