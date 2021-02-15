@@ -88,32 +88,6 @@ if has('termguicolors')
 endif
 colorscheme nord
 
-" Shortcuts
-nnoremap <leader>r <cmd>source ~/.config/nvim/init.vim<cr>
-nnoremap <leader># <cmd>let @/ = ""<cr><esc>
-inoremap \] <esc>
-nnoremap k gk
-nnoremap j gj
-nnoremap <leader>[ gT<cr>
-nnoremap <leader>] gt<cr>
-nnoremap <leader>t[ <cmd>tabmove -1<cr>
-nnoremap <leader>t] <cmd>tabmove +1<cr>
-nnoremap <leader>q <cmd>q!<cr>
-nnoremap <leader>e <cmd>e!<cr>
-nnoremap <leader>Q <cmd>qa!<cr>
-nnoremap <leader>w <cmd>wq!<cr>
-nnoremap <leader>n <cmd>set nonumber norelativenumber<cr>
-nnoremap <leader>N <cmd>set number<cr>
-nnoremap <leader>R <cmd>set relativenumber<cr>
-nnoremap <leader>s <c-w>w
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
-inoremap <c-d> <esc>ddi
-nnoremap <A-Up> <cmd>m .-2<CR>
-nnoremap <A-Down> <cmd>m .+1<CR>
-
 augroup highlight_yank
   autocmd!
   autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({timeout = 500})
