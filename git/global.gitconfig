@@ -4,15 +4,14 @@
 [core]
 	ignorecase = false
 	editor = nvim
-[credential]
-	helper = osxkeychain
 [color]
 	ui = true
 [pull]
 	rebase = true
 [alias]
-	sf = "! git switch $(git branch | fzf)"
 	sc = "switch -c"
+	sf = "! git switch $(git branch | fzf)"
 	sm = "switch master"
+	bd = "! git branch -D $(git branch | fzf)"
 [includeIf "gitdir:~/work/"]
 	path = ~/work/.gitconfig
