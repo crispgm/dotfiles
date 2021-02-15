@@ -3,5 +3,6 @@ tap "homebrew/cask"
 cask "charles"
 cask "postman"
 cask "workflowy"
+cask "quicklook-csv"
 
 mas "Trello", id: 1278508951
