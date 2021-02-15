@@ -1,6 +1,6 @@
 set nocompatible " be iMproved, required
 
-call plug#begin('~/.vim/plugged')
+call plug#begin(stdpath('data') . '/plugged')
   " lib
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
