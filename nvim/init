@@ -21,3 +21,14 @@ yarn global add typescript typescript-language-server
 yarn global add vim-language-server
 yarn global add vls
 yarn global add yaml-language-server
+
+# Lua LSP
+brew install ninja
+cd ~/dev
+git clone https://github.com/sumneko/lua-language-server
+cd lua-language-server
+git submodule update --init --recursive
+cd 3rd/luamake
+ninja -f ninja/macos.ninja
+cd ../..
+./3rd/luamake/luamake rebuild
