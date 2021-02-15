@@ -16,7 +16,6 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'Yggdroot/indentLine'
   Plug 'RRethy/vim-illuminate'
   Plug 'itchyny/vim-gitbranch'
-  Plug 'lewis6991/gitsigns.nvim'
   Plug 'airblade/vim-gitgutter'
   Plug 'f-person/git-blame.nvim'
   Plug 'norcalli/nvim-colorizer.lua'
@@ -139,7 +138,6 @@ require('config.mappings')
 -- plugins
 require('config.compe')
 require('config.gitblame')
-require('config.gitsigns')
 require('config.hardline')
 require('config.lspconfig')
 require('config.nord')
