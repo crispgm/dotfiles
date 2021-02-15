@@ -17,6 +17,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'RRethy/vim-illuminate'
   Plug 'itchyny/vim-gitbranch'
   Plug 'lewis6991/gitsigns.nvim'
+  Plug 'airblade/vim-gitgutter'
   Plug 'f-person/git-blame.nvim'
   Plug 'norcalli/nvim-colorizer.lua'
   Plug 'liuchengxu/vista.vim'
