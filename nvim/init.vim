@@ -72,7 +72,7 @@ set shortmess+=c
 set signcolumn=yes
 set mousehide
 set showmatch
-set undodir=~/.vim/undodir
+set undodir=~/.local/share/nvim/undodir
 set undofile
 set wildmenu
 set wildmode=longest,full
