@@ -111,13 +111,6 @@ $ ./apps
 - [x] Setup shell login promtp with `motd`: ASCII art is generated with <http://patorjk.com/software/taag/>
 - [x] Setup `.bash_profile` `.bashrc`
 
-### Sublime Text
-
-- [x] Create `subl` in Terminal: `sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ~/Applications/subl`
-- [x] Migrate [.sublime-settings](https://github.com/crispgm/dotfiles/tree/master/Sublime)
-- [ ] Install [PackageControl](https://packagecontrol.io/)
-- [ ] `PackageControl`: Install `Nord`, `syntax-highlighting-for-sass`, and `SublimeLinter`
-
 ## Related Blog
 
 [我是如何初始化 Mac 环境的](https://crispgm.com/page/provisioning-a-new-mac.html)
