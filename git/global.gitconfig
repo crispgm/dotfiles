@@ -9,9 +9,9 @@
 [pull]
 	rebase = true
 [alias]
-	sc = "switch -c"
-	sf = "! git switch $(git branch | fzf)"
-	sm = "switch master"
 	bd = "! git branch -D $(git branch | fzf)"
+	sf = "! git switch $(git branch | fzf)"
+	sc = "switch -c"
+	sm = "! git switch main || git switch master"
 [includeIf "gitdir:~/work/"]
 	path = ~/work/.gitconfig
