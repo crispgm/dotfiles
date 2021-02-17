@@ -69,5 +69,8 @@ source ~/.zsh_alias
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# zoxide
+eval "$(zoxide init zsh)"
+
 # bat
 export BAT_THEME=Nord

@@ -14,13 +14,14 @@ brew 'zsh-completions'
 brew 'tmux'
 brew 'fzf'
 
-# dev
+# [brew] dev
 brew 'ruby@2.7'
 brew 'go'
 # dev: CI testing
 if ENV.key? 'CI'
   puts 'In CI mode, skip non-primitive brews'
 else
+  # [brew] dev
   brew 'cmake'
   brew 'mysql'
   brew 'sqlite'
@@ -30,7 +31,7 @@ else
   brew 'node'
   brew 'yarn'
 
-  # tools
+  # [brew] tools
   brew 'wget'
   brew 'mas'
   brew 'bat'
@@ -40,7 +41,8 @@ else
   brew 'neofetch'
   brew 'onefetch'
 
-  # productivity
+  # [brew] productivity
+  brew 'zoxide'
   brew 'exa'
   brew 'ripgrep'
   brew 'fd'
@@ -51,13 +53,12 @@ else
   brew 'beancount'
   brew 'fava'
 
-  # [fonts] for code editor
+  # [font] for code editor
   cask 'font-menlo-for-powerline'
-  # [fonts] for web rendering
+  # [font] for web rendering
   cask 'font-fira-code'
 
   # [cask] dev
-  # cask 'sublime-text'
   cask 'visual-studio-code'
   cask 'alacritty'
   cask 'figma'
