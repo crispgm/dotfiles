@@ -26,9 +26,11 @@ set_keymap('n', '<c-k>', '<c-w>k')
 set_keymap('n', '<c-h>', '<c-w>h')
 set_keymap('n', '<c-l>', '<c-w>l')
 set_keymap('i', '<c-d>', '<esc>ddi')
-set_keymap('n', '<A-Up>', '<cmd>m .-2<CR>')
-set_keymap('n', '<A-Down>', '<cmd>m .+1<CR>')
-
+set_keymap('n', '<A-Up>', '<cmd>m .-2<cr>')
+set_keymap('n', '<A-Down>', '<cmd>m .+1<cr>')
+set_keymap('n', '<leader>cc', '<cmd>cclose<cr>')
+set_keymap('n', '<leader>;', '<cmd>cprev<cr>')
+set_keymap('n', '<leader>\'', '<cmd>cnext<cr>')
 
 -- LSP
 set_keymap('n', '<leader>ld', '<cmd>lua vim.lsp.buf.definition()<cr>')
