@@ -45,9 +45,12 @@ call plug#end()
 filetype plugin indent on
 syntax enable
 
+set encoding=utf-8
 set exrc
 set nobackup
 set noswapfile
+set undodir=~/.local/share/nvim/undodir
+set undofile
 set expandtab
 set ts=4
 set sw=4
@@ -55,11 +58,10 @@ set number
 set relativenumber
 set cursorline
 set ruler
-set noignorecase
 set autoindent
+set noignorecase
 set whichwrap=b,s,<,>,[,]
 set backspace=2
-set encoding=utf-8
 set list
 set hlsearch
 set noincsearch
@@ -72,10 +74,10 @@ set shortmess+=c
 set signcolumn=yes
 set mousehide
 set showmatch
-set undodir=~/.local/share/nvim/undodir
-set undofile
 set wildmenu
 set wildmode=longest,full
+set splitright
+
 if !has('gui_running')
   set t_Co=256
 endif
