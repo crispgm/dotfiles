@@ -18,7 +18,6 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'lewis6991/gitsigns.nvim'
   Plug 'f-person/git-blame.nvim'
   Plug 'norcalli/nvim-colorizer.lua'
-  Plug 'liuchengxu/vista.vim'
   " utility
   Plug 'kevinhwang91/nvim-bqf'
   Plug 'akinsho/nvim-toggleterm.lua'

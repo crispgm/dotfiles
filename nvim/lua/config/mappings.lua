@@ -75,6 +75,3 @@ set_keymap('n', '<leader>gb', '<cmd>GitBlameToggle<cr>')
 
 -- goyo
 set_keymap('n', '<leader>go', '<cmd>Goyo<cr>')
-
--- Vista
-set_keymap('n', '<leader>va', '<cmd>Vista<cr>')
