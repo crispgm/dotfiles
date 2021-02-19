@@ -50,12 +50,14 @@ set noswapfile
 set undodir=~/.local/share/nvim/undodir
 set undofile
 set expandtab
-set ts=4
-set sw=4
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set number
 set relativenumber
 set cursorline
 set ruler
+set colorcolumn=120
 set autoindent
 set noignorecase
 set whichwrap=b,s,<,>,[,]
