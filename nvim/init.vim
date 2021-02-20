@@ -139,6 +139,7 @@ require('config.mappings')
 
 -- plugins
 require('config.compe')
+require('config.emmet')
 require('config.gitblame')
 require('config.gitsigns')
 require('config.hardline')
