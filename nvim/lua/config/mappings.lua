@@ -72,6 +72,10 @@ set_keymap('n', '<leader>fh', '<cmd>Telescope help_tags<cr>')
 set_keymap('n', '<leader>pi', '<cmd>PlugInstall<cr>')
 set_keymap('n', '<leader>pc', '<cmd>PlugClean<cr>')
 
+-- kommentary
+vim.api.nvim_set_keymap('n', '<C-_>', '<Plug>kommentary_line_default', {})
+vim.api.nvim_set_keymap('v', '<C-_>', '<Plug>kommentary_visual_default', {})
+
 -- git-blame
 set_keymap('n', '<leader>gb', '<cmd>GitBlameToggle<cr>')
 
