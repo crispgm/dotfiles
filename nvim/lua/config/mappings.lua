@@ -33,8 +33,8 @@ set_keymap('n', '<leader>cc', '<cmd>cclose<cr>')
 set_keymap('n', '<leader>;', '<cmd>cprev<cr>')
 set_keymap('n', '<leader>\'', '<cmd>cnext<cr>')
 -- tab
-set_keymap('n', '<leader>[', 'gT')
-set_keymap('n', '<leader>]', 'gt')
+set_keymap('n', '<s-Tab>', 'gT')
+set_keymap('n', '<Tab>', 'gt')
 set_keymap('n', '<leader>t[', '<cmd>tabmove -1<cr>')
 set_keymap('n', '<leader>t]', '<cmd>tabmove +1<cr>')
 set_keymap('n', '<leader>1', '1gt')
@@ -85,3 +85,6 @@ vim.api.nvim_set_keymap('v', '<c-_>', '<Plug>kommentary_visual_default', {})
 
 -- git-blame
 set_keymap('n', '<leader>gb', '<cmd>GitBlameToggle<cr>')
+
+-- nvim-tree
+set_keymap('n', '<c-n>', '<cmd>NvimTreeToggle<cr>')

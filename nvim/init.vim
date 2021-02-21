@@ -6,12 +6,14 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'nvim-lua/plenary.nvim'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   " UI/theme
-  Plug 'arcticicestudio/nord-vim'
+  " Plug 'arcticicestudio/nord-vim'
+  Plug 'christianchiarulli/nvcode-color-schemes.vim'
   Plug 'mhinz/vim-startify'
   Plug 'ojroques/nvim-hardline'
   Plug 'crispgm/nvim-tabline'
   " view
   Plug 'nvim-telescope/telescope.nvim'
+  Plug 'kyazdani42/nvim-tree.lua'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'Yggdroot/indentLine'
   Plug 'RRethy/vim-illuminate'
@@ -151,6 +153,7 @@ require('config.gitsigns')
 require('config.hardline')
 require('config.lspconfig')
 require('config.nord')
+require('config.nvim_tree')
 require('config.toggleterm')
 require('config.treesitter')
 require('config.vimgo')
