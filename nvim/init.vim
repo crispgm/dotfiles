@@ -66,7 +66,6 @@ set list
 set hlsearch
 set noincsearch
 set completeopt=menu,menuone,noselect
-set guitablabel=%t
 set hidden
 set cmdheight=2
 set updatetime=300
@@ -77,6 +76,8 @@ set showmatch
 set wildmenu
 set wildmode=longest,full
 set splitright
+set splitbelow
+" set guitablabel=%t
 
 if !has('gui_running')
   set t_Co=256
@@ -112,8 +113,7 @@ augroup filetype_options
   autocmd Filetype css  setlocal ts=2 sts=2 sw=2 expandtab
   autocmd Filetype scss setlocal ts=2 sts=2 sw=2 expandtab
   autocmd Filetype html setlocal ts=2 sts=2 sw=2 expandtab
-  autocmd Filetype yml  setlocal ts=2 sts=2 sw=2 expandtab
-  autocmd Filetype yaml setlocal ts=2 sts=2 sw=2 expandtab
+  autocmd Filetype {yml,yaml} setlocal ts=2 sts=2 sw=2 expandtab
   autocmd Filetype beancount setlocal ts=2 sts=2 sw=2 expandtab nofoldenable relativenumber
 
   autocmd BufWritePre {*.bean,*.beancount} :%!bean-format
@@ -130,6 +130,12 @@ augroup END
 augroup quickfix_close
   autocmd!
   autocmd WinEnter * if winnr('$') == 1 && &buftype == "quickfix"|q|endif
+augroup END
+
+augroup linenumber
+  autocmd!
+  autocmd InsertEnter * setlocal norelativenumber
+  autocmd InsertLeave * setlocal relativenumber
 augroup END
 
 """ lua configs
