@@ -68,7 +68,6 @@ else
   cask 'alfred'
   cask 'google-chrome'
   cask 'brave-browser'
-  cask 'raindropio'
   cask 'dropbox'
   cask 'hiddenbar'
   cask 'snipaste'
@@ -85,7 +84,6 @@ else
   cask 'neteasemusic'
 
   # mas app
-  mas 'WeChat', id: 836_500_024
   mas 'Unsplash Wallpapers', id: 1_284_863_847
   mas 'Microsoft ToDo', id: 1_274_495_053
   mas 'Microsoft OneNote', id: 784_801_555
@@ -94,4 +92,8 @@ else
   mas 'Pages', id: 409_201_541
   mas 'Numbers', id: 409_203_825
   mas 'Keynote', id: 409_183_694
+  mas 'AdGuard for Safari', id: 1_440_147_259
+  mas 'Userscripts', id: 1_463_298_887
+  mas 'Pinboard Tools', id: 1_552_590_875
+  mas 'WeChat', id: 836_500_024
 end
