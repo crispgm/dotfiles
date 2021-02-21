@@ -1,5 +1,5 @@
 local function set_keymap(mode, from, to)
-    local opts = {noremap = true, silent = true}
+    local opts = {noremap = true, silent = false}
     vim.api.nvim_set_keymap(mode, from, to, opts)
 end
 
@@ -47,7 +47,7 @@ set_keymap('n', '<leader>8', '8gt')
 set_keymap('n', '<leader>9', '9gt')
 set_keymap('n', '<leader>0', '<cmd>tablast<cr>')
 -- others
-set_keymap('i', '\\]', '<esc>')
+set_keymap('i', '\\\\', '<esc>')
 set_keymap('i', '<c-d>', '<esc>ddi')
 
 -- LSP
