@@ -10,13 +10,26 @@ function precmd() {
   if [ $timer ]; then
     now=$(($(print -P %D{%s%6.})/1000))
     elapsed=$(($now-$timer))
-
+    unit="ms"
+    if [[ $elapsed -ge 1000 ]]; then
+        elapsed=$(($elapsed/1000))
+        unit="s"
+        if [[ $elapsed -ge 60 ]]; then
+            elapsed=$(($elapsed/60))
+            unit="m"
+            if [[ $elapsed -ge 60 ]]; then
+                elapsed=$(($elapsed/60))
+                unit="h"
+            fi
+        fi
+    fi
+    elapsed="$elapsed$unit"
     unset timer
   fi
 }
 
 function prompt_elapse {
-    echo "%{$fg[cyan]%}${elapsed}ms %{$reset_color%}"
+    echo "%{$fg[cyan]%}${elapsed} %{$reset_color%}"
 }
 
 function prompt_char {
