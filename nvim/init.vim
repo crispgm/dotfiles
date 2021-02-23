@@ -6,8 +6,7 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'nvim-lua/plenary.nvim'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   " UI/theme
-  " Plug 'arcticicestudio/nord-vim'
-  Plug 'christianchiarulli/nvcode-color-schemes.vim'
+  Plug 'crispgm/nord-vim'
   Plug 'mhinz/vim-startify'
   Plug 'ojroques/nvim-hardline'
   Plug 'crispgm/nvim-tabline'
