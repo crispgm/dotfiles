@@ -1,4 +1,4 @@
-set nocompatible " be iMproved, required
+set nocompatible " be iMproved, actually not necessary for nvim
 
 call plug#begin(stdpath('data') . '/plugged')
   " lib
@@ -43,45 +43,47 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'mattn/emmet-vim'
 call plug#end()
 
+" systematic
 filetype plugin indent on
-syntax enable
-
-set encoding=utf-8
-set exrc
-set nobackup
-set noswapfile
+syntax enable             " enable syntax
+set encoding=utf-8        " encoding
+set exrc                  " apply .vimrc in project path
+set nobackup              " no .bak
+set noswapfile            " no .swap
 set undodir=~/.local/share/nvim/undodir
-set undofile
-set expandtab
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set number
-set relativenumber
-set cursorline
-set ruler
-set colorcolumn=120
-set autoindent
-set noignorecase
-set whichwrap=b,s,<,>,[,]
-set backspace=2
-set list
-set hlsearch
-set noincsearch
+set undofile              " use undo file
+set updatetime=300        " time (in ms) to write to swap file
+" buffer
+set expandtab             " expend tab
+set tabstop=4             " tab stop
+set autoindent            " auto indent for new line
+set shiftwidth=4          " auto indent shift width
+set softtabstop=4         " soft tab stop size
+" window
+set number                " line number
+set relativenumber        " relative number
+" editing
+set whichwrap=b,s,<,>,[,] " cursor is able to move from end of line to next line
+set backspace=2           " backspace behaviors, is equivalent to indent,eol,start
+set list                  " show tabs with listchars
+set noignorecase          " search with no ignore case
+set hlsearch              " highlight search
+set noincsearch           " no incremental search
 set completeopt=menu,menuone,noselect
 set hidden
-set cmdheight=2
-set updatetime=300
-set shortmess+=c
-set signcolumn=yes
-set mouse=nv
-set mousehide
-set showmatch
-set wildmenu
+set cursorline            " show cursor line
+set ruler                 " show ruler line
+set colorcolumn=120       " display a color column when line is longer than 120 chars
+set shortmess+=c          " status line e.g. CTRL+G
+set signcolumn=yes        " show sign column (column of the line number)
+set mouse=nv              " enable mouse under normal and visual mode
+set mousehide             " hide mouse when characters are typed
+set showmatch             " show bracket match
+set cmdheight=2           " height of :command line
+set wildmenu              " wildmenu, auto complete for commands
 set wildmode=longest,full
-set splitright
-set splitbelow
-" set guitablabel=%t
+set splitright            " split to right
+set splitbelow            " split to below
 
 if !has('gui_running')
   set t_Co=256
