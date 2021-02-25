@@ -27,10 +27,7 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'google/vim-searchindex'
   Plug 'tpope/vim-surround'
   Plug 'b3nj5m1n/kommentary'
-  Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
-  \ 'branch': 'release/0.x'
-  \ }
+  Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'branch': 'release/0.x' }
   Plug 'christoomey/vim-system-copy'
   " language
   Plug 'neovim/nvim-lspconfig'
