@@ -10,7 +10,6 @@ opt('o', 'exrc', true)           -- apply .vimrc in project path
 opt('o', 'backup', false)        -- no .bak
 opt('o', 'swapfile', false)      -- no .swap
 opt('o', 'undofile', true)       -- use undo file
-opt('o', 'undodir', '~/.local/share/nvim/undodir')
 opt('o', 'updatetime', 300)      -- time (in ms) to write to swap file
 -- buffer
 opt('b', 'expandtab', true)      -- expend tab
