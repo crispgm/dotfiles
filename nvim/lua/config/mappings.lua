@@ -88,3 +88,14 @@ set_keymap('n', '<leader>gb', '<cmd>GitBlameToggle<cr>')
 
 -- nvim-tree
 set_keymap('n', '<c-n>', '<cmd>NvimTreeToggle<cr>')
+
+-- dial.nvim
+vim.api.nvim_set_keymap('n', '<c-a>', '<Plug>(dial-increment)', {})
+vim.api.nvim_set_keymap('n', '<c-x>', '<Plug>(dial-decrement)', {})
+vim.api.nvim_set_keymap('v', '<c-a>', '<Plug>(dial-increment)', {})
+vim.api.nvim_set_keymap('v', '<c-x>', '<Plug>(dial-decrement)', {})
+vim.api.nvim_set_keymap('v', 'g<c-a>', '<Plug>(dial-increment-additional)', {})
+vim.api.nvim_set_keymap('v', 'g<c-x>', '<Plug>(dial-decrement-additional)', {})
+
+-- hop.nvim
+set_keymap('n', '<c-h>', '<cmd>HopWord<cr>')
