@@ -39,6 +39,7 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
   Plug 'nathangrigg/vim-beancount'
   Plug 'mattn/emmet-vim'
+  Plug 'vimwiki/vimwiki'
 call plug#end()
 
 " systematic
@@ -156,6 +157,7 @@ require('config.hardline')
 require('config.lspconfig')
 require('config.nord')
 require('config.nvim_tree')
+require('config.prettier')
 require('config.toggleterm')
 require('config.treesitter')
 require('config.vimgo')

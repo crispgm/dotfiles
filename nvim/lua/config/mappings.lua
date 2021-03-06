@@ -1,3 +1,5 @@
+local vim = vim
+
 local function set_keymap(mode, from, to)
     local opts = {noremap = true, silent = false}
     vim.api.nvim_set_keymap(mode, from, to, opts)
