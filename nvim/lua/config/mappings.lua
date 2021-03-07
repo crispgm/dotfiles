@@ -16,7 +16,7 @@ set_keymap('n', '<leader>n', '<cmd>set nonumber norelativenumber<cr>')
 set_keymap('n', '<leader>N', '<cmd>set number<cr>')
 set_keymap('n', '<leader>R', '<cmd>set relativenumber<cr>')
 -- moving
-set_keymap('i', '<c-a>', '<Home>')
+set_keymap('i', '<c-a>', '<Esc>I')
 set_keymap('i', '<c-e>', '<End>')
 set_keymap('n', 'k', 'gk')
 set_keymap('n', 'j', 'gj')
