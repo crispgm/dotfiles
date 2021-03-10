@@ -31,12 +31,14 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'christoomey/vim-system-copy'
   Plug 'phaazon/hop.nvim'
   Plug 'monaqa/dial.nvim'
+  Plug 'hrsh7th/vim-vsnip'
+  Plug 'hrsh7th/vim-vsnip-integ'
   " language
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/nvim-compe'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'nvim-treesitter/playground'
-  Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+  Plug 'crispgm/nvim-go'
   Plug 'nathangrigg/vim-beancount'
   Plug 'mattn/emmet-vim'
   Plug 'vimwiki/vimwiki'
@@ -68,7 +70,7 @@ set list                  " show tabs with listchars
 set noignorecase          " search with no ignore case
 set hlsearch              " highlight search
 set noincsearch           " no incremental search
-set completeopt=menu,menuone,noselect
+set completeopt=menuone,noselect
 set hidden
 set cursorline            " show cursor line
 set ruler                 " show ruler line
@@ -160,7 +162,7 @@ require('config.nvim_tree')
 require('config.prettier')
 require('config.toggleterm')
 require('config.treesitter')
-require('config.vimgo')
+require('config.vsnip')
 
 -- just setup
 require('colorizer').setup()
