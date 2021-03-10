@@ -114,3 +114,4 @@ $ ./apps
 ## Related Blog
 
 [我是如何初始化 Mac 环境的](https://crispgm.com/page/provisioning-a-new-mac.html)
+# snippets
