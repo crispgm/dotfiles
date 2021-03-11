@@ -23,6 +23,7 @@ call plug#begin(stdpath('data') . '/plugged')
   " utility
   Plug 'kevinhwang91/nvim-bqf'
   Plug 'akinsho/nvim-toggleterm.lua'
+  Plug 'psliwka/vim-smoothie'
   " editing
   Plug 'google/vim-searchindex'
   Plug 'tpope/vim-surround'
@@ -31,13 +32,13 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'christoomey/vim-system-copy'
   Plug 'phaazon/hop.nvim'
   Plug 'monaqa/dial.nvim'
-  Plug 'hrsh7th/vim-vsnip'
-  Plug 'hrsh7th/vim-vsnip-integ'
   " language
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/nvim-compe'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'nvim-treesitter/playground'
+  Plug 'hrsh7th/vim-vsnip'
+  Plug 'hrsh7th/vim-vsnip-integ'
   Plug 'crispgm/nvim-go'
   Plug 'nathangrigg/vim-beancount'
   Plug 'mattn/emmet-vim'
