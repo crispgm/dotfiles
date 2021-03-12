@@ -124,7 +124,6 @@ augroup filetype_options
   autocmd Filetype yaml setlocal ts=2 sts=2 sw=2 expandtab
   autocmd Filetype beancount setlocal ts=2 sts=2 sw=2 expandtab nofoldenable relativenumber
 
-  autocmd BufWritePre {*.bean,*.beancount} :%!bean-format
   autocmd BufNewFile,BufRead {Brewfile,Gemfile} set filetype=ruby
 augroup END
 
@@ -144,6 +143,18 @@ augroup linenumber
   autocmd!
   autocmd InsertEnter * setlocal norelativenumber
   autocmd InsertLeave * setlocal relativenumber
+augroup END
+
+" beancount format
+function! BeanFormat()
+  let l:save = winsaveview()
+  exec ':%!bean-format'
+  call winrestview(l:save)
+endfunction
+
+augroup bean_format
+  autocmd!
+  autocmd BufWritePre {*.bean,*.beancount} :call BeanFormat()
 augroup END
 
 """ lua configs
