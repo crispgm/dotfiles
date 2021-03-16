@@ -46,10 +46,10 @@ else
   brew 'exa'
   brew 'ripgrep'
   brew 'fd'
+  brew 'pandoc'
   brew 'hexyl'
   brew 'xsv'
   brew 'jq'
-  brew 'dust'
   brew 'beancount'
   brew 'fava'
 
