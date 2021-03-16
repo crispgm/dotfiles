@@ -1,7 +1,7 @@
 local vim = vim
 
 vim.g.vimwiki_list = {{
-    path = '~/vimwiki/',
+    path = '~/wiki/wiki/',
     syntax = 'markdown',
     ext = '.md'
 }}
