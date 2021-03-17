@@ -174,6 +174,7 @@ require('config.nvim_tree')
 require('config.prettier')
 require('config.toggleterm')
 require('config.treesitter')
+require('config.vimwiki')
 require('config.vsnip')
 
 -- just setup
