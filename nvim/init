@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 
 # vim-plug
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 # conf
 mkdir -p ~/.config/nvim
@@ -24,11 +23,11 @@ yarn global add yaml-language-server
 
 # Lua LSP
 brew install ninja
-cd ~/dev
+cd ~/dev || exit 1
 git clone https://github.com/sumneko/lua-language-server
-cd lua-language-server
+cd lua-language-server || exit 1
 git submodule update --init --recursive
-cd 3rd/luamake
+cd 3rd/luamake || exit 1
 ninja -f ninja/macos.ninja
-cd ../..
+cd ../.. || exit 1
 ./3rd/luamake/luamake rebuild

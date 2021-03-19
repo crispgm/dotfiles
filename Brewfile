@@ -17,6 +17,7 @@ brew 'fzf'
 # [brew] dev
 brew 'ruby@2.7'
 brew 'go'
+brew 'shellcheck' # for CI checks
 # dev: CI testing
 if ENV.key? 'CI'
   puts 'In CI mode, skip non-primitive brews'

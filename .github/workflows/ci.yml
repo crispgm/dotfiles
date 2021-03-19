@@ -13,3 +13,5 @@ jobs:
         run: bash ./apps
       - name: CI
         run: bash ./test
+      - name: ShellCheck
+        run: bash ./check.sh

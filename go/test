@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-test -x `which go`
+test -x "$(which go)"
 test -d ~/go

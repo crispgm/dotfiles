@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-test -x `which git`
-GIT_NAME=`git config --global --get user.name`
+test -x "$(which git)"
+GIT_NAME="$(git config --global --get user.name)"
 test "$GIT_NAME" = "David Zhang"
