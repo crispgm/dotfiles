@@ -73,9 +73,11 @@ set_keymap('n', '<leader>lf', '<cmd>lua vim.lsp.buf.formatting()<cr>')
 
 -- telescope
 set_keymap('n', '<leader>ff', '<cmd>Telescope find_files<cr>')
+set_keymap('n', '<leader>fd', '<cmd>Telescope git_files<cr>')
 set_keymap('n', '<leader>fg', '<cmd>Telescope live_grep<cr>')
 set_keymap('n', '<leader>fb', '<cmd>Telescope buffers<cr>')
 set_keymap('n', '<leader>fh', '<cmd>Telescope help_tags<cr>')
+set_keymap('n', '<leader>fk', '<cmd>Telescope keymaps<cr>')
 
 -- vim-plug
 set_keymap('n', '<leader>pi', '<cmd>PlugInstall<cr>')
