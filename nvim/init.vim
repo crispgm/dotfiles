@@ -32,11 +32,14 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'christoomey/vim-system-copy'
   Plug 'phaazon/hop.nvim'
   Plug 'monaqa/dial.nvim'
+  Plug 'kana/vim-textobj-user'
+  Plug 'haya14busa/vim-textobj-number'
   " language
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/nvim-compe'
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'nvim-treesitter/playground'
+  Plug 'nvim-treesitter/nvim-treesitter-textobjects'
   Plug 'hrsh7th/vim-vsnip'
   Plug 'hrsh7th/vim-vsnip-integ'
   Plug 'crispgm/nvim-go'
