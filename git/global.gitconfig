@@ -8,6 +8,8 @@
 	ui = true
 [pull]
 	rebase = true
+[init]
+	defaultBranch = main
 [alias]
 	bd = "! git branch -D $(git branch | fzf)"
 	sf = "! git switch $(git branch | fzf)"
