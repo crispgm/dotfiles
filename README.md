@@ -56,10 +56,6 @@ $ ./apps
 - [x] Create `code` SymLink: `sudo ln -s /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code ~/Applications/code`
 - [x] Install `Setting Sync` extensions and then sync settings
 
-### Shadowsocks
-
-- [x] Import custom [user-rules](https://github.com/crispgm/dotfiles/tree/master/Shadowsocks)
-
 ### File Sync
 
 - [x] Install your favorite file sync service (e.g. Dropbox, Google Drive, One Drive ... I prefer Dropbox because it works with Alfred)
@@ -110,6 +106,10 @@ $ ./apps
 
 - [x] Setup shell login promtp with `motd`: ASCII art is generated with <http://patorjk.com/software/taag/>
 - [x] Setup `.bash_profile` `.bashrc`
+
+### Shadowsocks
+
+- [x] Import custom [user-rules](https://github.com/crispgm/dotfiles/tree/master/Shadowsocks)
 
 ## Related Blog
 
