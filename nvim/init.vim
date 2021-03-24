@@ -34,6 +34,7 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'monaqa/dial.nvim'
   Plug 'kana/vim-textobj-user'
   Plug 'haya14busa/vim-textobj-number'
+  Plug 'AndrewRadev/splitjoin.vim'
   " language
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/nvim-compe'
