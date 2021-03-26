@@ -35,6 +35,7 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'kana/vim-textobj-user'
   Plug 'haya14busa/vim-textobj-number'
   Plug 'AndrewRadev/splitjoin.vim'
+  Plug 'windwp/nvim-autopairs'
   " language
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/nvim-compe'
@@ -184,4 +185,6 @@ require('config.vsnip')
 -- just setup
 require('colorizer').setup()
 require('tabline').setup{}
+require('nvim-autopairs').setup()
+require('go').setup{ linter = 'golint' }
 EOB
