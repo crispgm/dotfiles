@@ -57,7 +57,6 @@ set encoding=utf-8        " encoding
 set exrc                  " apply .vimrc in project path
 set nobackup              " no .bak
 set noswapfile            " no .swap
-set undodir=~/.local/share/nvim/undo
 set undofile              " use undo file
 set updatetime=300        " time (in ms) to write to swap file
 " buffer
