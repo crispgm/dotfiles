@@ -159,6 +159,7 @@ endfunction
 augroup bean_format
   autocmd!
   autocmd BufWritePre {*.bean,*.beancount} :call BeanFormat()
+  autocmd BufWritePost {*.bean,*.beancount} :!bean-check <afile>
 augroup END
 
 """ lua configs
