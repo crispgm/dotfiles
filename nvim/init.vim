@@ -30,7 +30,6 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'b3nj5m1n/kommentary'
   Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'branch': 'release/0.x' }
   Plug 'christoomey/vim-system-copy'
-  Plug 'phaazon/hop.nvim'
   Plug 'monaqa/dial.nvim'
   Plug 'kana/vim-textobj-user'
   Plug 'haya14busa/vim-textobj-number'
