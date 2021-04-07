@@ -47,6 +47,7 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'nathangrigg/vim-beancount'
   Plug 'mattn/emmet-vim'
   Plug 'vimwiki/vimwiki'
+  Plug 'junegunn/vader.vim'
 call plug#end()
 
 " systematic
