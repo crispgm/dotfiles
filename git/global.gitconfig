@@ -11,7 +11,7 @@
 [init]
 	defaultBranch = main
 [alias]
-	bd = "! git branch -D $(git branch | fzf)"
+	bd = "! git branch -D $(git branch | fzf -m)"
 	sf = "! git switch $(git branch | fzf)"
 	sc = "switch -c"
 	sm = "! git switch main || git switch master"
