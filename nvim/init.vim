@@ -21,7 +21,6 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'f-person/git-blame.nvim'
   Plug 'norcalli/nvim-colorizer.lua'
   " utility
-  Plug 'kevinhwang91/nvim-bqf'
   Plug 'akinsho/nvim-toggleterm.lua'
   Plug 'psliwka/vim-smoothie'
   " editing
@@ -35,6 +34,7 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'haya14busa/vim-textobj-number'
   Plug 'AndrewRadev/splitjoin.vim'
   Plug 'windwp/nvim-autopairs'
+  Plug 'tversteeg/registers.nvim'
   " language
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/nvim-compe'
