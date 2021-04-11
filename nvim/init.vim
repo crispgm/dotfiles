@@ -5,24 +5,26 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-  " UI/theme
+  " theme
   Plug 'crispgm/nord-vim', { 'branch': 'develop' }
+  " UI layout
   Plug 'mhinz/vim-startify'
   Plug 'ojroques/nvim-hardline'
   Plug 'crispgm/nvim-tabline'
-  " view
-  Plug 'nvim-telescope/telescope.nvim'
   Plug 'kyazdani42/nvim-tree.lua'
   Plug 'dstein64/nvim-scrollview'
+  Plug 'akinsho/nvim-toggleterm.lua'
+  " view
   Plug 'editorconfig/editorconfig-vim'
   Plug 'Yggdroot/indentLine'
   Plug 'RRethy/vim-illuminate'
   Plug 'lewis6991/gitsigns.nvim'
   Plug 'f-person/git-blame.nvim'
   Plug 'norcalli/nvim-colorizer.lua'
-  " utility
-  Plug 'akinsho/nvim-toggleterm.lua'
+  Plug 'tversteeg/registers.nvim'
+  " motion
   Plug 'psliwka/vim-smoothie'
+  Plug 'phaazon/hop.nvim'
   " editing
   Plug 'google/vim-searchindex'
   Plug 'tpope/vim-surround'
@@ -34,7 +36,6 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'haya14busa/vim-textobj-number'
   Plug 'AndrewRadev/splitjoin.vim'
   Plug 'windwp/nvim-autopairs'
-  Plug 'tversteeg/registers.nvim'
   " language
   Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/nvim-compe'

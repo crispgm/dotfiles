@@ -81,6 +81,7 @@ set_keymap('n', '<leader>fk', '<cmd>Telescope keymaps<cr>')
 
 -- vim-plug
 set_keymap('n', '<leader>pi', '<cmd>PlugInstall<cr>')
+set_keymap('n', '<leader>pu', '<cmd>PlugUpdate<cr>')
 set_keymap('n', '<leader>pc', '<cmd>PlugClean<cr>')
 
 -- kommentary
@@ -101,3 +102,6 @@ vim.api.nvim_set_keymap('v', '<c-a>', '<Plug>(dial-increment)', {})
 vim.api.nvim_set_keymap('v', '<c-x>', '<Plug>(dial-decrement)', {})
 vim.api.nvim_set_keymap('v', 'g<c-a>', '<Plug>(dial-increment-additional)', {})
 vim.api.nvim_set_keymap('v', 'g<c-x>', '<Plug>(dial-decrement-additional)', {})
+
+-- hop.nvim
+set_keymap('n', '<c-h>', '<cmd>HopWord<cr>')
