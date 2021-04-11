@@ -77,6 +77,7 @@ set list                  " show tabs with listchars
 set noignorecase          " search with no ignore case
 set hlsearch              " highlight search
 set noincsearch           " no incremental search
+set inccommand=nosplit    " live substitute preview
 set completeopt=menuone,noselect
 set hidden
 set cursorline            " show cursor line
