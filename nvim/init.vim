@@ -14,6 +14,7 @@ call plug#begin(stdpath('data') . '/plugged')
   Plug 'kyazdani42/nvim-tree.lua'
   Plug 'dstein64/nvim-scrollview'
   Plug 'akinsho/nvim-toggleterm.lua'
+  Plug 'nvim-telescope/telescope.nvim'
   " view
   Plug 'editorconfig/editorconfig-vim'
   Plug 'Yggdroot/indentLine'
