@@ -29,6 +29,7 @@ call plug#begin(stdpath('data') . '/plugged')
   " editing
   Plug 'google/vim-searchindex'
   Plug 'tpope/vim-surround'
+  Plug 'tpope/vim-abolish'
   Plug 'b3nj5m1n/kommentary'
   Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'branch': 'release/0.x' }
   Plug 'christoomey/vim-system-copy'
