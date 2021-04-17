@@ -19,7 +19,6 @@ set_options({
     encoding = 'utf-8',
     fileencoding = 'utf-8',
     fileencodings = 'utf-8',
-    exrc = true,        -- apply `.vimrc` in project path
     backup = false,     -- no .bak
     swapfile = false,   -- no .swap
     undofile = true,    -- use undo file
