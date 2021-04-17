@@ -4,6 +4,9 @@ augroup highlight_yank
 augroup END
 
 function! TrimWhitespace()
+  if &ft == "markdown" || &ft == "vimwiki"
+    return
+  endif
   let l:save = winsaveview()
   keeppatterns %s/\s\+$//e
   call winrestview(l:save)
