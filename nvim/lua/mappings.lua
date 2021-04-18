@@ -85,9 +85,9 @@ set_keymap('n', '<leader>pu', '<cmd>PlugUpdate<cr>')
 set_keymap('n', '<leader>pc', '<cmd>PlugClean<cr>')
 
 -- kommentary
-vim.api.nvim_set_keymap('i', '<c-_>', '<Esc><Plug>kommentary_line_default', {})
-vim.api.nvim_set_keymap('n', '<c-_>', '<Plug>kommentary_line_default', {})
-vim.api.nvim_set_keymap('v', '<c-_>', '<Plug>kommentary_visual_default', {})
+vim.api.nvim_set_keymap('i', '<c-_>', '<Esc><Plug>CommentaryLine', {})
+vim.api.nvim_set_keymap('n', '<c-_>', '<Plug>CommentaryLine', {})
+vim.api.nvim_set_keymap('v', '<c-_>', '<Plug>Commentary', {})
 
 -- git-blame
 set_keymap('n', '<leader>gb', '<cmd>GitBlameToggle<cr>')
