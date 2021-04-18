@@ -9,6 +9,7 @@ paq 'nvim-lua/plenary.nvim'
 paq 'nvim-lua/popup.nvim'
 
 -- ## theme
+-- forked from official nord-vim, with treesitter and lsp supported
 paq {'crispgm/nord-vim', branch = 'develop' }
 
 -- ## UI layout
@@ -24,8 +25,6 @@ paq 'dstein64/nvim-scrollview'
 paq 'nvim-telescope/telescope.nvim'
 -- terminal
 paq 'akinsho/nvim-toggleterm.lua'
--- file tree
-paq 'kyazdani42/nvim-tree.lua'
 
 -- ## view
 -- editorconfig support
@@ -50,14 +49,16 @@ paq 'psliwka/vim-smoothie'
 paq 'phaazon/hop.nvim'
 
 -- ## editing
----- search index
+-- search index
 paq 'google/vim-searchindex'
+-- repeat that support plugin
+paq 'tpope/vim-repeat'
 -- toggle surround
 paq 'tpope/vim-surround'
 -- eh, hard to describe, see README
 paq 'tpope/vim-abolish'
 -- toggle comment
-paq 'b3nj5m1n/kommentary'
+paq 'tpope/vim-commentary'
 -- prettier formatter
 paq {'prettier/vim-prettier', run = 'yarn install', branch = 'release/0.x' }
 -- copy to system clipboard
