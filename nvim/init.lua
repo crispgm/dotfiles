@@ -25,5 +25,7 @@ require('plugins.vsnip')
 -- just setup
 require('colorizer').setup()
 require('tabline').setup{}
-require('nvim-autopairs').setup()
+require('pears').setup(function(conf)
+  conf.preset 'tag_matching'
+end)
 require('go').setup{ linter = 'golint' }

@@ -23,11 +23,11 @@ if ENV.key? 'CI'
   puts 'In CI mode, skip non-primitive brews'
 else
   # [brew] dev
+  brew 'gh'
   brew 'cmake'
   brew 'mysql'
   brew 'sqlite'
   brew 'postgresql'
-  brew 'youtube-dl'
   brew 'heroku'
   brew 'node'
   brew 'yarn'
@@ -53,6 +53,7 @@ else
   brew 'jq'
   brew 'beancount'
   brew 'fava'
+  brew 'youtube-dl'
 
   # [font] for code editor
   cask 'font-menlo-for-powerline'
