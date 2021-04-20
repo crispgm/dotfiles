@@ -72,7 +72,7 @@ paq 'haya14busa/vim-textobj-number'
 -- split and join in vim
 paq 'AndrewRadev/splitjoin.vim'
 -- auto symbol pairs
-paq 'windwp/nvim-autopairs'
+paq 'steelsojka/pears.nvim'
 
 -- language
 -- treesitter
