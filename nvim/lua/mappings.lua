@@ -7,7 +7,7 @@ end
 
 -- common
 set_keymap('n', '<leader>r', '<cmd>source ~/.config/nvim/init.vim<cr>')
-set_keymap('n', '<leader>#', '<cmd>let @/ = ""<cr><esc>')
+set_keymap('n', '<leader>#', '<cmd>let @/ = ""<cr><Esc>')
 set_keymap('n', '<leader>q', '<cmd>q!<cr>')
 set_keymap('n', '<leader>e', '<cmd>e!<cr>')
 set_keymap('n', '<leader>Q', '<cmd>qa!<cr>')
@@ -23,7 +23,7 @@ set_keymap('n', 'j', 'gj')
 -- editing
 set_keymap('n', '<a-Up>', '<cmd>m .-2<cr>')
 set_keymap('n', '<a-Down>', '<cmd>m .+1<cr>')
-set_keymap('i', '<c-d>', '<esc>ddi')
+set_keymap('i', '<c-d>', '<Esc>ddi')
 -- splits
 set_keymap('n', '<leader>s', '<c-w>w')
 set_keymap('n', '<c-j>', '<c-w>j')
@@ -56,7 +56,7 @@ set_keymap('n', '<leader>]', 'bnext')
 set_keymap('c', '<c-a>', '<Home>')
 set_keymap('c', '<c-e>', '<End>')
 -- others
-set_keymap('i', '\\]', '<esc>')
+set_keymap('i', '\\]', '<Esc>')
 
 -- LSP
 set_keymap('n', '<leader>ld', '<cmd>lua vim.lsp.buf.definition()<cr>')
@@ -91,9 +91,6 @@ vim.api.nvim_set_keymap('v', '<c-_>', '<Plug>Commentary', {})
 
 -- git-blame
 set_keymap('n', '<leader>gb', '<cmd>GitBlameToggle<cr>')
-
--- nvim-tree
-set_keymap('n', '<c-n>', '<cmd>NvimTreeToggle<cr>')
 
 -- dial.nvim
 vim.api.nvim_set_keymap('n', '<c-a>', '<Plug>(dial-increment)', {})
