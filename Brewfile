@@ -24,6 +24,7 @@ if ENV.key? 'CI'
 else
   # [brew] dev
   brew 'gh'
+  brew 'rust'
   brew 'cmake'
   brew 'mysql'
   brew 'sqlite'
