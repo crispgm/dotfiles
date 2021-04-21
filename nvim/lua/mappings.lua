@@ -6,7 +6,6 @@ local function set_keymap(mode, from, to)
 end
 
 -- common
-set_keymap('n', '<leader>r', '<cmd>source ~/.config/nvim/init.vim<cr>')
 set_keymap('n', '<leader>#', '<cmd>let @/ = ""<cr><Esc>')
 set_keymap('n', '<leader>q', '<cmd>q!<cr>')
 set_keymap('n', '<leader>e', '<cmd>e!<cr>')
@@ -26,10 +25,10 @@ set_keymap('n', '<a-Down>', '<cmd>m .+1<cr>')
 set_keymap('i', '<c-d>', '<Esc>ddi')
 -- splits
 set_keymap('n', '<leader>s', '<c-w>w')
-set_keymap('n', '<c-j>', '<c-w>j')
-set_keymap('n', '<c-k>', '<c-w>k')
-set_keymap('n', '<c-h>', '<c-w>h')
-set_keymap('n', '<c-l>', '<c-w>l')
+set_keymap('n', '<leader>j', '<c-w>j')
+set_keymap('n', '<leader>k', '<c-w>k')
+set_keymap('n', '<leader>h', '<c-w>h')
+set_keymap('n', '<leader>l', '<c-w>l')
 -- quickfix
 set_keymap('n', '<leader>cc', '<cmd>cclose<cr>')
 set_keymap('n', '<leader>;', '<cmd>cprev<cr>')
@@ -55,8 +54,6 @@ set_keymap('n', '<leader>]', 'bnext')
 -- command
 set_keymap('c', '<c-a>', '<Home>')
 set_keymap('c', '<c-e>', '<End>')
--- others
-set_keymap('i', '\\]', '<Esc>')
 
 -- LSP
 set_keymap('n', '<leader>ld', '<cmd>lua vim.lsp.buf.definition()<cr>')
@@ -79,12 +76,12 @@ set_keymap('n', '<leader>fb', '<cmd>Telescope buffers<cr>')
 set_keymap('n', '<leader>fh', '<cmd>Telescope help_tags<cr>')
 set_keymap('n', '<leader>fk', '<cmd>Telescope keymaps<cr>')
 
--- vim-plug
-set_keymap('n', '<leader>pi', '<cmd>PlugInstall<cr>')
-set_keymap('n', '<leader>pu', '<cmd>PlugUpdate<cr>')
-set_keymap('n', '<leader>pc', '<cmd>PlugClean<cr>')
+-- plug manager
+set_keymap('n', '<leader>pi', '<cmd>PaqInstall<cr>')
+set_keymap('n', '<leader>pu', '<cmd>PaqUpdate<cr>')
+set_keymap('n', '<leader>pc', '<cmd>PaqClean<cr>')
 
--- kommentary
+-- comment
 vim.api.nvim_set_keymap('i', '<c-_>', '<Esc><Plug>CommentaryLine', {})
 vim.api.nvim_set_keymap('n', '<c-_>', '<Plug>CommentaryLine', {})
 vim.api.nvim_set_keymap('v', '<c-_>', '<Plug>Commentary', {})
