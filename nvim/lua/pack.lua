@@ -4,98 +4,62 @@ vim.cmd 'packadd paq-nvim'
 local paq = require'paq-nvim'.paq
 paq{'savq/paq-nvim', opt = true}
 
--- ## lib
+-- lib
 paq 'nvim-lua/plenary.nvim'
 paq 'nvim-lua/popup.nvim'
 
--- ## theme
--- forked from official nord-vim, with treesitter and lsp supported
-paq {'crispgm/nord-vim', branch = 'develop' }
+-- theme
+paq {'crispgm/nord-vim', -- forked from official nord-vim, with treesitter and lsp supported
+    branch = 'develop'}
 
--- ## UI layout
--- stardup page
-paq 'mhinz/vim-startify'
--- status line
-paq 'ojroques/nvim-hardline'
--- tab line
-paq 'crispgm/nvim-tabline'
--- scroll bar
-paq 'dstein64/nvim-scrollview'
--- fuzzy picker
-paq 'nvim-telescope/telescope.nvim'
--- terminal
-paq 'akinsho/nvim-toggleterm.lua'
+-- file
+paq 'mhinz/vim-startify'            -- stardup page
+paq 'nvim-telescope/telescope.nvim' -- fuzzy picker
+paq 'akinsho/nvim-toggleterm.lua'   -- terminal
+paq 'rmagatti/auto-session'         -- auto session
+paq 'rmagatti/session-lens'         -- session lens for telescope
 
--- ## view
--- editorconfig support
-paq 'editorconfig/editorconfig-vim'
--- indent line
-paq 'Yggdroot/indentLine'
--- highlight hover word
-paq 'RRethy/vim-illuminate'
--- git signs
-paq 'lewis6991/gitsigns.nvim'
--- toggle git blame info
-paq 'f-person/git-blame.nvim'
--- color codes rendering
-paq 'norcalli/nvim-colorizer.lua'
--- show registers
-paq 'tversteeg/registers.nvim'
+-- view
+paq 'ojroques/nvim-hardline'        -- status line
+paq 'crispgm/nvim-tabline'          -- tab line
+paq 'dstein64/nvim-scrollview'      -- scroll bar
+paq 'google/vim-searchindex'        -- search index
+paq 'editorconfig/editorconfig-vim' -- editorconfig support
+paq 'Yggdroot/indentLine'           -- indent line
+paq 'RRethy/vim-illuminate'         -- highlight hover word
+paq 'lewis6991/gitsigns.nvim'       -- git signs
+paq 'f-person/git-blame.nvim'       -- toggle git blame info
+paq 'norcalli/nvim-colorizer.lua'   -- color codes rendering
+paq 'tversteeg/registers.nvim'      -- show registers
 
--- ## motion
--- smoothy scroll
-paq 'psliwka/vim-smoothie'
--- jump to anywhere within 2 strokes
-paq 'phaazon/hop.nvim'
-
--- ## editing
--- search index
-paq 'google/vim-searchindex'
--- repeat that support plugin
-paq 'tpope/vim-repeat'
--- toggle surround
-paq 'tpope/vim-surround'
--- eh, hard to describe, see README
-paq 'tpope/vim-abolish'
--- toggle comment
-paq 'tpope/vim-commentary'
--- prettier formatter
-paq {'prettier/vim-prettier', run = 'yarn install', branch = 'release/0.x' }
--- copy to system clipboard
-paq 'christoomey/vim-system-copy'
--- <c-a> <c-x> enhancement
-paq 'monaqa/dial.nvim'
--- define textobj by user
-paq 'kana/vim-textobj-user'
--- number textobj
-paq 'haya14busa/vim-textobj-number'
--- split and join in vim
-paq 'AndrewRadev/splitjoin.vim'
--- auto symbol pairs
-paq 'steelsojka/pears.nvim'
+-- edit
+paq 'psliwka/vim-smoothie'          -- smoothy scroll
+paq 'phaazon/hop.nvim'              -- jump to anywhere within 2 strokes
+paq 'tpope/vim-repeat'              -- repeat that support plugin
+paq 'tpope/vim-surround'            -- toggle surround
+paq 'tpope/vim-abolish'             -- eh, hard to describe, see README
+paq 'tpope/vim-commentary'          -- toggle comment
+paq {'prettier/vim-prettier',       -- prettier formatter
+    run = 'yarn install',
+    branch = 'release/0.x'}
+paq 'christoomey/vim-system-copy'   -- copy to system clipboard
+paq 'monaqa/dial.nvim'              -- <c-a> <c-x> enhancement
+paq 'kana/vim-textobj-user'         -- define textobj by user
+paq 'haya14busa/vim-textobj-number' -- number textobj
+paq 'AndrewRadev/splitjoin.vim'     -- split and join in vim
+paq 'steelsojka/pears.nvim'         -- auto symbol pairs
 
 -- language
--- treesitter
-paq {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
--- treesitter playground
-paq 'nvim-treesitter/playground'
--- treesitter textobj e.g., class, function
-paq 'nvim-treesitter/nvim-treesitter-textobjects'
--- lsp client config
-paq 'neovim/nvim-lspconfig'
--- completion
-paq 'hrsh7th/nvim-compe'
--- snippets
-paq 'hrsh7th/vim-vsnip'
--- vsnip integration for nvim-compe
-paq 'hrsh7th/vim-vsnip-integ'
--- html/css snippets
-paq 'mattn/emmet-vim'
--- go dev
-paq 'crispgm/nvim-go'
--- beancount ftplugin
-paq 'nathangrigg/vim-beancount'
--- vimwiki
-paq 'vimwiki/vimwiki'
--- vim plugin testing
-paq 'junegunn/vader.vim'
+paq {'nvim-treesitter/nvim-treesitter',           -- treesitter
+    run = ':TSUpdate'}
+paq 'nvim-treesitter/playground'                  -- treesitter playground
+paq 'nvim-treesitter/nvim-treesitter-textobjects' -- treesitter textobj e.g., class, function
+paq 'neovim/nvim-lspconfig'                       -- lsp client config
+paq 'hrsh7th/nvim-compe'                          -- completion
+paq 'hrsh7th/vim-vsnip'                           -- snippets
+paq 'hrsh7th/vim-vsnip-integ'                     -- vsnip integration for nvim-compe
+paq 'mattn/emmet-vim'                             -- html/css snippets
+paq 'crispgm/nvim-go'                             -- go dev
+paq 'nathangrigg/vim-beancount'                   -- beancount ftplugin
+paq 'vimwiki/vimwiki'                             -- vimwiki
+paq 'junegunn/vader.vim'                          -- vim plugin testing
