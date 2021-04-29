@@ -1,10 +1,4 @@
-local vim = vim
-
-local function set_keymap(mode, from, to)
-    local opts = {noremap = true, silent = false}
-    vim.api.nvim_set_keymap(mode, from, to, opts)
-end
-
+local set_keymap = require('common').set_keymap
 -- common
 set_keymap('n', '<leader>#', '<cmd>let @/ = ""<cr><Esc>')
 set_keymap('n', '<leader>q', '<cmd>q!<cr>')
@@ -67,14 +61,6 @@ set_keymap('n', '<leader>ls', '<cmd>lua vim.lsp.buf.document_symbol()<cr>')
 set_keymap('n', '<leader>lS', '<cmd>lua vim.lsp.buf.workspace_symbol()<cr>')
 set_keymap('n', '<leader>lR', '<cmd>lua vim.lsp.buf.rename()<cr>')
 set_keymap('n', '<leader>lf', '<cmd>lua vim.lsp.buf.formatting()<cr>')
-
--- telescope
-set_keymap('n', '<leader>ff', '<cmd>Telescope find_files find_command=fd,--hidden,--no-ignore,--exclude,*.git,--type,f<cr>')
-set_keymap('n', '<leader>fd', '<cmd>Telescope git_files<cr>')
-set_keymap('n', '<leader>fg', '<cmd>Telescope live_grep<cr>')
-set_keymap('n', '<leader>fb', '<cmd>Telescope buffers<cr>')
-set_keymap('n', '<leader>fh', '<cmd>Telescope help_tags<cr>')
-set_keymap('n', '<leader>fk', '<cmd>Telescope keymaps<cr>')
 
 -- plug manager
 set_keymap('n', '<leader>pi', '<cmd>PaqInstall<cr>')

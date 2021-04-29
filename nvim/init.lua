@@ -17,6 +17,7 @@ require('plugins.lspconfig')
 require('plugins.nord')
 require('plugins.nvim_tree')
 require('plugins.prettier')
+require('plugins.telescope')
 require('plugins.toggleterm')
 require('plugins.treesitter')
 require('plugins.vimwiki')
@@ -29,5 +30,3 @@ require('pears').setup(function(conf)
   conf.preset 'tag_matching'
 end)
 require('go').setup{ linter = 'golint' }
-require('telescope').load_extension('session-lens')
-require('telescope').load_extension('heading')
