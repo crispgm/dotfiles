@@ -15,6 +15,7 @@ paq {'crispgm/nord-vim', -- forked from official nord-vim, with treesitter and l
 -- file
 paq 'mhinz/vim-startify'            -- stardup page
 paq 'nvim-telescope/telescope.nvim' -- fuzzy picker
+paq 'crispgm/telescope-heading.nvim'
 paq 'akinsho/nvim-toggleterm.lua'   -- terminal
 paq 'rmagatti/auto-session'         -- auto session
 paq 'rmagatti/session-lens'         -- session lens for telescope
