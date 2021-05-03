@@ -25,3 +25,12 @@ require'compe'.setup {
     treesitter = true;
   };
 }
+
+local vim = vim
+local opts = {
+    noremap = true,
+    silent=true,
+    expr = true,
+}
+vim.api.nvim_set_keymap('i', '<cr>', "compe#confirm('<CR>')", opts)
+vim.api.nvim_set_keymap('i', '<c-c>', "compe#close('<c-c>')", opts)

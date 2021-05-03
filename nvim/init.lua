@@ -8,6 +8,7 @@ require('pack')
 require('mappings')
 
 -- plugins
+require('plugins.setups')
 require('plugins.compe')
 require('plugins.emmet')
 require('plugins.gitblame')
@@ -21,11 +22,3 @@ require('plugins.toggleterm')
 require('plugins.treesitter')
 require('plugins.vimwiki')
 require('plugins.vsnip')
-
--- just setup
-require('colorizer').setup()
-require('tabline').setup{}
-require('pears').setup(function(conf)
-  conf.preset 'tag_matching'
-end)
-require('go').setup{ linter = 'golint' }
