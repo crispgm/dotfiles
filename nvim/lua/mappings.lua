@@ -14,6 +14,7 @@ set_keymap('i', '<c-e>', '<End>')
 set_keymap('n', 'k', 'gk')
 set_keymap('n', 'j', 'gj')
 -- editing
+set_keymap('n', 'Y', 'y$')
 set_keymap('n', '<a-Up>', '<cmd>m .-2<cr>')
 set_keymap('n', '<a-Down>', '<cmd>m .+1<cr>')
 set_keymap('i', '<c-d>', '<Esc>ddi')
@@ -23,10 +24,6 @@ set_keymap('n', '<leader>j', '<c-w>j')
 set_keymap('n', '<leader>k', '<c-w>k')
 set_keymap('n', '<leader>h', '<c-w>h')
 set_keymap('n', '<leader>l', '<c-w>l')
--- quickfix
-set_keymap('n', '<leader>cc', '<cmd>cclose<cr>')
-set_keymap('n', '<leader>;', '<cmd>cprev<cr>')
-set_keymap('n', '<leader>\'', '<cmd>cnext<cr>')
 -- tab
 set_keymap('n', '<s-Tab>', 'gT')
 set_keymap('n', '<Tab>', 'gt')
@@ -45,6 +42,10 @@ set_keymap('n', '<leader>0', '<cmd>tablast<cr>')
 -- buf
 set_keymap('n', '<leader>[', 'bprev')
 set_keymap('n', '<leader>]', 'bnext')
+-- quickfix
+set_keymap('n', '<leader>cc', '<cmd>cclose<cr>')
+set_keymap('n', '<leader>;', '<cmd>cprev<cr>')
+set_keymap('n', '<leader>\'', '<cmd>cnext<cr>')
 -- command
 set_keymap('c', '<c-a>', '<Home>')
 set_keymap('c', '<c-e>', '<End>')
