@@ -48,6 +48,7 @@ else
   brew 'exa'
   brew 'ripgrep'
   brew 'fd'
+  brew 'navi'
   brew 'pandoc'
   brew 'hexyl'
   brew 'xsv'
