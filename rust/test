@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+test -x "$(which rustc)"
+test -x "$(which rustfmt)"
+test -d ~/.cargo
