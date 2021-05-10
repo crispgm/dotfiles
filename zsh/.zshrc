@@ -45,16 +45,14 @@ export UPDATE_ZSH_DAYS=30
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(docker emoji heroku osx redis-cli zsh_reload)
 
 # User configuration
 source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 export EDITOR='nvim'
+# allow the respect for LS_COLORS
+export LS_COLORS=gxfxaxdxcxegedabagacad
 
 # PATH
 export PATH=$GOPATH/bin:/opt/homebrew/bin:/opt/homebrew/opt/ruby/bin:$PATH
