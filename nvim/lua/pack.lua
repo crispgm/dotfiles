@@ -61,6 +61,7 @@ paq 'hrsh7th/vim-vsnip'                           -- snippets
 paq 'hrsh7th/vim-vsnip-integ'                     -- vsnip integration for nvim-compe
 paq 'mattn/emmet-vim'                             -- html/css snippets
 paq 'crispgm/nvim-go'                             -- go dev
+paq 'rust-lang/rust.vim'                          -- rust lang support
 paq 'nathangrigg/vim-beancount'                   -- beancount ftplugin
 paq 'vimwiki/vimwiki'                             -- vimwiki
 paq 'junegunn/vader.vim'                          -- vim plugin testing
