@@ -59,11 +59,11 @@ set_options({
 vim.cmd('set shortmess+=c')    -- status line e.g. CTRL+G
 
 if not vim.fn.has('gui_running') then
-  vim.cmd('set t_Co=256')
+    vim.cmd('set t_Co=256')
 end
 vim.cmd('set background=dark')
 if vim.fn.has('termguicolors') then
-  vim.cmd('let &t_8f = "\\<Esc>[38;2;%lu;%lu;%lum"')
-  vim.cmd('let &t_8b = "\\<Esc>[48;2;%lu;%lu;%lum"')
-  vim.cmd('set termguicolors')
+    vim.cmd('let &t_8f = "\\<Esc>[38;2;%lu;%lu;%lum"')
+    vim.cmd('let &t_8b = "\\<Esc>[48;2;%lu;%lu;%lum"')
+    vim.cmd('set termguicolors')
 end
