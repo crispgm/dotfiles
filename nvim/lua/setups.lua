@@ -6,3 +6,4 @@ require('pears').setup(function(conf)
     conf.expand_on_enter(false)
 end)
 require('go').setup{ linter = 'golint' }
+require('range-highlight').setup{}

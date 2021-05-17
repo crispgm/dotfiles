@@ -13,25 +13,26 @@ paq {'crispgm/nord-vim', -- forked from official nord-vim, with treesitter and l
     branch = 'develop'}
 
 -- file
-paq 'mhinz/vim-startify'            -- stardup page
-paq 'nvim-telescope/telescope.nvim' -- fuzzy picker
-paq 'crispgm/telescope-heading.nvim'
-paq 'akinsho/nvim-toggleterm.lua'   -- terminal
-paq 'rmagatti/auto-session'         -- auto session
-paq 'rmagatti/session-lens'         -- session lens for telescope
+paq 'mhinz/vim-startify'             -- stardup page
+paq 'nvim-telescope/telescope.nvim'  -- fuzzy picker
+paq 'crispgm/telescope-heading.nvim' -- markdown heading
+paq 'akinsho/nvim-toggleterm.lua'    -- terminal
+paq 'rmagatti/auto-session'          -- auto session
+paq 'rmagatti/session-lens'          -- session lens for telescope
 
 -- view
-paq 'ojroques/nvim-hardline'        -- status line
-paq 'crispgm/nvim-tabline'          -- tab line
-paq 'dstein64/nvim-scrollview'      -- scroll bar
-paq 'google/vim-searchindex'        -- search index
-paq 'editorconfig/editorconfig-vim' -- editorconfig support
-paq 'Yggdroot/indentLine'           -- indent line
-paq 'RRethy/vim-illuminate'         -- highlight hover word
-paq 'lewis6991/gitsigns.nvim'       -- git signs
-paq 'f-person/git-blame.nvim'       -- toggle git blame info
-paq 'norcalli/nvim-colorizer.lua'   -- color codes rendering
-paq 'tversteeg/registers.nvim'      -- show registers
+paq 'ojroques/nvim-hardline'           -- status line
+paq 'crispgm/nvim-tabline'             -- tab line
+paq 'dstein64/nvim-scrollview'         -- scroll bar
+paq 'google/vim-searchindex'           -- search index
+paq 'editorconfig/editorconfig-vim'    -- editorconfig support
+paq 'Yggdroot/indentLine'              -- indent line
+paq 'RRethy/vim-illuminate'            -- highlight hover word
+paq 'lewis6991/gitsigns.nvim'          -- git signs
+paq 'f-person/git-blame.nvim'          -- toggle git blame info
+paq 'norcalli/nvim-colorizer.lua'      -- color codes rendering
+paq 'tversteeg/registers.nvim'         -- show registers
+paq 'winston0410/range-highlight.nvim' -- highlight range lines
 
 -- edit
 paq 'psliwka/vim-smoothie'          -- smoothy scroll
