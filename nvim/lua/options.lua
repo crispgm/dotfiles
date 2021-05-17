@@ -1,16 +1,5 @@
 local vim = vim
-
-local function set_options(options)
-    for key, val in pairs(options) do
-        if val == true then
-            vim.api.nvim_command('set ' .. key)
-        elseif val == false then
-            vim.api.nvim_command('set no' .. key)
-        else
-            vim.api.nvim_command('set ' .. key .. '=' .. val)
-        end
-    end
-end
+local set_options = require('common').set_options
 
 vim.cmd('filetype plugin indent on')
 vim.cmd('syntax enable')
