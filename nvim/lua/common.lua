@@ -6,6 +6,10 @@ function M.set_keymap(mode, from, to)
     vim.api.nvim_set_keymap(mode, from, to, opts)
 end
 
+function M.nvim_set_keymap(mode, from, to, opts)
+    vim.api.nvim_set_keymap(mode, from, to, opts)
+end
+
 function M.set_options(options)
     for key, val in pairs(options) do
         if val == true then

@@ -1,25 +1,25 @@
-require'lspconfig'.bashls.setup{}
-require'lspconfig'.cssls.setup{}
-require'lspconfig'.gopls.setup{}
-require'lspconfig'.html.setup{}
-require'lspconfig'.jsonls.setup{}
-require'lspconfig'.pyls.setup{}
-require'lspconfig'.rust_analyzer.setup{}
-require'lspconfig'.solargraph.setup{}
-require'lspconfig'.sqlls.setup{
+require('lspconfig').bashls.setup{}
+require('lspconfig').cssls.setup{}
+require('lspconfig').gopls.setup{}
+require('lspconfig').html.setup{}
+require('lspconfig').jsonls.setup{}
+require('lspconfig').pyls.setup{}
+require('lspconfig').rust_analyzer.setup{}
+require('lspconfig').solargraph.setup{}
+require('lspconfig').sqlls.setup{
     cmd = {'/usr/local/bin/sql-language-server', 'up', '--method', 'stdio'}
 }
-require'lspconfig'.tsserver.setup{}
-require'lspconfig'.vimls.setup{}
-require'lspconfig'.vuels.setup{}
-require'lspconfig'.yamlls.setup{}
+require('lspconfig').tsserver.setup{}
+require('lspconfig').vimls.setup{}
+require('lspconfig').vuels.setup{}
+require('lspconfig').yamlls.setup{}
 
 local user = vim.fn.expand('$USER')
 local sumneko_root_path = '/Users/' .. user .. '/dev/lua-language-server'
 local sumneko_binary = sumneko_root_path .. '/bin/macOS/lua-language-server'
 
-require'lspconfig'.sumneko_lua.setup {
-    cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"};
+require('lspconfig').sumneko_lua.setup {
+    cmd = {sumneko_binary, '-E', sumneko_root_path .. '/main.lua'};
     settings = {
         Lua = {
             runtime = {

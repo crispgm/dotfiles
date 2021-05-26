@@ -1,4 +1,5 @@
 local set_keymap = require('common').set_keymap
+local nvim_set_keymap = require('common').nvim_set_keymap
 -- common
 set_keymap('n', '<leader>#', '<cmd>let @/ = ""<cr><Esc>')
 set_keymap('n', '<leader>q', '<cmd>q!<cr>')
@@ -69,20 +70,20 @@ set_keymap('n', '<leader>pu', '<cmd>PaqUpdate<cr>')
 set_keymap('n', '<leader>pc', '<cmd>PaqClean<cr>')
 
 -- comment
-vim.api.nvim_set_keymap('i', '<c-_>', '<Esc><Plug>CommentaryLine', {})
-vim.api.nvim_set_keymap('n', '<c-_>', '<Plug>CommentaryLine', {})
-vim.api.nvim_set_keymap('v', '<c-_>', '<Plug>Commentary', {})
+nvim_set_keymap('i', '<c-_>', '<Esc><Plug>CommentaryLine', {})
+nvim_set_keymap('n', '<c-_>', '<Plug>CommentaryLine', {})
+nvim_set_keymap('v', '<c-_>', '<Plug>Commentary', {})
 
 -- git-blame
 set_keymap('n', '<leader>gb', '<cmd>GitBlameToggle<cr>')
 
 -- dial.nvim
-vim.api.nvim_set_keymap('n', '<c-a>', '<Plug>(dial-increment)', {})
-vim.api.nvim_set_keymap('n', '<c-x>', '<Plug>(dial-decrement)', {})
-vim.api.nvim_set_keymap('v', '<c-a>', '<Plug>(dial-increment)', {})
-vim.api.nvim_set_keymap('v', '<c-x>', '<Plug>(dial-decrement)', {})
-vim.api.nvim_set_keymap('v', 'g<c-a>', '<Plug>(dial-increment-additional)', {})
-vim.api.nvim_set_keymap('v', 'g<c-x>', '<Plug>(dial-decrement-additional)', {})
+nvim_set_keymap('n', '<c-a>', '<Plug>(dial-increment)', {})
+nvim_set_keymap('n', '<c-x>', '<Plug>(dial-decrement)', {})
+nvim_set_keymap('v', '<c-a>', '<Plug>(dial-increment)', {})
+nvim_set_keymap('v', '<c-x>', '<Plug>(dial-decrement)', {})
+nvim_set_keymap('v', 'g<c-a>', '<Plug>(dial-increment-additional)', {})
+nvim_set_keymap('v', 'g<c-x>', '<Plug>(dial-decrement-additional)', {})
 
 -- hop.nvim
 set_keymap('n', '<c-h>', '<cmd>HopWord<cr>')
