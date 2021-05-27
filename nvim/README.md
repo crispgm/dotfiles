@@ -3,7 +3,7 @@
 ## Install Plugin
 
 ```sh
-nvim +PlugInstall
+:PaqInstall
 ```
 
 ## Screenshots
