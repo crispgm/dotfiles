@@ -41,6 +41,7 @@ else
   brew 'htop'
   brew 'neofetch'
   brew 'onefetch'
+  brew 'tokei'
 
   # [brew] productivity
   brew 'zoxide'
