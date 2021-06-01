@@ -1,10 +1,10 @@
-require 'nvim-treesitter.configs'.setup {
+require('nvim-treesitter.configs').setup({
     highlight = {
         enable = true,
     },
     ensure_installed = 'maintained',
     indent = {
-        enable = true
+        enable = true,
     },
     incremental_selection = {
         enable = true,
@@ -19,7 +19,7 @@ require 'nvim-treesitter.configs'.setup {
         enable = true,
         disable = {},
         updatetime = 25, -- Debounced time for highlighting nodes in the playground from source code
-        persist_queries = false -- Whether the query persists across vim sessions
+        persist_queries = false, -- Whether the query persists across vim sessions
     },
     textobjects = {
         select = {
@@ -35,4 +35,4 @@ require 'nvim-treesitter.configs'.setup {
             },
         },
     },
-}
+})
