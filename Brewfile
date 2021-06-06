@@ -76,7 +76,6 @@ else
   cask 'hiddenbar'
   cask 'snipaste'
   cask 'rectangle'
-  # cask 'shadowsocksx-ng'
   cask 'clashx'
   cask 'karabiner-elements'
   cask 'qmk-toolbox'

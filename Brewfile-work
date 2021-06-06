@@ -1,8 +1,8 @@
-tap "homebrew/cask"
+tap 'homebrew/cask'
 
-cask "charles"
-cask "postman"
-cask "workflowy"
-cask "quicklook-csv"
+cask 'charles'
+cask 'postman'
+cask 'workflowy'
+cask 'quicklook-csv'
 
-mas "Trello", id: 1278508951
+mas 'Trello', id: 1278508951
