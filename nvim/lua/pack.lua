@@ -21,6 +21,7 @@ paq('crispgm/telescope-heading.nvim') -- markdown heading
 paq('akinsho/nvim-toggleterm.lua') -- terminal
 paq('rmagatti/auto-session') -- auto session
 paq('rmagatti/session-lens') -- session lens for telescope
+paq('farmergreg/vim-lastplace') -- reopen files at your last edit position
 
 -- view
 paq('ojroques/nvim-hardline') -- status line
@@ -34,7 +35,7 @@ paq('lewis6991/gitsigns.nvim') -- git signs
 paq('f-person/git-blame.nvim') -- toggle git blame info
 paq('norcalli/nvim-colorizer.lua') -- color codes rendering
 paq('tversteeg/registers.nvim') -- show registers
-paq('winston0410/cmd-parser.nvim')
+paq('winston0410/cmd-parser.nvim') -- dependency of range-highlight
 paq('winston0410/range-highlight.nvim') -- highlight range lines
 
 -- edit
