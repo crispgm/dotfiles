@@ -2,9 +2,10 @@ alias l='exa'
 alias la='exa -a'
 alias ll='exa -lah'
 alias ls='exa --color=auto'
-alias bc="bc -q -l"
-alias nvimconf="nvim ~/.config/nvim/init.lua"
-alias zshconf="nvim ~/.zshrc"
+alias hf='history | fzf'
+alias bc='bc -q -l'
+alias nvimconf='nvim ~/.config/nvim/init.lua'
+alias zshconf='nvim ~/.zshrc'
 
 alias -s md=nvim
 alias -s markdown=nvim
