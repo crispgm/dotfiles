@@ -32,27 +32,30 @@ else
   brew 'node'
   brew 'yarn'
 
-  # [brew] tools
+  # [brew] productivity
   brew 'wget'
-  brew 'mas'
-  brew 'bat'
   brew 'p7zip'
   brew 'dos2unix'
-  brew 'htop'
-  brew 'neofetch'
-  brew 'onefetch'
-  brew 'tokei'
-
-  # [brew] productivity
-  brew 'zoxide'
+  brew 'mas'
+  brew 'bat'
   brew 'exa'
   brew 'ripgrep'
   brew 'fd'
+  brew 'zoxide'
+  brew 'choose-rust'
+  brew 'htop'
+  brew 'procs'
+  brew 'neofetch'
+  brew 'onefetch'
+  brew 'tokei'
   brew 'navi'
-  brew 'pandoc'
   brew 'hexyl'
   brew 'xsv'
   brew 'jq'
+  brew 'curlie'
+
+  # [brew] tools
+  brew 'pandoc'
   brew 'beancount'
   brew 'fava'
   brew 'youtube-dl'
