@@ -28,6 +28,7 @@ paq('ojroques/nvim-hardline') -- status line
 paq('crispgm/nvim-tabline') -- tab line
 paq('dstein64/nvim-scrollview') -- scroll bar
 paq('google/vim-searchindex') -- search index
+paq('wincent/ferret') -- find and replace
 paq('editorconfig/editorconfig-vim') -- editorconfig support
 paq('Yggdroot/indentLine') -- indent line
 paq('RRethy/vim-illuminate') -- highlight hover word
