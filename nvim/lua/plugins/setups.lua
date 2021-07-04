@@ -3,8 +3,9 @@ require('colorizer').setup()
 require('tabline').setup({})
 
 require('pears').setup(function(conf)
-    conf.preset('tag_matching')
+    conf.remove_pair_on_outer_backspace(false)
     conf.expand_on_enter(false)
+    conf.preset('tag_matching')
 end)
 
 require('range-highlight').setup({
