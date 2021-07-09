@@ -22,6 +22,7 @@ paq('akinsho/nvim-toggleterm.lua') -- terminal
 paq('rmagatti/auto-session') -- auto session
 paq('rmagatti/session-lens') -- session lens for telescope
 paq('farmergreg/vim-lastplace') -- reopen files at your last edit position
+paq('AndrewRadev/undoquit.vim') -- restore closed tabs
 
 -- view
 paq('ojroques/nvim-hardline') -- status line

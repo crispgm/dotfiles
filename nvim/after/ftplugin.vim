@@ -19,18 +19,6 @@ augroup trim_whitespace
   autocmd BufWritePre * :call TrimWhitespace()
 augroup END
 
-" Restore last closed tab
-augroup bufclosetrack
-  autocmd!
-  autocmd WinLeave * let g:lastWinName = @%
-augroup END
-
-function! LastWindow()
-  exe "tabedit " . g:lastWinName
-endfunction
-command -nargs=0 LastWindow call LastWindow()
-nnoremap <leader>z <cmd>LastWindow<cr>
-
 " Line number
 augroup linenumber
   autocmd!
