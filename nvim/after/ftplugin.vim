@@ -1,8 +1,10 @@
+" Highlight yank
 augroup highlight_yank
   autocmd!
   autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank({timeout = 500})
 augroup END
 
+" Trim whitespace
 function! TrimWhitespace()
   if &ft == "markdown" || &ft == "vimwiki"
     return
@@ -15,6 +17,25 @@ endfunction
 augroup trim_whitespace
   autocmd!
   autocmd BufWritePre * :call TrimWhitespace()
+augroup END
+
+" Restore last closed tab
+augroup bufclosetrack
+  autocmd!
+  autocmd WinLeave * let g:lastWinName = @%
+augroup END
+
+function! LastWindow()
+  exe "tabedit " . g:lastWinName
+endfunction
+command -nargs=0 LastWindow call LastWindow()
+nnoremap <leader>z <cmd>LastWindow<cr>
+
+" Line number
+augroup linenumber
+  autocmd!
+  autocmd InsertEnter * setlocal norelativenumber
+  autocmd InsertLeave * setlocal relativenumber
 augroup END
 
 " Indent/tabs
@@ -31,6 +52,7 @@ augroup filetype_options
   autocmd BufNewFile,BufRead {Brewfile,Gemfile} set filetype=ruby
 augroup END
 
+" Terminal
 augroup terminal_options
   autocmd!
   autocmd TermOpen * startinsert
@@ -38,15 +60,10 @@ augroup terminal_options
   autocmd TermOpen * nnoremap <buffer> <C-c> i<C-c>
 augroup END
 
+" Quickfix auto close
 augroup quickfix_close
   autocmd!
   autocmd WinEnter * if winnr('$') == 1 && &buftype == "quickfix"|q|endif
-augroup END
-
-augroup linenumber
-  autocmd!
-  autocmd InsertEnter * setlocal norelativenumber
-  autocmd InsertLeave * setlocal relativenumber
 augroup END
 
 " beancount format
