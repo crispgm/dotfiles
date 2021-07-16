@@ -14,7 +14,7 @@ yarn global add vscode-css-languageserver-bin
 go get golang.org/x/tools/gopls@latest
 yarn global add vscode-html-languageserver-bin
 yarn global add vscode-json-languageserver
-pip install python-language-server
+yarn global add pyright
 brew install rust-analyzer
 gem install solargraph
 yarn global add sql-language-server
