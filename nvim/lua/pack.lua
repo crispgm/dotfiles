@@ -37,7 +37,6 @@ paq('lewis6991/gitsigns.nvim') -- git signs
 paq('f-person/git-blame.nvim') -- toggle git blame info
 paq('rhysd/conflict-marker.vim') -- git conflict
 paq('norcalli/nvim-colorizer.lua') -- color codes rendering
-paq('tversteeg/registers.nvim') -- show registers
 paq('winston0410/cmd-parser.nvim') -- dependency of range-highlight
 paq('winston0410/range-highlight.nvim') -- highlight range lines
 
