@@ -1,25 +1,36 @@
+--- try requiring a submodule and do not crash all the configs
+local function try_require(name)
+    local ok, _ = pcall(require, name)
+    if not ok then
+        local msg = string.format(
+            'The configuration is not fully loaded. Requiring `%s` failed. Check the path and syntax.',
+            name)
+        vim.api.nvim_echo({ { 'init.lua', 'ErrorMsg' }, { ' ' .. msg } }, true, {})
+    end
+end
+
 -- options
-require('options')
+try_require('options')
 
 -- packages
-require('pack')
+try_require('pack')
 
 -- mappings
-require('mappings')
+try_require('mappings')
 
 -- plugins
-require('plugins.setups')
-require('plugins.compe')
-require('plugins.emmet')
-require('plugins.gitblame')
-require('plugins.gitsigns')
-require('plugins.hardline')
-require('plugins.lspconfig')
-require('plugins.nord')
-require('plugins.prettier')
-require('plugins.rust')
-require('plugins.telescope')
-require('plugins.toggleterm')
-require('plugins.treesitter')
-require('plugins.vimwiki')
-require('plugins.vsnip')
+try_require('plugins.setups')
+try_require('plugins.compe')
+try_require('plugins.emmet')
+try_require('plugins.gitblame')
+try_require('plugins.gitsigns')
+try_require('plugins.hardline')
+try_require('plugins.lspconfig')
+try_require('plugins.nord')
+try_require('plugins.prettier')
+try_require('plugins.rust')
+try_require('plugins.telescope')
+try_require('plugins.toggleterm')
+try_require('plugins.treesitter')
+try_require('plugins.vimwiki')
+try_require('plugins.vsnip')
