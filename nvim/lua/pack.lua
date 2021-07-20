@@ -15,7 +15,7 @@ paq({
 })
 
 -- file
-paq('mhinz/vim-startify') -- stardup page
+paq('mhinz/vim-startify') -- startup page
 paq('nvim-telescope/telescope.nvim') -- fuzzy picker
 paq('crispgm/telescope-heading.nvim') -- markdown heading
 paq('akinsho/nvim-toggleterm.lua') -- terminal
