@@ -17,11 +17,11 @@ set_keymap('n', '<leader>fm', '<cmd>Telescope heading<cr>')
 
 local actions = require('telescope.actions')
 require('telescope').setup({
-    defaults = {
+    defaults = require('telescope.themes').get_ivy({
         mappings = {
             i = {
                 ['<esc>'] = actions.close,
             },
         },
-    },
+    }),
 })
