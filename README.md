@@ -11,7 +11,9 @@
 
 ## Introduction
 
-This is a dotfiles project which may be used to provision a new macOS with cosy dev setups. And it is tested with GitHub Actions CI. The checkbox denotes whether it is done by `bootstrap`. More screenshots [here](screenshots).
+This is a dotfiles project which may be used to provision a new macOS with cosy dev setups.
+And it is tested with GitHub Actions CI. The checkbox denotes whether it is done by `bootstrap`.
+More screenshots [here](screenshots).
 
 Inspired by [KrauseFx/new-mac](https://github.com/KrauseFx/new-mac).
 

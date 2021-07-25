@@ -8,11 +8,12 @@ paq({ 'savq/paq-nvim', opt = true })
 paq('nvim-lua/plenary.nvim')
 paq('nvim-lua/popup.nvim')
 
--- theme
+-- colorscheme
 paq({
     'crispgm/nord-vim', -- forked from official nord-vim, with treesitter and lsp supported
     branch = 'develop',
 })
+paq('kadekillary/skull-vim') -- minimal monochrome colorscheme for reading and etc.
 
 -- file
 paq('mhinz/vim-startify') -- startup page
