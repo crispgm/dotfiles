@@ -25,13 +25,13 @@ yarn global add yaml-language-server
 
 # Lua LSP
 brew install ninja
-cd ~/dev || exit 1
+cd ~/dev
 git clone https://github.com/sumneko/lua-language-server
-cd lua-language-server || exit 1
+cd lua-language-server
 git submodule update --init --recursive
-cd 3rd/luamake || exit 1
-ninja -f ninja/macos.ninja
-cd ../.. || exit 1
+cd 3rd/luamake
+compile/install.sh
+cd ../..
 ./3rd/luamake/luamake rebuild
 
 echo "Run `nvim +PaqInstall` to finish setup"

@@ -12,4 +12,7 @@ require('range-highlight').setup({
     highlight = 'Visual',
 })
 
-require('go').setup({ linter = 'golint' })
+require('go').setup({
+    linter = 'golint',
+    test_popup_width = 120,
+})
