@@ -68,7 +68,6 @@ paq({
 paq('nvim-treesitter/playground') -- treesitter playground
 paq('nvim-treesitter/nvim-treesitter-textobjects') -- treesitter textobj e.g., class, function
 paq('neovim/nvim-lspconfig') -- lsp client config
-paq('ray-x/lsp_signature.nvim') -- lsp function signature
 paq('hrsh7th/nvim-compe') -- completion
 paq('hrsh7th/vim-vsnip') -- snippets
 paq('hrsh7th/vim-vsnip-integ') -- vsnip integration for nvim-compe

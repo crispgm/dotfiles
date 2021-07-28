@@ -16,10 +16,3 @@ require('go').setup({
     linter = 'golint',
     test_popup_width = 120,
 })
-
-require('lsp_signature').setup({
-    bind = true,
-    handler_opts = {
-        border = 'single',
-    },
-})
