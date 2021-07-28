@@ -46,7 +46,7 @@ set_keymap('n', '<leader>]', 'bnext')
 -- quickfix
 set_keymap('n', '<leader>cc', '<cmd>cclose<cr>')
 set_keymap('n', '<leader>;', '<cmd>cprev<cr>')
-set_keymap('n', '<leader>\'', '<cmd>cnext<cr>')
+set_keymap('n', "<leader>'", '<cmd>cnext<cr>')
 -- command
 set_keymap('c', '<c-a>', '<Home>')
 set_keymap('c', '<c-e>', '<End>')

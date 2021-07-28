@@ -13,7 +13,7 @@ paq({
     'crispgm/nord-vim', -- forked from official nord-vim, with treesitter and lsp supported
     branch = 'develop',
 })
-paq('kadekillary/skull-vim') -- minimal monochrome colorscheme for reading and etc.
+paq('pbrisbin/vim-colors-off') -- minimal monochrome colorscheme for reading and etc.
 
 -- file
 paq('mhinz/vim-startify') -- startup page
@@ -36,7 +36,7 @@ paq('Yggdroot/indentLine') -- indent line
 paq('RRethy/vim-illuminate') -- highlight hover word
 paq('lewis6991/gitsigns.nvim') -- git signs
 paq('f-person/git-blame.nvim') -- toggle git blame info
-paq('rhysd/conflict-marker.vim') -- git conflict
+paq('rhysd/conflict-marker.vim') -- git conflict marker
 paq('norcalli/nvim-colorizer.lua') -- color codes rendering
 paq('winston0410/cmd-parser.nvim') -- dependency of range-highlight
 paq('winston0410/range-highlight.nvim') -- highlight range lines
@@ -44,7 +44,7 @@ paq('winston0410/range-highlight.nvim') -- highlight range lines
 -- edit
 paq('psliwka/vim-smoothie') -- smoothy scroll
 paq('phaazon/hop.nvim') -- jump to anywhere within 2 strokes
-paq('tpope/vim-repeat') -- repeat that support plugin
+paq('tpope/vim-repeat') -- allow commands from plugin do repeat
 paq('tpope/vim-surround') -- toggle surround
 paq('tpope/vim-abolish') -- eh, hard to describe, see README
 paq('tpope/vim-commentary') -- toggle comment
@@ -68,6 +68,7 @@ paq({
 paq('nvim-treesitter/playground') -- treesitter playground
 paq('nvim-treesitter/nvim-treesitter-textobjects') -- treesitter textobj e.g., class, function
 paq('neovim/nvim-lspconfig') -- lsp client config
+paq('ray-x/lsp_signature.nvim') -- lsp function signature
 paq('hrsh7th/nvim-compe') -- completion
 paq('hrsh7th/vim-vsnip') -- snippets
 paq('hrsh7th/vim-vsnip-integ') -- vsnip integration for nvim-compe
