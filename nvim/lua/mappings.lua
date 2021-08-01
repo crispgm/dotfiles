@@ -2,6 +2,8 @@ local set_keymap = require('common').set_keymap
 local nvim_set_keymap = require('common').nvim_set_keymap
 -- common
 set_keymap('n', '<leader>#', '<cmd>let @/ = ""<cr><Esc>')
+set_keymap('n', 'n', 'nzzzv')
+set_keymap('n', 'N', 'Nzzzv')
 set_keymap('n', '<leader>q', '<cmd>q!<cr>')
 set_keymap('n', '<leader>e', '<cmd>e!<cr>')
 set_keymap('n', '<leader>Q', '<cmd>qa!<cr>')
@@ -16,8 +18,8 @@ set_keymap('n', 'k', 'gk')
 set_keymap('n', 'j', 'gj')
 -- editing
 set_keymap('n', 'Y', 'y$')
-set_keymap('n', '<a-Up>', '<cmd>m .-2<cr>')
-set_keymap('n', '<a-Down>', '<cmd>m .+1<cr>')
+set_keymap('n', '<a-Up>', '<cmd>m .-2<cr>==')
+set_keymap('n', '<a-Down>', '<cmd>m .+1<cr>==')
 set_keymap('i', '<c-d>', '<Esc>ddi')
 -- splits
 set_keymap('n', '<leader>s', '<c-w>w')
