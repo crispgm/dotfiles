@@ -13,6 +13,6 @@ require('range-highlight').setup({
 })
 
 require('go').setup({
-    linter = 'golint',
+    formatter = 'gofumpt',
     test_popup_width = 120,
 })

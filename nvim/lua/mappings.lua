@@ -21,6 +21,7 @@ set_keymap('n', 'Y', 'y$')
 set_keymap('n', '<a-Up>', '<cmd>m .-2<cr>==')
 set_keymap('n', '<a-Down>', '<cmd>m .+1<cr>==')
 set_keymap('i', '<c-d>', '<Esc>ddi')
+set_keymap('n', '<leader>pp', '"0p')
 -- splits
 set_keymap('n', '<leader>s', '<c-w>w')
 set_keymap('n', '<leader>j', '<c-w>j')
