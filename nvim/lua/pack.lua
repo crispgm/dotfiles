@@ -76,4 +76,5 @@ paq('crispgm/nvim-go') -- go dev
 paq('rust-lang/rust.vim') -- rust lang support
 paq('nathangrigg/vim-beancount') -- beancount ftplugin
 paq('vimwiki/vimwiki') -- vimwiki
+paq('rafcamlet/nvim-luapad') -- lua repl
 paq('junegunn/vader.vim') -- vim plugin testing
