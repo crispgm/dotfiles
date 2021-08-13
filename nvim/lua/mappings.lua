@@ -68,9 +68,7 @@ set_keymap('n', '<leader>lR', '<cmd>lua vim.lsp.buf.rename()<cr>')
 set_keymap('n', '<leader>lf', '<cmd>lua vim.lsp.buf.formatting()<cr>')
 
 -- plug manager
-set_keymap('n', '<leader>pi', '<cmd>PaqInstall<cr>')
-set_keymap('n', '<leader>pu', '<cmd>PaqUpdate<cr>')
-set_keymap('n', '<leader>pc', '<cmd>PaqClean<cr>')
+set_keymap('n', '<leader>ps', '<cmd>PackerSync<cr>')
 
 -- comment
 nvim_set_keymap('i', '<c-_>', '<Esc><Plug>CommentaryLine', {})
