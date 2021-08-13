@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-# vim-plug
-git clone https://github.com/savq/paq-nvim.git \
-    "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/pack/paqs/opt/paq-nvim
+# plugin manager
+git clone https://github.com/wbthomason/packer.nvim \
+  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
 # conf
 mkdir -p ~/.config/nvim
@@ -34,4 +34,4 @@ compile/install.sh
 cd ../..
 ./3rd/luamake/luamake rebuild
 
-echo "Run `nvim +PaqInstall` to finish setup"
+echo "Run `nvim +PackerInstall` to finish setup"

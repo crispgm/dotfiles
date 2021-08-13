@@ -1,80 +1,114 @@
 local vim = vim
 
-vim.cmd('packadd paq-nvim')
-local paq = require('paq-nvim').paq
-paq({ 'savq/paq-nvim', opt = true })
+vim.cmd('packadd packer.nvim')
 
--- lib
-paq('nvim-lua/plenary.nvim')
-paq('nvim-lua/popup.nvim')
+return require('packer').startup(function()
+    use('wbthomason/packer.nvim')
+    -- lib
+    use('nvim-lua/plenary.nvim')
+    use('nvim-lua/popup.nvim')
 
--- colorscheme
-paq({
-    'crispgm/nord-vim', -- forked from official nord-vim, with treesitter and lsp supported
-    branch = 'develop',
-})
-paq('pbrisbin/vim-colors-off') -- minimal monochrome colorscheme for reading and etc.
+    -- colorscheme
+    use({
+        'crispgm/nord-vim', -- forked from official nord-vim, with treesitter and lsp supported
+        branch = 'develop',
+    })
 
--- file
-paq('mhinz/vim-startify') -- startup page
-paq('nvim-telescope/telescope.nvim') -- fuzzy picker
-paq('crispgm/telescope-heading.nvim') -- markdown heading
-paq('akinsho/nvim-toggleterm.lua') -- terminal
-paq('rmagatti/auto-session') -- auto session
-paq('rmagatti/session-lens') -- session lens for telescope
-paq('farmergreg/vim-lastplace') -- reopen files at your last edit position
-paq('AndrewRadev/undoquit.vim') -- restore closed tabs
+    -- file
+    use('mhinz/vim-startify') -- startup page
+    use('nvim-telescope/telescope.nvim') -- fuzzy picker
+    use('crispgm/telescope-heading.nvim') -- markdown heading
+    use('akinsho/nvim-toggleterm.lua') -- terminal
+    use('rmagatti/auto-session') -- auto session
+    use('rmagatti/session-lens') -- session lens for telescope
+    use('farmergreg/vim-lastplace') -- reopen files at your last edit position
+    use('AndrewRadev/undoquit.vim') -- restore closed tabs
 
--- view
-paq('ojroques/nvim-hardline') -- status line
-paq('crispgm/nvim-tabline') -- tab line
-paq('dstein64/nvim-scrollview') -- scroll bar
-paq('google/vim-searchindex') -- search index
-paq('wincent/ferret') -- find and replace
-paq('editorconfig/editorconfig-vim') -- editorconfig support
-paq('Yggdroot/indentLine') -- indent line
-paq('RRethy/vim-illuminate') -- highlight hover word
-paq('lewis6991/gitsigns.nvim') -- git signs
-paq('f-person/git-blame.nvim') -- toggle git blame info
-paq('rhysd/conflict-marker.vim') -- git conflict marker
-paq('norcalli/nvim-colorizer.lua') -- color codes rendering
-paq('winston0410/cmd-parser.nvim') -- dependency of range-highlight
-paq('winston0410/range-highlight.nvim') -- highlight range lines
+    -- view
+    use('ojroques/nvim-hardline') -- status line
+    use({
+        'crispgm/nvim-tabline', -- tab line
+        config = function()
+            require('tabline').setup({})
+        end,
+    })
+    use('dstein64/nvim-scrollview') -- scroll bar
+    use('google/vim-searchindex') -- search index
+    use('wincent/ferret') -- find and replace
+    use('editorconfig/editorconfig-vim') -- editorconfig support
+    use('Yggdroot/indentLine') -- indent line
+    use('RRethy/vim-illuminate') -- highlight hover word
+    use('lewis6991/gitsigns.nvim') -- git signs
+    use('f-person/git-blame.nvim') -- toggle git blame info
+    use('rhysd/conflict-marker.vim') -- git conflict marker
+    use({
+        'norcalli/nvim-colorizer.lua', -- color codes rendering
+        config = function()
+            require('colorizer').setup()
+        end,
+    })
+    use({
+        'winston0410/range-highlight.nvim', -- highlight range lines
+        requires = { 'winston0410/cmd-parser.nvim' },
+        config = function()
+            require('range-highlight').setup({
+                highlight = 'Visual',
+            })
+        end,
+    })
 
--- edit
-paq('psliwka/vim-smoothie') -- smoothy scroll
-paq('phaazon/hop.nvim') -- jump to anywhere within 2 strokes
-paq('tpope/vim-repeat') -- allow commands from plugin do repeat
-paq('tpope/vim-surround') -- toggle surround
-paq('tpope/vim-abolish') -- eh, hard to describe, see README
-paq('tpope/vim-commentary') -- toggle comment
-paq({
-    'prettier/vim-prettier', -- prettier formatter
-    run = 'yarn install',
-    branch = 'release/0.x',
-})
-paq('christoomey/vim-system-copy') -- copy to system clipboard
-paq('monaqa/dial.nvim') -- <c-a> <c-x> enhancement
-paq('kana/vim-textobj-user') -- define textobj by user
-paq('haya14busa/vim-textobj-number') -- number textobj
-paq('AndrewRadev/splitjoin.vim') -- split and join in vim
-paq('steelsojka/pears.nvim') -- auto symbol pairs
+    -- edit
+    use('psliwka/vim-smoothie') -- smoothy scroll
+    use('phaazon/hop.nvim') -- jump to anywhere within 2 strokes
+    use('tpope/vim-repeat') -- allow commands from plugin do repeat
+    use('tpope/vim-surround') -- toggle surround
+    use('tpope/vim-abolish') -- eh, hard to describe, see README
+    use('tpope/vim-commentary') -- toggle comment
+    use({
+        'prettier/vim-prettier', -- prettier formatter
+        run = 'yarn install',
+        branch = 'release/0.x',
+    })
+    use('christoomey/vim-system-copy') -- copy to system clipboard
+    use('monaqa/dial.nvim') -- <c-a> <c-x> enhancement
+    use('kana/vim-textobj-user') -- define textobj by user
+    use('haya14busa/vim-textobj-number') -- number textobj
+    use('AndrewRadev/splitjoin.vim') -- split and join in vim
+    use({
+        'steelsojka/pears.nvim', -- auto symbol pairs
+        config = function()
+            require('pears').setup(function(conf)
+                conf.remove_pair_on_outer_backspace(false)
+                conf.expand_on_enter(false)
+                conf.preset('tag_matching')
+            end)
+        end,
+    })
 
--- language
-paq({
-    'nvim-treesitter/nvim-treesitter', -- treesitter
-    run = ':TSUpdate',
-})
-paq('nvim-treesitter/playground') -- treesitter playground
-paq('nvim-treesitter/nvim-treesitter-textobjects') -- treesitter textobj e.g., class, function
-paq('neovim/nvim-lspconfig') -- lsp client config
-paq('hrsh7th/nvim-compe') -- completion
-paq('hrsh7th/vim-vsnip') -- snippets
-paq('hrsh7th/vim-vsnip-integ') -- vsnip integration for nvim-compe
-paq('mattn/emmet-vim') -- html/css snippets
-paq('crispgm/nvim-go') -- go dev
-paq('rust-lang/rust.vim') -- rust lang support
-paq('nathangrigg/vim-beancount') -- beancount ftplugin
-paq('vimwiki/vimwiki') -- vimwiki
-paq('rafcamlet/nvim-luapad') -- lua repl
-paq('junegunn/vader.vim') -- vim plugin testing
+    -- language
+    use({
+        'nvim-treesitter/nvim-treesitter', -- treesitter
+        run = ':TSUpdate',
+    })
+    use('nvim-treesitter/playground') -- treesitter playground
+    use('nvim-treesitter/nvim-treesitter-textobjects') -- treesitter textobj e.g., class, function
+    use('neovim/nvim-lspconfig') -- lsp client config
+    use('hrsh7th/nvim-compe') -- completion
+    use('hrsh7th/vim-vsnip') -- snippets
+    use('hrsh7th/vim-vsnip-integ') -- vsnip integration for nvim-compe
+    use('mattn/emmet-vim') -- html/css snippets
+    use({
+        'crispgm/nvim-go', -- go dev
+        config = function()
+            require('go').setup({
+                formatter = 'gofumpt',
+                test_popup_width = 120,
+            })
+        end,
+    })
+    use('rust-lang/rust.vim') -- rust lang support
+    use('nathangrigg/vim-beancount') -- beancount ftplugin
+    use('vimwiki/vimwiki') -- vimwiki
+    use('rafcamlet/nvim-luapad') -- lua repl
+    use('junegunn/vader.vim') -- vim plugin testing
+end)

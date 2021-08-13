@@ -3,7 +3,7 @@
 ## Install Plugin
 
 ```sh
-:PaqInstall
+:PackerSync
 ```
 
 ## Screenshots
