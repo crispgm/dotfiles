@@ -66,3 +66,20 @@ augroup bean_format
   autocmd BufWritePre {*.bean,*.beancount} :call BeanFormat()
   autocmd BufWritePost {*.bean,*.beancount} :!bean-check <afile>
 augroup END
+
+" Lua format
+function! LuaFormat()
+  let l:save = winsaveview()
+  if filereadable('.stylua.toml')
+    exec ':silent !stylua <afile> --config-path ./.stylua.toml'
+  else
+    exec ':silent !stylua <afile>'
+  endif
+  edit!
+  call winrestview(l:save)
+endfunction
+
+augroup lua_format
+  autocmd!
+  autocmd BufWritePost *.lua :call LuaFormat()
+augroup END
