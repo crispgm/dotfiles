@@ -10,10 +10,8 @@ cp -r ./nvim/init.lua ./nvim/lua ./nvim/after ~/.config/nvim/
 
 # Language servers
 yarn global add bash-language-server
-yarn global add vscode-css-languageserver-bin
+yarn global add vscode-langservers-extracted
 go get golang.org/x/tools/gopls@latest
-yarn global add vscode-html-languageserver-bin
-yarn global add vscode-json-languageserver
 yarn global add pyright
 brew install rust-analyzer
 gem install solargraph
