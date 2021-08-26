@@ -10,7 +10,7 @@ try_require('pack')
 try_require('mappings')
 
 -- plugins
-try_require('plugins.compe')
+try_require('plugins.cmp')
 try_require('plugins.emmet')
 try_require('plugins.gitblame')
 try_require('plugins.gitsigns')

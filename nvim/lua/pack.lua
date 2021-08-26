@@ -95,9 +95,15 @@ return require('packer').startup({
         use('nvim-treesitter/playground') -- treesitter playground
         use('nvim-treesitter/nvim-treesitter-textobjects') -- treesitter textobj e.g., class, function
         use('neovim/nvim-lspconfig') -- lsp client config
-        use('hrsh7th/nvim-compe') -- completion
         use('hrsh7th/vim-vsnip') -- snippets
-        use('hrsh7th/vim-vsnip-integ') -- vsnip integration for nvim-compe
+        use('hrsh7th/nvim-cmp') -- completion
+        use('hrsh7th/cmp-nvim-lsp') -- cmp lsp
+        use('hrsh7th/cmp-nvim-lua') -- cmp lua vim api
+        use('hrsh7th/cmp-buffer') -- cmp buffer
+        use('hrsh7th/cmp-path') -- cmp path
+        use('hrsh7th/cmp-calc') -- cmp calculator
+        use('hrsh7th/cmp-vsnip') -- cmp vsnip integration
+        use('hrsh7th/cmp-emoji') -- cmp emojis
         use('mattn/emmet-vim') -- html/css snippets
         use({
             'crispgm/nvim-go', -- go dev
