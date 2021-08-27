@@ -1,5 +1,4 @@
 local M = {}
-local vim = vim
 
 --- try requiring a submodule and do not crash all the configs
 function M.try_require(name)

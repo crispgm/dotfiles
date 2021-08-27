@@ -1,5 +1,3 @@
-local vim = vim
-
 vim.g.nord_cursor_line_number_background = 1
 vim.g.nord_uniform_status_lines = 1
 vim.g.nord_bold_vertical_split_line = 1
