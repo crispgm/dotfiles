@@ -21,4 +21,9 @@ cmp.setup({
         { name = 'calc' },
         { name = 'emoji' },
     },
+    snippet = {
+        expand = function(args)
+            vim.fn['vsnip#anonymous'](args.body)
+        end,
+    },
 })
