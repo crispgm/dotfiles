@@ -94,14 +94,18 @@ return require('packer').startup({
         use('nvim-treesitter/nvim-treesitter-textobjects') -- treesitter textobj e.g., class, function
         use('neovim/nvim-lspconfig') -- lsp client config
         use('hrsh7th/vim-vsnip') -- snippets
-        use('hrsh7th/nvim-cmp') -- completion
-        use('hrsh7th/cmp-nvim-lsp') -- cmp lsp
-        use('hrsh7th/cmp-nvim-lua') -- cmp lua vim api
-        use('hrsh7th/cmp-buffer') -- cmp buffer
-        use('hrsh7th/cmp-path') -- cmp path
-        use('hrsh7th/cmp-calc') -- cmp calculator
-        use('hrsh7th/cmp-vsnip') -- cmp vsnip integration
-        use('hrsh7th/cmp-emoji') -- cmp emojis
+        use({
+            'hrsh7th/nvim-cmp', -- completion
+            requires = {
+                'hrsh7th/cmp-nvim-lsp', -- cmp lsp
+                'hrsh7th/cmp-nvim-lua', -- cmp lua vim api
+                'hrsh7th/cmp-buffer', -- cmp buffer
+                'hrsh7th/cmp-path', -- cmp path
+                'hrsh7th/cmp-calc', -- cmp calculator
+                'hrsh7th/cmp-vsnip', -- cmp vsnip integration
+                'hrsh7th/cmp-emoji', -- cmp emojis
+            },
+        })
         use('mattn/emmet-vim') -- html/css snippets
         use({
             'crispgm/nvim-go', -- go dev
