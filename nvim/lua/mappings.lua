@@ -55,10 +55,10 @@ set_keymap('c', '<c-a>', '<Home>')
 set_keymap('c', '<c-e>', '<End>')
 
 -- LSP
-set_keymap('n', '<leader>ld', '<cmd>lua vim.lsp.buf.definition()<cr>')
+set_keymap('n', '<leader>ld', '<cmd>Telescope lsp_definitions<cr>')
 set_keymap('n', '<leader>lD', '<cmd>lua vim.lsp.buf.declaration()<cr>')
-set_keymap('n', '<leader>lt', '<cmd>lua vim.lsp.buf.type_definition()<cr>')
-set_keymap('n', '<leader>li', '<cmd>lua vim.lsp.buf.implementation()<cr>')
+set_keymap('n', '<leader>lt', '<cmd>Telescope lsp_type_definitions<cr>')
+set_keymap('n', '<leader>li', '<cmd>Telescope lsp_implementations<cr>')
 set_keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<cr>')
 set_keymap('n', 'U', '<cmd>lua vim.lsp.buf.signature_help()<cr>')
 set_keymap('n', '<leader>lr', '<cmd>Telescope lsp_references<cr>')
