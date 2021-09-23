@@ -5,6 +5,7 @@ try_require('options')
 
 -- packages
 try_require('pack')
+require('impatient').enable_profile()
 
 -- mappings
 try_require('mappings')
