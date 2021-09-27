@@ -40,7 +40,6 @@ return require('packer').startup({
         use('Yggdroot/indentLine') -- indent line
         use('RRethy/vim-illuminate') -- highlight hover word
         use('lewis6991/gitsigns.nvim') -- git signs
-        use('f-person/git-blame.nvim') -- toggle git blame info
         use('rhysd/conflict-marker.vim') -- git conflict marker
         use({
             'norcalli/nvim-colorizer.lua', -- color codes rendering

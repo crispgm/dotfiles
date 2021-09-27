@@ -13,7 +13,6 @@ try_require('mappings')
 -- plugins
 try_require('plugins.cmp')
 try_require('plugins.emmet')
-try_require('plugins.gitblame')
 try_require('plugins.gitsigns')
 try_require('plugins.hardline')
 try_require('plugins.lspconfig')
