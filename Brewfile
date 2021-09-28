@@ -53,6 +53,7 @@ else
   brew 'xsv'
   brew 'jq'
   brew 'curlie'
+  brew 'glow'
 
   # [brew] tools
   brew 'pandoc'
