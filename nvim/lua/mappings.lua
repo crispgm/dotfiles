@@ -70,11 +70,6 @@ set_keymap('n', '<leader>lf', '<cmd>lua vim.lsp.buf.formatting()<cr>')
 -- plug manager
 set_keymap('n', '<leader>ps', '<cmd>PackerSync<cr>')
 
--- comment
-nvim_set_keymap('i', '<c-_>', '<Esc><Plug>CommentaryLine', {})
-nvim_set_keymap('n', '<c-_>', '<Plug>CommentaryLine', {})
-nvim_set_keymap('v', '<c-_>', '<Plug>Commentary', {})
-
 -- dial.nvim
 nvim_set_keymap('n', '<c-a>', '<Plug>(dial-increment)', {})
 nvim_set_keymap('n', '<c-x>', '<Plug>(dial-decrement)', {})
