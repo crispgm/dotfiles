@@ -63,7 +63,12 @@ return require('packer').startup({
         use('tpope/vim-repeat') -- allow commands from plugin do repeat
         use('tpope/vim-surround') -- toggle surround
         use('tpope/vim-abolish') -- eh, hard to describe, see README
-        use('tpope/vim-commentary') -- toggle comment
+        use({
+            'numToStr/Comment.nvim', -- toggle comment
+            config = function()
+                require('Comment').setup()
+            end,
+        })
         use({
             'prettier/vim-prettier', -- prettier formatter
             run = 'yarn install',
