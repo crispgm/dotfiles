@@ -111,6 +111,7 @@ return require('packer').startup({
                 'hrsh7th/cmp-emoji', -- cmp emojis
             },
         })
+        use('github/copilot.vim')
         use('mattn/emmet-vim') -- html/css snippets
         use({
             'crispgm/nvim-go', -- go dev
