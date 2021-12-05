@@ -45,7 +45,7 @@ export UPDATE_ZSH_DAYS=30
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-plugins=(docker emoji heroku osx redis-cli zsh_reload)
+plugins=(docker emoji heroku macos redis-cli)
 
 # User configuration
 source $ZSH/oh-my-zsh.sh
