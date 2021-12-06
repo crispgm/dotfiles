@@ -45,7 +45,7 @@ export UPDATE_ZSH_DAYS=30
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-plugins=(docker emoji heroku macos redis-cli)
+plugins=(docker emoji fd heroku macos redis-cli ripgrep sudo zoxide)
 
 # User configuration
 source $ZSH/oh-my-zsh.sh
@@ -66,9 +66,6 @@ source ~/.zsh_alias
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# zoxide
-eval "$(zoxide init zsh)"
 
 # bat
 export BAT_THEME=Nord
