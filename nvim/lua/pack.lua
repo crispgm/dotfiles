@@ -18,6 +18,7 @@ return require('packer').startup({
         -- file
         use('mhinz/vim-startify') -- startup page
         use('nvim-telescope/telescope.nvim') -- fuzzy picker
+        use({ 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' })
         use('crispgm/telescope-heading.nvim') -- markdown heading
         use('akinsho/nvim-toggleterm.lua') -- terminal
         use('rmagatti/auto-session') -- auto session
