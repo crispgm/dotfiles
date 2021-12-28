@@ -14,6 +14,7 @@ return require('packer').startup({
             opt = true,
             branch = 'develop',
         })
+        use('huyvohcmc/atlas.vim')
 
         -- file
         use('mhinz/vim-startify') -- startup page
@@ -60,7 +61,12 @@ return require('packer').startup({
 
         -- edit
         use('psliwka/vim-smoothie') -- smoothy scroll
-        use('phaazon/hop.nvim') -- jump to anywhere within 2 strokes
+        use({
+            'phaazon/hop.nvim', -- jump to anywhere within 2 strokes
+            config = function()
+                require('hop').setup()
+            end,
+        })
         use('tpope/vim-repeat') -- allow commands from plugin do repeat
         use('tpope/vim-surround') -- toggle surround
         use('tpope/vim-abolish') -- eh, hard to describe, see README
