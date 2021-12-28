@@ -84,3 +84,8 @@ augroup lua_format
   autocmd!
   autocmd BufWritePost *.lua :call LuaFormat()
 augroup END
+
+augroup NvimGo
+  autocmd!
+  autocmd User NvimGoLintPopupPost wincmd p
+augroup END
