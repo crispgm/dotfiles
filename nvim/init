@@ -11,7 +11,7 @@ cp -r ./nvim/init.lua ./nvim/lua ./nvim/after ~/.config/nvim/
 # Language servers
 yarn global add bash-language-server
 yarn global add vscode-langservers-extracted
-go get golang.org/x/tools/gopls@latest
+go install golang.org/x/tools/gopls@latest
 yarn global add pyright
 brew install rust-analyzer
 gem install solargraph
@@ -31,5 +31,9 @@ cd 3rd/luamake
 compile/install.sh
 cd ../..
 ./3rd/luamake/luamake rebuild
+
+# Formatters
+cargo install stylua --features lua52
+go install mvdan.cc/sh/v3/cmd/shfmt@latest
 
 echo "Run `nvim +PackerInstall` to finish setup"
