@@ -55,6 +55,12 @@ augroup quickfix_close
   autocmd WinEnter * if winnr('$') == 1 && &buftype == "quickfix"|q|endif
 augroup END
 
+" LSP Diagnostics
+augroup lsp_diagnostics
+  autocmd!
+  autocmd CursorHold * lua vim.diagnostic.open_float(nil,{focusable=false,scope="cursor"})
+augroup END
+
 " beancount format
 function! BeanFormat()
   let l:save = winsaveview()
