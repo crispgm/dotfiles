@@ -125,6 +125,7 @@ return require('packer').startup({
             config = function()
                 require('go').setup({
                     formatter = 'gofumpt',
+                    test_flags = { '-v', '-count=1' },
                     test_popup_width = 120,
                     test_open_cmd = 'tabedit',
                 })
