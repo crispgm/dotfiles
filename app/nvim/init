@@ -19,11 +19,11 @@ yarn global add yaml-language-server
 
 # Lua LSP
 brew install ninja
-cd ~/dev
+cd ~/dev || exit 1
 git clone https://github.com/sumneko/lua-language-server
-cd lua-language-server
+cd lua-language-server || exit 1
 git submodule update --init --recursive
-cd 3rd/luamake
+cd 3rd/luamake || exit 1
 compile/install.sh
 cd ../..
 ./3rd/luamake/luamake rebuild
@@ -32,4 +32,4 @@ cd ../..
 cargo install stylua --features lua52
 go install mvdan.cc/sh/v3/cmd/shfmt@latest
 
-echo "Run `nvim +PackerInstall` to finish setup"
+echo "Run \`nvim +PackerInstall\` to finish setup"

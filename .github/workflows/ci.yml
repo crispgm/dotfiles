@@ -16,4 +16,4 @@ jobs:
       - name: Test
         run: bash ./test
       - name: ShellCheck
-        run: bash ./check.sh
+        run: bash ./check
