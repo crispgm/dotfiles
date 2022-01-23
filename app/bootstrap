@@ -10,8 +10,8 @@ else
 fi
 
 for app in "${apps[@]}"; do
-    echo "Initializing $app"
     if [[ -f "./app/$app/init" ]]; then
+        echo "Initializing $app"
         bash "./app/$app/init"
     fi
     if [[ -f "./app/$app/test" ]]; then
