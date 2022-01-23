@@ -24,11 +24,11 @@ mkdir -p ~/work
 echo "Setup zsh and oh-my-zsh"
 ./app/zsh/init
 
-echo "Application bootstrap"
-./app/bootstrap
-
 echo "Install dotfiles"
 rcup -d ./rc
+
+echo "Application bootstrap"
+./app/bootstrap
 
 echo "Final testing"
 ./test
