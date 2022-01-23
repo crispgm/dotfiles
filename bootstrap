@@ -21,7 +21,8 @@ echo "Setup workspace"
 mkdir -p ~/dev
 mkdir -p ~/work
 
-./zsh/init
+echo "Setup zsh and oh-my-zsh"
+./app/zsh/init
 
 echo "Application bootstrap"
 ./app/bootstrap
