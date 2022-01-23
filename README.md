@@ -27,9 +27,14 @@ $ git clone --recursive https://github.com/crispgm/dotfiles.git
 # Login to AppStore with Apple ID, since there are MAS apps in Brewfile
 $ cd dotfiles
 $ ./bootstrap
-# Application initialize
-$ ./apps
 ```
+
+## Project Layout
+
+- `bootstrap`: entry point of dotfiles bootstrapping
+- `Brewfile`: all Homebrew formulae and casks
+- `rc`: dotfiles managed by [RCM](https://github.com/thoughtbot/rcm)
+- `app`: customized boostrapping scripts for applications
 
 ## Dev Setups
 
@@ -108,11 +113,3 @@ $ ./apps
 
 - [x] Setup shell login promtp with `motd`: ASCII art is generated with <http://patorjk.com/software/taag/>
 - [x] Setup `.bash_profile` `.bashrc`
-
-### Shadowsocks
-
-- [x] Import custom [user-rules](https://github.com/crispgm/dotfiles/tree/master/Shadowsocks)
-
-## Related Blog
-
-[我是如何初始化 Mac 环境的](https://crispgm.com/page/provisioning-a-new-mac.html)

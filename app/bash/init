@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo "Setup motd"
+sudo cp ./app/bash/motd /etc/motd

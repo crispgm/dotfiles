@@ -22,3 +22,12 @@ mkdir -p ~/dev
 mkdir -p ~/work
 
 ./zsh/init
+
+echo "Application bootstrap"
+./app/bootstrap
+
+echo "Install dotfiles"
+rcup -d ./rc
+
+echo "Final testing"
+./test
