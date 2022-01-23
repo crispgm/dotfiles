@@ -32,6 +32,8 @@ else
   brew 'heroku'
   brew 'node'
   brew 'yarn'
+  brew 'navi'
+  brew 'tokei'
 
   # [brew] productivity
   brew 'wget'
@@ -46,21 +48,20 @@ else
   brew 'choose-rust'
   brew 'htop'
   brew 'procs'
-  brew 'neofetch'
-  brew 'onefetch'
-  brew 'tokei'
-  brew 'navi'
   brew 'hexyl'
   brew 'xsv'
   brew 'jq'
   brew 'curlie'
-  brew 'glow'
 
   # [brew] tools
   brew 'pandoc'
   brew 'beancount'
   brew 'fava'
   brew 'youtube-dl'
+  brew 'neofetch'
+  brew 'onefetch'
+  brew 'glow'
+  brew 'mpv'
 
   # [font] for code editor
   cask 'font-menlo-for-powerline'
@@ -73,19 +74,18 @@ else
   cask 'figma'
 
   # [cask] productivity
+  cask 'clashx'
   cask '1password'
   cask 'alfred'
   cask 'google-chrome'
-  cask 'brave-browser'
   cask 'dropbox'
   cask 'hiddenbar'
   cask 'snipaste'
   cask 'rectangle'
-  cask 'clashx'
+  cask 'appcleaner'
   cask 'karabiner-elements'
   cask 'qmk-toolbox'
   cask 'via'
-  cask 'appcleaner'
   cask 'google-trends'
 
   # [cask] entertainment

@@ -16,13 +16,33 @@ function M.try_require(name)
     end
 end
 
-function M.set_keymap(mode, from, to)
-    local opts = { noremap = true, silent = false }
+function M.map(mode, from, to, opts)
+    vim.api.nvim_set_keymap(mode, from, to, opts or {})
+end
+
+function M.noremap(mode, from, to)
+    local opts = { noremap = true }
     vim.api.nvim_set_keymap(mode, from, to, opts)
 end
 
-function M.nvim_set_keymap(mode, from, to, opts)
-    vim.api.nvim_set_keymap(mode, from, to, opts)
+function M.nmap(from, to)
+    vim.api.nvim_set_keymap('n', from, to)
+end
+
+function M.nnoremap(from, to)
+    M.noremap('n', from, to)
+end
+
+function M.inoremap(from, to)
+    M.noremap('i', from, to)
+end
+
+function M.vnoremap(from, to)
+    M.noremap('v', from, to)
+end
+
+function M.cnoremap(from, to)
+    M.noremap('c', from, to)
 end
 
 return M
