@@ -25,7 +25,7 @@ echo "Setup zsh and oh-my-zsh"
 ./app/zsh/init
 
 echo "Install dotfiles"
-rcup -d ./rc
+rcup -d ./rc -f
 
 echo "Application bootstrap"
 ./app/bootstrap
