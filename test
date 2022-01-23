@@ -14,6 +14,6 @@ echo "Test folders"
 test -d ~/dev
 test -d ~/work
 
-echo "Test zsh/oh-my-zsh"
-test -x "$(which zsh)"
-test -d ~/.oh-my-zsh
+echo "Test RCM symlinks"
+test -s ~/.zshrc
+test -s ~/.gitconfig

@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-mkdir -p ~/.config/alacritty/
-cp ./alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml

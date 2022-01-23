@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-mkdir -p ~/.config/karabiner/
-cp ./karabiner/karabiner.json ~/.config/karabiner/karabiner.json

@@ -1,5 +1,9 @@
 name: build
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
 jobs:
   ci:
     name: run
@@ -9,9 +13,7 @@ jobs:
       - uses: actions/checkout@master
       - name: build
         run: bash ./bootstrap
-      - name: App Init
-        run: bash ./apps
-      - name: CI
+      - name: Test
         run: bash ./test
       - name: ShellCheck
-        run: bash ./check.sh
+        run: bash ./check

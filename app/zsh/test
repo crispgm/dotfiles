@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -e
+
+test -x "$(which zsh)"
+test -d ~/.oh-my-zsh

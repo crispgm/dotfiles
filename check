@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# check yourself at first
+shellcheck check
+
+shellcheck bootstrap
+shellcheck test
+shellcheck app/bootstrap
+
+apps=()
+while IFS='' read -r line; do apps+=("$line"); done < <(ls -d app/*)
+for app in "${apps[@]}"; do
+    if [[ -f "./$app/init" ]]; then
+        shellcheck "./$app/init"
+    fi
+    if [[ -f "./$app/test" ]]; then
+        shellcheck "./$app/test"
+    fi
+done

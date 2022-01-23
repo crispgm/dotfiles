@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+GEM_SOURCE=$(gem sources | tail -n 1)
+test "$GEM_SOURCE" = "https://gems.ruby-china.com/"

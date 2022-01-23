@@ -8,6 +8,7 @@ tap 'heroku/brew'
 
 # primitives
 brew 'git'
+brew 'rcm'
 brew 'neovim'
 brew 'zsh'
 brew 'zsh-completions'

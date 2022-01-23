@@ -21,4 +21,11 @@ echo "Setup workspace"
 mkdir -p ~/dev
 mkdir -p ~/work
 
-./zsh/init
+echo "Install dotfiles"
+rcup -d ./rc -f
+
+echo "Application bootstrap"
+./app/bootstrap
+
+echo "Final testing"
+./test
