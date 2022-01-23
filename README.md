@@ -31,10 +31,10 @@ $ ./bootstrap
 
 ## Project Layout
 
-- `bootstrap`: entry point of dotfiles bootstrapping
-- `Brewfile`: all Homebrew formulae and casks
-- `rc`: dotfiles managed by [RCM](https://github.com/thoughtbot/rcm)
-- `app`: customized boostrapping scripts for applications
+- `bootstrap`: entry point of dotfiles bootstrapping.
+- `Brewfile`: all Homebrew formulae and casks managed by Homebrew Bundle.
+- `rc`: dotfiles managed by [rcm](https://github.com/thoughtbot/rcm).
+- `app`: customized boostrapping scripts for applications.
 
 ## Dev Setups
 

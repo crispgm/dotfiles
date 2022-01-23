@@ -21,9 +21,6 @@ echo "Setup workspace"
 mkdir -p ~/dev
 mkdir -p ~/work
 
-echo "Setup zsh and oh-my-zsh"
-./app/zsh/init
-
 echo "Install dotfiles"
 rcup -d ./rc -f
 

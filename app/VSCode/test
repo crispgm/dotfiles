@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+test -s /usr/local/bin/code
