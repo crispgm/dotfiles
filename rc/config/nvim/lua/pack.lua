@@ -14,7 +14,7 @@ return require('packer').startup({
             opt = true,
             branch = 'develop',
         })
-        use('huyvohcmc/atlas.vim')
+        use('pgdouyon/vim-yin-yang')
 
         -- file
         use('mhinz/vim-startify') -- startup page
