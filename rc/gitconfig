@@ -15,5 +15,6 @@
 	sf = "! git switch $(git branch | fzf)"
 	sc = "switch -c"
 	sm = "! git switch main || git switch master"
+	history = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [includeIf "gitdir:~/work/"]
 	path = ~/work/.gitconfig
