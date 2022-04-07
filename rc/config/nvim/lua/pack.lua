@@ -26,6 +26,7 @@ return require('packer').startup({
         use('rmagatti/session-lens') -- session lens for telescope
         use('farmergreg/vim-lastplace') -- reopen files at your last edit position
         use('AndrewRadev/undoquit.vim') -- restore closed tabs
+        use('rcarriga/nvim-notify')
 
         -- view
         use('ojroques/nvim-hardline') -- status line
