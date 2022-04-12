@@ -1,7 +1,4 @@
 require('nvim-treesitter.configs').setup({
-    highlight = {
-        enable = true,
-    },
     ensure_installed = {
         'bash',
         'beancount',
@@ -19,14 +16,12 @@ require('nvim-treesitter.configs').setup({
         'hcl',
         'help',
         'html',
-        'html_tags',
         'http',
         'javascript',
         'jsdoc',
         'json',
         'json5',
         'jsonc',
-        'jsx',
         'lua',
         'make',
         'markdown',
@@ -44,6 +39,9 @@ require('nvim-treesitter.configs').setup({
         'vim',
         'vue',
         'yaml',
+    },
+    highlight = {
+        enable = true,
     },
     indent = {
         enable = false,
