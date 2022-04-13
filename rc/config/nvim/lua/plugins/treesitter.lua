@@ -8,6 +8,7 @@ require('nvim-treesitter.configs').setup({
         'cpp',
         'css',
         'dockerfile',
+        'dot',
         'go',
         'gomod',
         'gowork',
