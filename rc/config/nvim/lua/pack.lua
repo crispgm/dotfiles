@@ -21,7 +21,7 @@ return require('packer').startup({
         use('nvim-telescope/telescope.nvim') -- fuzzy picker
         use({ 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' })
         use('crispgm/telescope-heading.nvim') -- markdown heading
-        use('akinsho/nvim-toggleterm.lua') -- terminal
+        use('akinsho/toggleterm.nvim') -- terminal
         use('rmagatti/auto-session') -- auto session
         use('rmagatti/session-lens') -- session lens for telescope
         use('farmergreg/vim-lastplace') -- reopen files at your last edit position
