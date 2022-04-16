@@ -24,3 +24,6 @@ try_require('plugins.toggleterm')
 try_require('plugins.treesitter')
 try_require('plugins.vimwiki')
 try_require('plugins.vsnip')
+
+-- autocmds
+try_require('autocmds')
