@@ -6,7 +6,6 @@ return require('packer').startup({
         use('lewis6991/impatient.nvim')
         -- lib
         use('nvim-lua/plenary.nvim')
-        use('nvim-lua/popup.nvim')
 
         -- colorscheme
         use({
