@@ -12,6 +12,7 @@ cmp.setup({
     }),
     sources = cmp.config.sources({
         { name = 'nvim_lsp' },
+        { name = 'nvim_lsp_signature_help' },
         { name = 'nvim_lua' },
         { name = 'buffer' },
         { name = 'vsnip' },
@@ -23,5 +24,19 @@ cmp.setup({
         expand = function(args)
             vim.fn['vsnip#anonymous'](args.body)
         end,
+    },
+})
+
+cmp.setup.cmdline(':', {
+    mapping = cmp.mapping.preset.cmdline(),
+    sources = {
+        { name = 'cmdline', max_item_count = 30 },
+    },
+})
+
+cmp.setup.cmdline('/', {
+    mapping = cmp.mapping.preset.cmdline(),
+    sources = {
+        { name = 'buffer' },
     },
 })

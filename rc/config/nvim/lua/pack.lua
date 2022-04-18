@@ -20,6 +20,7 @@ return require('packer').startup({
         use('nvim-telescope/telescope.nvim') -- fuzzy picker
         use({ 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' })
         use('crispgm/telescope-heading.nvim') -- markdown heading
+        -- use('~/dev/telescope-heading/')
         use('akinsho/toggleterm.nvim') -- terminal
         use('rmagatti/auto-session') -- auto session
         use('rmagatti/session-lens') -- session lens for telescope
@@ -105,13 +106,21 @@ return require('packer').startup({
         use('nvim-treesitter/playground') -- treesitter playground
         use('nvim-treesitter/nvim-treesitter-textobjects') -- treesitter textobj e.g., class, function
         use('neovim/nvim-lspconfig') -- lsp client config
+        use({
+            'j-hui/fidget.nvim',
+            config = function()
+                require('fidget').setup()
+            end,
+        })
         use('hrsh7th/vim-vsnip') -- snippets
         use({
             'hrsh7th/nvim-cmp', -- completion
             requires = {
                 'hrsh7th/cmp-nvim-lsp', -- cmp lsp
+                'hrsh7th/cmp-nvim-lsp-signature-help', -- cmp lsp signature help
                 'hrsh7th/cmp-nvim-lua', -- cmp lua vim api
                 'hrsh7th/cmp-buffer', -- cmp buffer
+                'hrsh7th/cmp-cmdline', -- cmp cmdline
                 'hrsh7th/cmp-path', -- cmp path
                 'hrsh7th/cmp-calc', -- cmp calculator
                 'hrsh7th/cmp-vsnip', -- cmp vsnip integration
@@ -122,6 +131,7 @@ return require('packer').startup({
         use('mattn/emmet-vim') -- html/css snippets
         use({
             'crispgm/nvim-go', -- go dev
+            -- '~/dev/nvim-go',
             config = function()
                 require('go').setup({
                     formatter = 'gofumpt',

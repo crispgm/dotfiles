@@ -45,6 +45,7 @@ opt.wildmode = { 'longest', 'full' }
 opt.splitright = true -- split to right
 opt.splitbelow = true -- split to below
 opt.shortmess:append('c') -- status line e.g. CTRL+G
+opt.laststatus = 3
 
 if not has('gui_running') then
     opt.t_Co = 256
