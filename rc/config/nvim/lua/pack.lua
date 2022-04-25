@@ -87,6 +87,7 @@ return require('packer').startup({
         use('kana/vim-textobj-user') -- define textobj by user
         use('haya14busa/vim-textobj-number') -- number textobj
         use('AndrewRadev/splitjoin.vim') -- split and join in vim
+        use('wellle/targets.vim') -- various text objects
         use({
             'steelsojka/pears.nvim', -- auto symbol pairs
             config = function()
