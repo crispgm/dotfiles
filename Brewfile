@@ -65,6 +65,7 @@ else
 
   # [font] for code editor
   cask 'font-menlo-for-powerline'
+  cask 'font-iosevka-nerd-font'
   # [font] for web rendering
   cask 'font-fira-code'
 
