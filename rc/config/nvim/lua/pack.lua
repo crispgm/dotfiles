@@ -16,6 +16,7 @@ return require('packer').startup({
         use('pgdouyon/vim-yin-yang')
 
         -- file
+        use('kyazdani42/nvim-web-devicons')
         use('mhinz/vim-startify') -- startup page
         use('nvim-telescope/telescope.nvim') -- fuzzy picker
         use({ 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' })
@@ -44,12 +45,7 @@ return require('packer').startup({
         use('RRethy/vim-illuminate') -- highlight hover word
         use('lewis6991/gitsigns.nvim') -- git signs
         use('rhysd/conflict-marker.vim') -- git conflict marker
-        use({
-            'norcalli/nvim-colorizer.lua', -- color codes rendering
-            config = function()
-                require('colorizer').setup()
-            end,
-        })
+        use({ 'rrethy/vim-hexokinase', run = 'make hexokinase' }) -- colorizer
         use({
             'winston0410/range-highlight.nvim', -- highlight range lines
             requires = { 'winston0410/cmd-parser.nvim' },

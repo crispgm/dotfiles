@@ -73,7 +73,7 @@ nnoremap('<leader>lR', '<cmd>lua vim.lsp.buf.rename()<cr>')
 nnoremap('<leader>lf', '<cmd>lua vim.lsp.buf.formatting()<cr>')
 
 -- plug manager
-nnoremap('<leader>ps', '<cmd>PackerSync<cr>')
+nnoremap('<leader>ps', '<cmd>source|PackerSync<cr>')
 
 -- dial.nvim
 map('n', '<c-a>', '<Plug>(dial-increment)')
