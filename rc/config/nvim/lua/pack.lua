@@ -9,9 +9,8 @@ return require('packer').startup({
 
         -- colorscheme
         use({
-            'crispgm/nord-vim', -- forked from official nord-vim, with treesitter and lsp supported
+            'arcticicestudio/nord-vim',
             opt = true,
-            branch = 'develop',
         })
         use('pgdouyon/vim-yin-yang')
 

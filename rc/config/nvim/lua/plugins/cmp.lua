@@ -14,11 +14,11 @@ cmp.setup({
         { name = 'nvim_lsp' },
         { name = 'nvim_lsp_signature_help' },
         { name = 'nvim_lua' },
-        { name = 'buffer' },
         { name = 'vsnip' },
         { name = 'path' },
         { name = 'calc' },
         { name = 'emoji' },
+        { name = 'buffer' },
     }),
     snippet = {
         expand = function(args)
