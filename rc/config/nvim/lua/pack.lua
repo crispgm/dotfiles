@@ -83,16 +83,6 @@ return require('packer').startup({
         use('haya14busa/vim-textobj-number') -- number textobj
         use('AndrewRadev/splitjoin.vim') -- split and join in vim
         use('wellle/targets.vim') -- various text objects
-        use({
-            'steelsojka/pears.nvim', -- auto symbol pairs
-            config = function()
-                require('pears').setup(function(conf)
-                    conf.remove_pair_on_outer_backspace(false)
-                    conf.expand_on_enter(false)
-                    conf.preset('tag_matching')
-                end)
-            end,
-        })
 
         -- language
         use({
@@ -123,7 +113,27 @@ return require('packer').startup({
                 'hrsh7th/cmp-emoji', -- cmp emojis
             },
         })
-        use('github/copilot.vim')
+        use({
+            'github/copilot.vim',
+            event = { 'VimEnter' },
+            config = function()
+                -- disable and use copilot-cmp
+                vim.cmd([[Copilot disable]])
+            end,
+        })
+        use({
+            'zbirenbaum/copilot.lua',
+            event = { 'VimEnter' },
+            config = function()
+                vim.defer_fn(function()
+                    require('copilot').setup()
+                end, 100)
+            end,
+        })
+        use({
+            'zbirenbaum/copilot-cmp',
+            after = { 'copilot.lua', 'nvim-cmp' },
+        })
         use('mattn/emmet-vim') -- html/css snippets
         use({
             'crispgm/nvim-go', -- go dev
