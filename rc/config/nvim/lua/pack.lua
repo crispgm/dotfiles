@@ -12,7 +12,6 @@ return require('packer').startup({
             'arcticicestudio/nord-vim',
             opt = true,
         })
-        use('pgdouyon/vim-yin-yang')
 
         -- file
         use('kyazdani42/nvim-web-devicons')
@@ -83,6 +82,14 @@ return require('packer').startup({
         use('haya14busa/vim-textobj-number') -- number textobj
         use('AndrewRadev/splitjoin.vim') -- split and join in vim
         use('wellle/targets.vim') -- various text objects
+        use({
+            'windwp/nvim-autopairs', -- auto pairs
+            config = function()
+                require('nvim-autopairs').setup({
+                    disable_filetype = { 'TelescopePrompt' },
+                })
+            end,
+        })
 
         -- language
         use({
