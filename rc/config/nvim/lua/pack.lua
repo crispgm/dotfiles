@@ -120,19 +120,13 @@ return require('packer').startup({
                 'hrsh7th/cmp-emoji', -- cmp emojis
             },
         })
-        use({
-            'github/copilot.vim',
-            event = { 'VimEnter' },
-            config = function()
-                -- disable and use copilot-cmp
-                vim.cmd([[Copilot disable]])
-            end,
-        })
+        use('github/copilot.vim')
         use({
             'zbirenbaum/copilot.lua',
-            event = { 'VimEnter' },
+            after = { 'copilot.vim' },
             config = function()
                 vim.defer_fn(function()
+                    vim.cmd([[Copilot disable]])
                     require('copilot').setup()
                 end, 100)
             end,

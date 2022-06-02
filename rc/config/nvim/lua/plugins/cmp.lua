@@ -1,4 +1,5 @@
 local cmp = require('cmp')
+
 cmp.setup({
     mapping = cmp.mapping.preset.insert({
         ['<C-d>'] = cmp.mapping.scroll_docs(-4),
@@ -24,6 +25,26 @@ cmp.setup({
     snippet = {
         expand = function(args)
             vim.fn['vsnip#anonymous'](args.body)
+        end,
+    },
+    experimental = {
+        native_menu = false,
+        ghost_text = true,
+    },
+    formatting = {
+        format = function(entry, vim_item)
+            vim_item.menu = ({
+                copilot = '[cop]',
+                nvim_lsp = '[lsp]',
+                nvim_lua = '[lua]',
+                nvim_lsp_signature_help = '[sig]',
+                vsnip = '[vsp]',
+                path = '[path]',
+                calc = '[cal]',
+                emoji = '[emo]',
+                buffer = '[buf]',
+            })[entry.source.name]
+            return vim_item
         end,
     },
 })
