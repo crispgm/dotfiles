@@ -17,6 +17,10 @@ cmp.setup({
         { name = 'nvim_lsp_signature_help' },
         { name = 'nvim_lua' },
         { name = 'vsnip' },
+        {
+            name = 'beancount',
+            option = { account = '~/dev/ledger/beancounts/accounts.bean' },
+        },
         { name = 'path' },
         { name = 'calc' },
         { name = 'emoji' },
@@ -43,6 +47,7 @@ cmp.setup({
                 calc = '[cal]',
                 emoji = '[emo]',
                 buffer = '[buf]',
+                bean_account = '[bean]',
             })[entry.source.name]
             return vim_item
         end,

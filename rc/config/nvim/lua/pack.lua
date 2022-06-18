@@ -112,12 +112,14 @@ return require('packer').startup({
                 'hrsh7th/cmp-nvim-lsp', -- cmp lsp
                 'hrsh7th/cmp-nvim-lsp-signature-help', -- cmp lsp signature help
                 'hrsh7th/cmp-nvim-lua', -- cmp lua vim api
-                'hrsh7th/cmp-buffer', -- cmp buffer
-                'hrsh7th/cmp-cmdline', -- cmp cmdline
-                'hrsh7th/cmp-path', -- cmp path
-                'hrsh7th/cmp-calc', -- cmp calculator
-                'hrsh7th/cmp-vsnip', -- cmp vsnip integration
-                'hrsh7th/cmp-emoji', -- cmp emojis
+                'hrsh7th/cmp-buffer'
+                'hrsh7th/cmp-cmdline',
+                'hrsh7th/cmp-path',
+                'hrsh7th/cmp-calc',
+                'hrsh7th/cmp-vsnip',
+                'hrsh7th/cmp-emoji',
+                'crispgm/cmp-beancount',
+                -- '~/dev/cmp-beancount',
             },
         })
         use('github/copilot.vim')
