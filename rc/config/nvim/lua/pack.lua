@@ -112,7 +112,7 @@ return require('packer').startup({
                 'hrsh7th/cmp-nvim-lsp', -- cmp lsp
                 'hrsh7th/cmp-nvim-lsp-signature-help', -- cmp lsp signature help
                 'hrsh7th/cmp-nvim-lua', -- cmp lua vim api
-                'hrsh7th/cmp-buffer'
+                'hrsh7th/cmp-buffer',
                 'hrsh7th/cmp-cmdline',
                 'hrsh7th/cmp-path',
                 'hrsh7th/cmp-calc',

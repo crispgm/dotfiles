@@ -42,12 +42,12 @@ cmp.setup({
                 nvim_lsp = '[lsp]',
                 nvim_lua = '[lua]',
                 nvim_lsp_signature_help = '[sig]',
+                bean_account = '[bean]',
                 vsnip = '[vsp]',
                 path = '[path]',
                 calc = '[cal]',
                 emoji = '[emo]',
                 buffer = '[buf]',
-                bean_account = '[bean]',
             })[entry.source.name]
             return vim_item
         end,
