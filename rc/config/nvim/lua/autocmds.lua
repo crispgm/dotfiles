@@ -140,7 +140,5 @@ local nvim_go = a.nvim_create_augroup('nvim_go', { clear = true })
 a.nvim_create_autocmd({ 'User' }, {
     group = nvim_go,
     pattern = { 'NvimGoLintPopupPost' },
-    callback = function()
-        vim.cmd('wincmd p')
-    end,
+    command = 'wincmd p',
 })

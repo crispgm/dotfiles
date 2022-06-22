@@ -14,9 +14,9 @@ require('lspconfig').vimls.setup({})
 require('lspconfig').vuels.setup({})
 require('lspconfig').yamlls.setup({})
 
-local user = vim.fn.expand('$USER')
-local sumneko_root_path = '/Users/' .. user .. '/dev/lua-language-server'
-local sumneko_binary = sumneko_root_path .. '/bin/macOS/lua-language-server'
+local home = vim.fn.expand('$HOME')
+local sumneko_root_path = home .. '/dev/lua-language-server'
+local sumneko_binary = sumneko_root_path .. '/bin/lua-language-server'
 
 require('lspconfig').sumneko_lua.setup({
     cmd = { sumneko_binary, '-E', sumneko_root_path .. '/main.lua' },

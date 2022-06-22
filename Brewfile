@@ -85,7 +85,6 @@ else
   cask 'rectangle'
   cask 'appcleaner'
   cask 'karabiner-elements'
-  cask 'input-source-pro'
   cask 'qmk-toolbox'
   cask 'via'
   cask 'google-trends'
