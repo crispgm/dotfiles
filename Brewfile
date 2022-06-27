@@ -31,7 +31,7 @@ else
   brew 'postgresql'
   brew 'heroku'
   brew 'node'
-  brew 'yarn'
+  brew 'pnpm'
   brew 'navi'
   brew 'tokei'
 
@@ -102,8 +102,5 @@ else
   mas 'Pages', id: 409_201_541
   mas 'Numbers', id: 409_203_825
   mas 'Keynote', id: 409_183_694
-  mas 'AdGuard for Safari', id: 1_440_147_259
-  mas 'Userscripts', id: 1_463_298_887
-  mas 'Pinboard Tools', id: 1_552_590_875
   mas 'WeChat', id: 836_500_024
 end
