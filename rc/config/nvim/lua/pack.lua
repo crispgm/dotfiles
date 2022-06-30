@@ -55,7 +55,12 @@ return require('packer').startup({
         })
 
         -- edit
-        use('psliwka/vim-smoothie') -- smoothy scroll
+        use({
+            'declancm/cinnamon.nvim', -- smooth scrolling
+            config = function()
+                require('cinnamon').setup()
+            end,
+        })
         use({
             'phaazon/hop.nvim', -- jump to anywhere within 2 strokes
             config = function()
