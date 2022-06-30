@@ -122,21 +122,21 @@ return require('packer').startup({
                 -- '~/dev/cmp-beancount',
             },
         })
-        use('github/copilot.vim')
-        use({
-            'zbirenbaum/copilot.lua',
-            after = { 'copilot.vim' },
-            config = function()
-                vim.defer_fn(function()
-                    vim.cmd([[Copilot disable]])
-                    require('copilot').setup()
-                end, 100)
-            end,
-        })
-        use({
-            'zbirenbaum/copilot-cmp',
-            after = { 'copilot.lua', 'nvim-cmp' },
-        })
+        -- use('github/copilot.vim')
+        -- use({
+        --     'zbirenbaum/copilot.lua',
+        --     after = { 'copilot.vim' },
+        --     config = function()
+        --         vim.defer_fn(function()
+        --             vim.cmd([[Copilot disable]])
+        --             require('copilot').setup()
+        --         end, 100)
+        --     end,
+        -- })
+        -- use({
+        --     'zbirenbaum/copilot-cmp',
+        --     after = { 'copilot.lua', 'nvim-cmp' },
+        -- })
         use('mattn/emmet-vim') -- html/css snippets
         use({
             'crispgm/nvim-go', -- go dev

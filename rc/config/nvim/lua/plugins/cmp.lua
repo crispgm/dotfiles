@@ -12,7 +12,7 @@ cmp.setup({
         }),
     }),
     sources = cmp.config.sources({
-        { name = 'copilot' },
+        -- { name = 'copilot' },
         { name = 'nvim_lsp' },
         { name = 'nvim_lsp_signature_help' },
         { name = 'nvim_lua' },
@@ -38,7 +38,7 @@ cmp.setup({
     formatting = {
         format = function(entry, vim_item)
             vim_item.menu = ({
-                copilot = '[cop]',
+                -- copilot = '[cop]',
                 nvim_lsp = '[lsp]',
                 nvim_lua = '[lua]',
                 nvim_lsp_signature_help = '[sig]',
