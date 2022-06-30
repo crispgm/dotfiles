@@ -6,4 +6,4 @@
 :update_sources: true
 :ssl_verify_mode: 0
 :verbose: true
-gem: --no-document --bindir /usr/local/bin
+gem: --no-document --bindir /opt/homebrew/bin
