@@ -502,6 +502,10 @@ key_bindings:
   - { key: Left,     mods: Shift,   chars: "\x1b[1;2D"                       }
   - { key: Left,     mods: Control, chars: "\x1b[1;5D"                       }
   - { key: Left,     mods: Alt,     chars: "\x1bb"                           }
+  - { key: Right,    mods: Alt,     chars: "\x1bf"                           }
+  - { key: B,        mods: Alt,     chars: "\x1bb"                           }
+  - { key: F,        mods: Alt,     chars: "\x1bf"                           }
+  - { key: D,        mods: Alt,     chars: "\x1bd"                           }
   - { key: Left,                    chars: "\x1b[D",        mode: ~AppCursor }
   - { key: Left,                    chars: "\x1bOD",        mode: AppCursor  }
   - { key: Right,    mods: Shift,   chars: "\x1b[1;2C"                       }
