@@ -77,6 +77,15 @@ a.nvim_create_autocmd({ 'Filetype' }, {
         vim.bo.expandtab = false
     end,
 })
+a.nvim_create_autocmd({ 'Filetype' }, {
+    group = editor,
+    pattern = {
+        'json',
+    },
+    callback = function()
+        vim.g['indentLine_conceallevel'] = 1
+    end,
+})
 a.nvim_create_autocmd({ 'BufRead', 'BufNewFile' }, {
     group = editor,
     pattern = {
