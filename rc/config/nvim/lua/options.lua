@@ -37,7 +37,6 @@ opt.ruler = true -- show ruler line
 opt.colorcolumn = { 120 } -- display a color column when line is longer than 120 chars
 opt.signcolumn = 'yes' -- show sign column (column of the line number)
 opt.mouse = 'nv' -- enable mouse under normal and visual mode
-cmd('set mousehide') -- hide mouse when characters are typed
 opt.showmatch = true -- show bracket match
 opt.cmdheight = 2 -- height of :command line
 opt.wildmenu = true -- wildmenu, auto complete for commands
