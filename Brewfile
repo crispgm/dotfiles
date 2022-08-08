@@ -38,6 +38,7 @@ else
   # [brew] productivity
   brew 'wget'
   brew 'p7zip'
+  brew 'rar'
   brew 'dos2unix'
   brew 'mas'
   brew 'bat'
