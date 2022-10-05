@@ -35,6 +35,18 @@ return require('packer').startup({
                 require('tabline').setup({})
             end,
         })
+        use({
+            'SmiteshP/nvim-navic',
+            requires = 'neovim/nvim-lspconfig',
+        })
+        use({
+            'utilyre/barbecue.nvim',
+            requires = {
+                'neovim/nvim-lspconfig',
+                'smiteshp/nvim-navic',
+                'kyazdani42/nvim-web-devicons', -- optional
+            },
+        })
         use('dstein64/nvim-scrollview') -- scroll bar
         use('google/vim-searchindex') -- search index
         use('wincent/ferret') -- find and replace

@@ -1,24 +1,43 @@
-require('lspconfig').bashls.setup({})
-require('lspconfig').cssls.setup({})
-require('lspconfig').gopls.setup({})
-require('lspconfig').html.setup({})
-require('lspconfig').jsonls.setup({})
-require('lspconfig').pyright.setup({})
-require('lspconfig').rust_analyzer.setup({})
-require('lspconfig').solargraph.setup({})
-require('lspconfig').sqlls.setup({
+local lspconfig = require('lspconfig')
+-- winbar setup
+local navic = require('nvim-navic')
+local attach_navic = function(client, bufnr)
+    if client.server_capabilities.documentSymbolProvider then
+        navic.attach(client, bufnr)
+    end
+end
+
+-- major langs
+lspconfig.gopls.setup({
+    on_attach = attach_navic,
+})
+lspconfig.rust_analyzer.setup({
+    on_attach = attach_navic,
+})
+lspconfig.tsserver.setup({
+    on_attach = attach_navic,
+})
+
+-- minor langs
+lspconfig.bashls.setup({})
+lspconfig.cssls.setup({})
+lspconfig.html.setup({})
+lspconfig.jsonls.setup({})
+lspconfig.pyright.setup({})
+lspconfig.solargraph.setup({})
+lspconfig.sqlls.setup({
     cmd = { '/usr/local/bin/sql-language-server', 'up', '--method', 'stdio' },
 })
-require('lspconfig').tsserver.setup({})
-require('lspconfig').vimls.setup({})
-require('lspconfig').vuels.setup({})
-require('lspconfig').yamlls.setup({})
+lspconfig.vimls.setup({})
+lspconfig.vuels.setup({})
+lspconfig.yamlls.setup({})
 
+-- and lua
 local home = vim.fn.expand('$HOME')
 local sumneko_root_path = home .. '/dev/lua-language-server'
 local sumneko_binary = sumneko_root_path .. '/bin/lua-language-server'
 
-require('lspconfig').sumneko_lua.setup({
+lspconfig.sumneko_lua.setup({
     cmd = { sumneko_binary, '-E', sumneko_root_path .. '/main.lua' },
     settings = {
         Lua = {
@@ -41,4 +60,7 @@ require('lspconfig').sumneko_lua.setup({
             },
         },
     },
+    on_attach = function(client, bufnr)
+        navic.attach(client, bufnr)
+    end,
 })
