@@ -24,8 +24,8 @@ if ENV.key? 'CI'
   puts 'In CI mode, skip non-primitive brews'
 else
   # [brew] dev
-  brew 'gh'
   brew 'cmake'
+  brew 'gh'
   brew 'mysql'
   brew 'sqlite'
   brew 'postgresql'
@@ -46,13 +46,15 @@ else
   brew 'ripgrep'
   brew 'fd'
   brew 'zoxide'
-  brew 'choose-rust'
   brew 'htop'
-  brew 'procs'
-  brew 'hexyl'
-  brew 'xsv'
   brew 'jq'
-  brew 'curlie'
+  brew 'xsv'
+
+  # [brew] optional
+  # brew 'choose-rust'
+  # brew 'curlie'
+  # brew 'hexyl'
+  # brew 'procs'
 
   # [brew] tools
   brew 'pandoc'
@@ -63,6 +65,7 @@ else
   brew 'onefetch'
   brew 'glow'
   brew 'mpv'
+  brew 'charmbracelet/tap/vhs'
 
   # [font] for code editor
   cask 'font-menlo-for-powerline'
