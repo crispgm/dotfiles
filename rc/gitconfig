@@ -16,5 +16,11 @@
 	sc = "switch -c"
 	sm = "! git switch main || git switch master"
 	history = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    hub = "!f() { \
+       open \"$(git ls-remote --get-url \
+       | sed 's|git@github.com:\\(.*\\)$|https://github.com/\\1|' \
+       | sed 's|\\.git$||'; \
+       )\"; \
+    }; f"
 [includeIf "gitdir:~/work/"]
 	path = ~/work/.gitconfig
