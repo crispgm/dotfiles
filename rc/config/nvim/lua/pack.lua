@@ -50,9 +50,16 @@ return require('packer').startup({
         use('dstein64/nvim-scrollview') -- scroll bar
         use('google/vim-searchindex') -- search index
         use('wincent/ferret') -- find and replace
-        use('editorconfig/editorconfig-vim') -- editorconfig support
+        use('editorconfig/editorconfig-vim') -- editorconfig support TODO: remove on next neovim release
         use('Yggdroot/indentLine') -- indent line
-        use('RRethy/vim-illuminate') -- highlight hover word
+        use({
+            'RRethy/vim-illuminate', -- highlight hover word
+            config = function()
+                require('illuminate').configure({
+                    under_cursor = false,
+                })
+            end,
+        })
         use('lewis6991/gitsigns.nvim') -- git signs
         use('rhysd/conflict-marker.vim') -- git conflict marker
         use({ 'rrethy/vim-hexokinase', run = 'make hexokinase' }) -- colorizer
@@ -77,6 +84,12 @@ return require('packer').startup({
             'phaazon/hop.nvim', -- jump to anywhere within 2 strokes
             config = function()
                 require('hop').setup()
+            end,
+        })
+        use({
+            'echasnovski/mini.jump', -- f/t enhancement
+            config = function()
+                require('mini.jump').setup()
             end,
         })
         use('tpope/vim-repeat') -- allow commands from plugin do repeat
