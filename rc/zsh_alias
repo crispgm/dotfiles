@@ -6,6 +6,8 @@ alias hf='history | fzf'
 alias bc='bc -q -l'
 alias nvimconf='nvim ~/.config/nvim/init.lua'
 alias zshconf='nvim ~/.zshrc'
+alias ovf='ov --follow-mode'
+alias ovcsv='ov --column-delimiter "," --column-mode'
 
 alias -s md=nvim
 alias -s markdown=nvim

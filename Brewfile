@@ -4,7 +4,6 @@ tap 'homebrew/core'
 tap 'homebrew/services'
 tap 'homebrew/cask-versions'
 tap 'homebrew/cask-drivers'
-tap 'heroku/brew'
 
 # primitives
 brew 'git'
@@ -29,7 +28,7 @@ else
   brew 'mysql'
   brew 'sqlite'
   brew 'postgresql'
-  brew 'heroku'
+  brew 'flyctl'
   brew 'node'
   brew 'pnpm'
   brew 'navi'
@@ -66,6 +65,7 @@ else
   brew 'glow'
   brew 'mpv'
   brew 'charmbracelet/tap/vhs'
+  brew 'noborus/tap/ov'
 
   # [font] for code editor
   cask 'font-menlo-for-powerline'
