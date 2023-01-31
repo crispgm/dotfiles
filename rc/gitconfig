@@ -22,5 +22,6 @@
        | sed 's|\\.git$||'; \
        )\"; \
     }; f"
+    rank = "shortlog -s -n --no-merges"
 [includeIf "gitdir:~/work/"]
 	path = ~/work/.gitconfig
