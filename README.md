@@ -46,7 +46,7 @@ $ ./bootstrap
 - [x] Install `zsh`, `oh-my-zsh` and setup `.zshrc`
 - [x] Setup Alacritty
 - [x] Setup tmux
-- [x] Setup NeoVim
+- [x] Setup Neovim
 
 ### Git
 

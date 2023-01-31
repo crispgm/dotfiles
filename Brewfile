@@ -48,14 +48,6 @@ else
   brew 'htop'
   brew 'jq'
   brew 'xsv'
-
-  # [brew] optional
-  # brew 'choose-rust'
-  # brew 'curlie'
-  # brew 'hexyl'
-  # brew 'procs'
-
-  # [brew] tools
   brew 'pandoc'
   brew 'beancount'
   brew 'fava'
@@ -66,6 +58,12 @@ else
   brew 'mpv'
   brew 'charmbracelet/tap/vhs'
   brew 'noborus/tap/ov'
+
+  # [brew] optional
+  # brew 'choose-rust'
+  # brew 'curlie'
+  # brew 'hexyl'
+  # brew 'procs'
 
   # [font] for code editor
   cask 'font-menlo-for-powerline'
@@ -89,9 +87,9 @@ else
   cask 'rectangle'
   cask 'appcleaner'
   cask 'karabiner-elements'
-  cask 'qmk-toolbox'
   cask 'via'
   cask 'google-trends'
+  # cask 'qmk-toolbox'
 
   # [cask] entertainment
   cask 'iina'
