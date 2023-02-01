@@ -72,9 +72,6 @@ nnoremap('<leader>lS', '<cmd>Telescope lsp_workspace_symbols<cr>')
 nnoremap('<leader>lR', '<cmd>lua vim.lsp.buf.rename()<cr>')
 nnoremap('<leader>lf', '<cmd>lua vim.lsp.buf.formatting()<cr>')
 
--- plug manager
-nnoremap('<leader>ps', '<cmd>source|PackerSync<cr>')
-
 -- dial.nvim
 map('n', '<c-a>', '<Plug>(dial-increment)')
 map('n', '<c-x>', '<Plug>(dial-decrement)')
