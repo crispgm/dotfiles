@@ -3,7 +3,7 @@
 ## Install Plugin
 
 ```sh
-:PackerSync
+:Lazy sync
 ```
 
 ## Screenshots

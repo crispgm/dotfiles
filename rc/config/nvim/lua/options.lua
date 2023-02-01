@@ -22,6 +22,7 @@ opt.shiftwidth = 4 -- auto indent shift width
 -- window
 opt.number = true
 opt.relativenumber = true
+opt.foldmethod = 'marker'
 -- editing
 opt.whichwrap = 'b,s,<,>,[,]' -- cursor is able to move from end of line to next line
 opt.backspace = { 'indent', 'eol', 'start' } -- backspace behaviors
