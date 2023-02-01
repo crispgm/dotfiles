@@ -33,9 +33,13 @@ nnoremap('<leader>j', '<c-w>j')
 nnoremap('<leader>k', '<c-w>k')
 nnoremap('<leader>h', '<c-w>h')
 nnoremap('<leader>l', '<c-w>l')
+-- buf
+nnoremap('<leader>bb', '<cmd>bdelete<cr>')
+nnoremap('<s-Tab>', '<cmd>bprev<cr>')
+nnoremap('<Tab>', '<cmd>bnext<cr>')
 -- tab
-nnoremap('<s-Tab>', 'gT')
-nnoremap('<Tab>', 'gt')
+nnoremap('<leader>[', 'gT')
+nnoremap('<leader>]', 'gt')
 nnoremap('<leader>t[', '<cmd>tabmove -1<cr>')
 nnoremap('<leader>t]', '<cmd>tabmove +1<cr>')
 nnoremap('<leader>1', '1gt')
@@ -48,9 +52,6 @@ nnoremap('<leader>7', '7gt')
 nnoremap('<leader>8', '8gt')
 nnoremap('<leader>9', '9gt')
 nnoremap('<leader>0', '<cmd>tablast<cr>')
--- buf
-nnoremap('<leader>[', 'bprev')
-nnoremap('<leader>]', 'bnext')
 -- quickfix
 nnoremap('<leader>cc', '<cmd>cclose<cr>')
 nnoremap('<leader>;', '<cmd>cprev<cr>')
@@ -86,7 +87,7 @@ nnoremap('S', '<cmd>HopWord<cr>')
 nnoremap('<c-l>', '<cmd>HopLine<cr>')
 
 -- ferret
-vim.g.FerretMap = 0
-nnoremap('<leader>fa', '<Plug>(FerretLack)')
-nnoremap('<leader>fw', '<Plug>(FerretAckWord)')
-nnoremap('<leader>fs', '<Plug>(FerretAcks)')
+-- vim.g.FerretMap = 0
+-- nnoremap('<leader>fa', '<Plug>(FerretLack)')
+-- nnoremap('<leader>fw', '<Plug>(FerretAckWord)')
+-- nnoremap('<leader>fs', '<Plug>(FerretAcks)')
