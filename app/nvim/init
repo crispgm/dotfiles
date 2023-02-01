@@ -1,31 +1,7 @@
 #!/usr/bin/env bash
 
-# Language servers
-yarn global add bash-language-server
-yarn global add vscode-langservers-extracted
-go install golang.org/x/tools/gopls@latest
-yarn global add pyright
-brew install rust-analyzer
-gem install solargraph
-yarn global add sql-language-server
-yarn global add typescript typescript-language-server
-yarn global add vim-language-server
-yarn global add vls
-yarn global add yaml-language-server
+# Run `nvim` to trigger plugin install.
+nvim
 
-# Lua LSP
-brew install ninja
-cd ~/dev || exit 1
-git clone https://github.com/sumneko/lua-language-server
-cd lua-language-server || exit 1
-git submodule update --init --recursive
-cd 3rd/luamake || exit 1
-compile/install.sh
-cd ../..
-./3rd/luamake/luamake rebuild
-
-# Formatters
-cargo install stylua --features lua52
-go install mvdan.cc/sh/v3/cmd/shfmt@latest
-
-echo "Run \`nvim +PackerInstall\` to finish setup"
+# Install formatters & linters (language servers are ensured by mason-lspconfig).
+nvim '+MasonInstall luacheck markdownlint revive stylua shfmt yamllint'

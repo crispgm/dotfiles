@@ -127,7 +127,7 @@ return require('lazy').setup({
     },
     -- }}}
 
-    -- {{{ language
+    -- {{{ language features
     {
         'nvim-treesitter/nvim-treesitter', -- treesitter
         build = ':TSUpdate',
@@ -136,7 +136,36 @@ return require('lazy').setup({
     'nvim-treesitter/nvim-treesitter-textobjects', -- treesitter textobj e.g., class, function
     'neovim/nvim-lspconfig', -- lsp client config
     {
-        'j-hui/fidget.nvim',
+        'williamboman/mason.nvim',
+        config = function()
+            require('mason').setup()
+        end,
+    },
+    {
+        'williamboman/mason-lspconfig.nvim',
+        dependencies = { 'williamboman/mason.nvim', 'neovim/nvim-lspconfig' },
+        config = function()
+            require('mason-lspconfig').setup({
+                ensure_installed = {
+                    'bashls',
+                    'cssls',
+                    'gopls',
+                    'html',
+                    'jsonls',
+                    'rust_analyzer',
+                    'solargraph',
+                    'sqlls',
+                    'sumneko_lua',
+                    'tsserver',
+                    'vimls',
+                    'vuels',
+                    'yamlls',
+                },
+            })
+        end,
+    },
+    {
+        'j-hui/fidget.nvim', -- lsp loading process
         config = function()
             require('fidget').setup()
         end,
@@ -158,6 +187,9 @@ return require('lazy').setup({
             -- '~/dev/cmp-beancount',
         },
     },
+    -- }}}
+
+    -- {{{ language-specific
     'mattn/emmet-vim', -- html/css snippets
     {
         'crispgm/nvim-go', -- go dev
