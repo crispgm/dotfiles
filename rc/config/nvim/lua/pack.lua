@@ -165,7 +165,6 @@ return require('lazy').setup({
     'hrsh7th/vim-vsnip', -- snippets
     {
         'hrsh7th/nvim-cmp', -- completion
-        event = 'InsertEnter',
         dependencies = {
             'hrsh7th/cmp-nvim-lsp', -- cmp lsp
             'hrsh7th/cmp-nvim-lsp-signature-help', -- cmp lsp signature help
@@ -174,13 +173,16 @@ return require('lazy').setup({
             'hrsh7th/cmp-cmdline',
             'hrsh7th/cmp-path',
             'hrsh7th/cmp-calc',
-            'hrsh7th/cmp-vsnip',
             'hrsh7th/cmp-emoji',
+            {
+                'crispgm/cmp-beancount',
+                -- dev = true,
+            },
+            {
+                'hrsh7th/cmp-vsnip',
+                dependencies = { 'hrsh7th/vim-vsnip' },
+            },
         },
-    },
-    {
-        'crispgm/cmp-beancount',
-        -- dev = true,
     },
     -- }}}
 
