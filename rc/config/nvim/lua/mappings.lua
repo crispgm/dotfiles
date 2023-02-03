@@ -85,9 +85,3 @@ map('n', 'g<c-x>', '<Plug>(dial-decrement-additional)')
 nnoremap('s', '<cmd>HopChar2<cr>')
 nnoremap('S', '<cmd>HopWord<cr>')
 nnoremap('<c-l>', '<cmd>HopLine<cr>')
-
--- ferret
--- vim.g.FerretMap = 0
--- nnoremap('<leader>fa', '<Plug>(FerretLack)')
--- nnoremap('<leader>fw', '<Plug>(FerretAckWord)')
--- nnoremap('<leader>fs', '<Plug>(FerretAcks)')

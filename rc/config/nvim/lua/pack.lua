@@ -9,7 +9,7 @@ return require('lazy').setup({
 
     -- {{{ ui
     'rcarriga/nvim-notify',
-    'kyazdani42/nvim-web-devicons',
+    'nvim-tree/nvim-web-devicons',
     -- }}}
 
     -- {{{ file
@@ -44,7 +44,7 @@ return require('lazy').setup({
         dependencies = {
             'neovim/nvim-lspconfig',
             'SmiteshP/nvim-navic',
-            'kyazdani42/nvim-web-devicons',
+            'nvim-tree/nvim-web-devicons',
         },
         config = true,
     },
@@ -54,7 +54,6 @@ return require('lazy').setup({
         config = true,
     },
     'google/vim-searchindex', -- search index
-    -- 'wincent/ferret', -- find and replace
     'Yggdroot/indentLine', -- indent line
     {
         'RRethy/vim-illuminate', -- highlight hover word
