@@ -34,7 +34,7 @@ nnoremap('<leader>k', '<c-w>k')
 nnoremap('<leader>h', '<c-w>h')
 nnoremap('<leader>l', '<c-w>l')
 -- buf
-nnoremap('<leader>bb', '<cmd>bdelete<cr>')
+nnoremap('<leader>bb', '<cmd>BufDel<cr>')
 nnoremap('<s-Tab>', '<cmd>bprev<cr>')
 nnoremap('<Tab>', '<cmd>bnext<cr>')
 -- tab

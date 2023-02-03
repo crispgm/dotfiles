@@ -15,26 +15,29 @@ return require('lazy').setup({
     -- {{{ file
     'mhinz/vim-startify', -- startup page
     'nvim-telescope/telescope.nvim', -- fuzzy picker
-    'crispgm/telescope-heading.nvim', -- markdown heading
-    -- '~/dev/telescope-heading.nvim',
+    {
+        'crispgm/telescope-heading.nvim', -- markdown heading
+        -- dev = true,
+    },
     'akinsho/toggleterm.nvim', -- terminal
     'rmagatti/auto-session', -- auto session
     'rmagatti/session-lens', -- session lens for telescope
-    'farmergreg/vim-lastplace', -- reopen files at your last edit position
+    'ethanholz/nvim-lastplace', -- reopen files at your last edit position
     'AndrewRadev/undoquit.vim', -- restore closed tabs
+    'ojroques/nvim-bufdel', -- delete buf without losing window layout
+    'christoomey/vim-system-copy', -- copy to system clipboard
     -- }}}
 
     -- {{{ view
     'ojroques/nvim-hardline', -- status line
     {
         'crispgm/nvim-tabline', -- tab line
-        config = function()
-            require('tabline').setup({})
-        end,
+        -- dev = true,
+        config = true,
     },
     {
-        'SmiteshP/nvim-navic', -- winbar
-        dependencies = 'neovim/nvim-lspconfig',
+        'SmiteshP/nvim-navic', -- LSP code context
+        dependencies = { 'neovim/nvim-lspconfig' },
     },
     {
         'utilyre/barbecue.nvim', -- winbar
@@ -43,13 +46,12 @@ return require('lazy').setup({
             'SmiteshP/nvim-navic',
             'kyazdani42/nvim-web-devicons',
         },
+        config = true,
     },
     'dstein64/nvim-scrollview', -- scroll bar
     {
         'declancm/cinnamon.nvim', -- smooth scrolling
-        config = function()
-            require('cinnamon').setup()
-        end,
+        config = true,
     },
     'google/vim-searchindex', -- search index
     -- 'wincent/ferret', -- find and replace
@@ -66,9 +68,7 @@ return require('lazy').setup({
     'rhysd/conflict-marker.vim', -- git conflict marker
     {
         'norcalli/nvim-colorizer.lua', -- colorizer
-        config = function()
-            require('colorizer').setup()
-        end,
+        config = true,
     },
     {
         'winston0410/range-highlight.nvim', -- highlight range lines
@@ -84,9 +84,7 @@ return require('lazy').setup({
     -- {{{ edit
     {
         'phaazon/hop.nvim', -- jump to anywhere within 2 strokes
-        config = function()
-            require('hop').setup()
-        end,
+        config = true,
     },
     {
         'echasnovski/mini.jump', -- f/t enhancement
@@ -99,21 +97,13 @@ return require('lazy').setup({
     'tpope/vim-abolish', -- eh, hard to describe, see README
     {
         'numToStr/Comment.nvim', -- toggle comment
-        config = function()
-            require('Comment').setup()
-        end,
+        config = true,
     },
-    {
-        'prettier/vim-prettier', -- prettier formatter
-        build = 'yarn install',
-        branch = 'release/0.x',
-    },
-    'christoomey/vim-system-copy', -- copy to system clipboard
     'monaqa/dial.nvim', -- <c-a> <c-x> enhancement
     'kana/vim-textobj-user', -- define textobj by user
     {
         'haya14busa/vim-textobj-number', -- number textobj
-        dependencies = 'kana/vim-textobj-user',
+        dependencies = { 'kana/vim-textobj-user' },
     },
     'AndrewRadev/splitjoin.vim', -- split and join in vim
     'wellle/targets.vim', -- various text objects
@@ -132,14 +122,18 @@ return require('lazy').setup({
         'nvim-treesitter/nvim-treesitter', -- treesitter
         build = ':TSUpdate',
     },
-    'nvim-treesitter/playground', -- treesitter playground
-    'nvim-treesitter/nvim-treesitter-textobjects', -- treesitter textobj e.g., class, function
+    {
+        'nvim-treesitter/playground', -- treesitter playground
+        dependencies = { 'nvim-treesitter/nvim-treesitter' },
+    },
+    {
+        'nvim-treesitter/nvim-treesitter-textobjects', -- treesitter textobj e.g., class, function
+        dependencies = { 'nvim-treesitter/nvim-treesitter' },
+    },
     'neovim/nvim-lspconfig', -- lsp client config
     {
         'williamboman/mason.nvim',
-        config = function()
-            require('mason').setup()
-        end,
+        config = true,
     },
     {
         'williamboman/mason-lspconfig.nvim',
@@ -166,13 +160,12 @@ return require('lazy').setup({
     },
     {
         'j-hui/fidget.nvim', -- lsp loading process
-        config = function()
-            require('fidget').setup()
-        end,
+        config = true,
     },
     'hrsh7th/vim-vsnip', -- snippets
     {
         'hrsh7th/nvim-cmp', -- completion
+        event = 'InsertEnter',
         dependencies = {
             'hrsh7th/cmp-nvim-lsp', -- cmp lsp
             'hrsh7th/cmp-nvim-lsp-signature-help', -- cmp lsp signature help
@@ -183,17 +176,24 @@ return require('lazy').setup({
             'hrsh7th/cmp-calc',
             'hrsh7th/cmp-vsnip',
             'hrsh7th/cmp-emoji',
-            'crispgm/cmp-beancount',
-            -- '~/dev/cmp-beancount',
         },
+    },
+    {
+        'crispgm/cmp-beancount',
+        -- dev = true,
     },
     -- }}}
 
     -- {{{ language-specific
+    {
+        'prettier/vim-prettier', -- prettier formatter
+        build = 'yarn install',
+        branch = 'release/0.x',
+    },
     'mattn/emmet-vim', -- html/css snippets
     {
         'crispgm/nvim-go', -- go dev
-        -- '~/dev/nvim-go',
+        -- dev = true,
         config = function()
             require('go').setup({
                 formatter = 'lsp',
@@ -206,9 +206,16 @@ return require('lazy').setup({
     'rust-lang/rust.vim', -- rust lang support
     'nathangrigg/vim-beancount', -- beancount ftplugin
     'vimwiki/vimwiki', -- vimwiki
+    {
+        'folke/neodev.nvim',
+        config = true,
+    },
     'rafcamlet/nvim-luapad', -- lua repl
     'junegunn/vader.vim', -- vim plugin testing
     -- }}}
 }, {
+    dev = {
+        path = '~/dev',
+    },
     install = { colorscheme = { 'nord' } },
 })

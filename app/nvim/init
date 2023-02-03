@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Run `nvim` to trigger plugin install.
-nvim
+nvim --headless "+Lazy! sync" +qa
 
 # Install formatters & linters (language servers are ensured by mason-lspconfig).
-nvim '+MasonInstall luacheck markdownlint revive stylua shfmt yamllint'
+nvim --headless '+MasonInstall luacheck markdownlint revive stylua shfmt yamllint' +qa
