@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 
-# themes & plugins
+# tpm
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# plugins
 git clone https://github.com/arcticicestudio/nord-tmux ~/.tmux/themes/nord-tmux
 git clone https://github.com/tmux-plugins/tmux-resurrect ~/.tmux/plugins/tmux-resurrect
 
-# reload
-# tmux source-file ~/.tmux.conf
+# install plugins
+echo "Toggle \`prefix + I\` inside a tmux session."
