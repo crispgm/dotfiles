@@ -1,4 +1,4 @@
-local nnoremap = require('../common').nnoremap
+local nnoremap = require('common').nnoremap
 
 local actions = require('telescope.actions')
 require('telescope').setup({

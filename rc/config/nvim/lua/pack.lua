@@ -148,7 +148,7 @@ return require('lazy').setup({
                     'rust_analyzer',
                     'solargraph',
                     'sqlls',
-                    'sumneko_lua',
+                    'lua_ls',
                     'tsserver',
                     'vimls',
                     'vuels',
