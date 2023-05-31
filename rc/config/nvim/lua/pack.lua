@@ -114,6 +114,7 @@ return require('lazy').setup({
             })
         end,
     },
+    { 'chrisgrieser/nvim-spider', lazy = true },
     -- }}}
 
     -- {{{ language features
