@@ -4,7 +4,7 @@ return require('lazy').setup({
     -- }}}
 
     -- {{{ colorscheme
-    'arcticicestudio/nord-vim',
+    'nordtheme/vim',
     -- }}}
 
     -- {{{ ui
