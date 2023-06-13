@@ -23,20 +23,16 @@ try_require('pack')
 -- mappings
 try_require('mappings')
 
--- plugins
-try_require('plugins.cmp')
-try_require('plugins.emmet')
-try_require('plugins.gitsigns')
-try_require('plugins.hardline')
-try_require('plugins.lspconfig')
-try_require('plugins.nord')
-try_require('plugins.prettier')
-try_require('plugins.rust')
-try_require('plugins.telescope')
-try_require('plugins.toggleterm')
-try_require('plugins.treesitter')
-try_require('plugins.vimwiki')
-try_require('plugins.vsnip')
+-- functions
+try_require('completion')
+try_require('colorscheme')
+try_require('editor')
+try_require('finder')
+try_require('languages')
+try_require('statusline')
+try_require('terminal')
+try_require('treesitter')
+try_require('wiki')
 
 -- autocmds
 try_require('autocmds')

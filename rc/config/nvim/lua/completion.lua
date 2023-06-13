@@ -1,4 +1,7 @@
 local cmp = require('cmp')
+local ls = require('luasnip')
+
+require('luasnip.loaders.from_vscode').lazy_load({ paths = '~/dev/snippets' })
 
 cmp.setup({
     mapping = cmp.mapping.preset.insert({
@@ -10,13 +13,20 @@ cmp.setup({
             behavior = cmp.ConfirmBehavior.Insert,
             select = true,
         }),
+        ['<C-j>'] = cmp.mapping(function(fallback)
+            if ls.expand_or_jumpable() then
+                ls.expand_or_jump()
+            else
+                fallback()
+            end
+        end, { 'i', 's' }),
     }),
     sources = cmp.config.sources({
         -- { name = 'copilot' },
         { name = 'nvim_lsp' },
         { name = 'nvim_lsp_signature_help' },
         { name = 'nvim_lua' },
-        { name = 'vsnip' },
+        { name = 'luasnip' },
         {
             name = 'beancount',
             option = { account = '~/dev/ledger/beancounts/accounts.bean' },
@@ -28,7 +38,7 @@ cmp.setup({
     }),
     snippet = {
         expand = function(args)
-            vim.fn['vsnip#anonymous'](args.body)
+            require('luasnip').lsp_expand(args.body)
         end,
     },
     experimental = {
@@ -43,7 +53,7 @@ cmp.setup({
                 nvim_lua = '[lua]',
                 nvim_lsp_signature_help = '[sig]',
                 bean_account = '[bean]',
-                vsnip = '[vsp]',
+                luasnip = '[snippet]',
                 path = '[path]',
                 calc = '[cal]',
                 emoji = '[emo]',

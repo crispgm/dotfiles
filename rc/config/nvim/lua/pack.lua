@@ -162,7 +162,6 @@ return require('lazy').setup({
         'j-hui/fidget.nvim', -- lsp loading process
         config = true,
     },
-    'hrsh7th/vim-vsnip', -- snippets
     {
         'hrsh7th/nvim-cmp', -- completion
         dependencies = {
@@ -179,8 +178,12 @@ return require('lazy').setup({
                 -- dev = true,
             },
             {
-                'hrsh7th/cmp-vsnip',
-                dependencies = { 'hrsh7th/vim-vsnip' },
+                'saadparwaiz1/cmp_luasnip',
+                dependencies = {
+                    'L3MON4D3/LuaSnip',
+                    version = 'v1.*',
+                    build = 'make install_jsregexp',
+                },
             },
         },
     },
