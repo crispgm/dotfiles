@@ -83,7 +83,6 @@ else
   cask 'google-chrome'
   cask 'dropbox'
   cask 'hiddenbar'
-  cask 'snipaste'
   cask 'rectangle'
   cask 'appcleaner'
   cask 'karabiner-elements'
