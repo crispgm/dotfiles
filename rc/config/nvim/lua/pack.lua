@@ -115,6 +115,15 @@ return require('lazy').setup({
         end,
     },
     { 'chrisgrieser/nvim-spider', lazy = true },
+    {
+        'crispgm/nvim-auto-ime',
+        -- dev = true,
+        config = function()
+            require('auto-ime').setup({
+                ime_source = 'com.apple.inputmethod.SCIM.ITABC',
+            })
+        end,
+    },
     -- }}}
 
     -- {{{ language features

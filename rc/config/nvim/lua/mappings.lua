@@ -54,8 +54,6 @@ nnoremap('<leader>9', '9gt')
 nnoremap('<leader>0', '<cmd>tablast<cr>')
 -- quickfix
 nnoremap('<leader>cc', '<cmd>cclose<cr>')
-nnoremap('<leader>;', '<cmd>cprev<cr>')
-nnoremap("<leader>'", '<cmd>cnext<cr>')
 -- command
 cnoremap('<c-a>', '<Home>')
 cnoremap('<c-e>', '<End>')
