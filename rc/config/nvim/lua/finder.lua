@@ -24,7 +24,11 @@ nnoremap(
     '<cmd>Telescope find_files find_command=fd,--hidden,--no-ignore,--exclude,*.git,--type,f<cr>'
 )
 nnoremap('<leader>fd', '<cmd>Telescope git_files<cr>')
-nnoremap('<leader>fg', '<cmd>Telescope live_grep<cr>')
+nnoremap(
+    '<leader>fg',
+    "<cmd>lua require('telescope.builtin').live_grep({additional_args={'--sortr','modified'}})<cr>"
+)
+nnoremap('<leader>fG', '<cmd>Telescope grep_string<cr>')
 nnoremap('<leader>fb', '<cmd>Telescope buffers<cr>')
 nnoremap('<leader>fh', '<cmd>Telescope help_tags<cr>')
 nnoremap('<leader>fl', '<cmd>Telescope lsp_document_symbols<cr>')
