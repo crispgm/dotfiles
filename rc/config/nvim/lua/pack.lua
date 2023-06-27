@@ -170,6 +170,7 @@ return require('lazy').setup({
     {
         'j-hui/fidget.nvim', -- lsp loading process
         config = true,
+        tag = 'legacy',
     },
     {
         'hrsh7th/nvim-cmp', -- completion

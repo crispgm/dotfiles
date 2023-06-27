@@ -14,6 +14,9 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- pre hooks
+vim.g.vimwiki_ext2syntax = vim.empty_dict()
+
 -- options
 try_require('options')
 
