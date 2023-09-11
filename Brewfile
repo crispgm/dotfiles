@@ -41,7 +41,7 @@ else
   brew 'dos2unix'
   brew 'mas'
   brew 'bat'
-  brew 'exa'
+  brew 'eza'
   brew 'ripgrep'
   brew 'fd'
   brew 'zoxide'
@@ -57,7 +57,6 @@ else
   brew 'glow'
   brew 'mpv'
   brew 'charmbracelet/tap/vhs'
-  brew 'noborus/tap/ov'
 
   # [brew] optional
   # brew 'choose-rust'
