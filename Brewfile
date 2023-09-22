@@ -47,6 +47,7 @@ else
   brew 'zoxide'
   brew 'htop'
   brew 'jq'
+  brew 'fx'
   brew 'xsv'
   brew 'pandoc'
   brew 'beancount'
