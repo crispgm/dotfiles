@@ -25,7 +25,7 @@ return require('lazy').setup({
     'ethanholz/nvim-lastplace', -- reopen files at your last edit position
     'AndrewRadev/undoquit.vim', -- restore closed tabs
     'ojroques/nvim-bufdel', -- delete buf without losing window layout
-    'christoomey/vim-system-copy', -- copy to system clipboard
+    'ojroques/vim-oscyank', -- copy to system clipboard by OSC52
     -- }}}
 
     -- {{{ view

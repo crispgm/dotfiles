@@ -21,6 +21,8 @@ nnoremap('k', 'gk')
 nnoremap('j', 'gj')
 -- editing
 nnoremap('Y', 'y$')
+nnoremap('cp', '<Plug>OSCYankOperator')
+vnoremap('cp', '<Plug>OSCYankVisual')
 inoremap('<c-d>', '<Esc>ddi')
 nnoremap('<leader>pp', '"0p')
 nnoremap('<a-Up>', '<cmd>m .-2<cr>==')
