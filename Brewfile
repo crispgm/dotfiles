@@ -57,7 +57,7 @@ else
   brew 'onefetch'
   brew 'glow'
   brew 'mpv'
-  brew 'charmbracelet/tap/vhs'
+  brew 't-rec'
 
   # [brew] optional
   # brew 'choose-rust'
