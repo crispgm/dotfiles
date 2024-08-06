@@ -24,11 +24,9 @@ if ENV.key? 'CI'
 else
   # [brew] dev
   brew 'cmake'
-  brew 'gh'
   brew 'mysql'
   brew 'sqlite'
   brew 'postgresql'
-  brew 'flyctl'
   brew 'node'
   brew 'pnpm'
   brew 'navi'
@@ -52,11 +50,8 @@ else
   brew 'pandoc'
   brew 'beancount'
   brew 'fava'
-  brew 'youtube-dl'
+  brew 'yt-dlp'
   brew 'neofetch'
-  brew 'onefetch'
-  brew 'glow'
-  brew 'mpv'
   brew 't-rec'
 
   # [brew] optional
@@ -64,6 +59,9 @@ else
   # brew 'curlie'
   # brew 'hexyl'
   # brew 'procs'
+  # brew 'onefetch'
+  # brew 'glow'
+  # brew 'mpv'
 
   # [font] for code editor
   cask 'font-menlo-for-powerline'
@@ -77,7 +75,7 @@ else
   cask 'figma'
 
   # [cask] productivity
-  cask 'clashx'
+  # cask 'clashx'
   cask '1password'
   cask 'alfred'
   cask 'google-chrome'
