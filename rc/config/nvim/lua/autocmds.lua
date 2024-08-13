@@ -121,7 +121,7 @@ a.nvim_create_autocmd({ 'CursorHold' }, {
 
 -- formatter
 local format = a.nvim_create_augroup('formatter_options', { clear = true })
-a.nvim_create_autocmd({ 'BufWritePre' }, {
+a.nvim_create_autocmd({ 'BufWritePost' }, {
     group = format,
     pattern = { '{*.bean,*.beancount}' },
     callback = formatter.bean_format,

@@ -85,12 +85,7 @@ return require('lazy').setup({
         'phaazon/hop.nvim', -- jump to anywhere within 2 strokes
         config = true,
     },
-    {
-        'echasnovski/mini.jump', -- f/t enhancement
-        config = function()
-            require('mini.jump').setup()
-        end,
-    },
+    -- f/t enhancement
     'tpope/vim-repeat', -- allow commands from plugin do repeat
     'tpope/vim-surround', -- toggle surround
     'tpope/vim-abolish', -- eh, hard to describe, see README
