@@ -1,7 +1,3 @@
-alias l='eza'
-alias la='eza -a'
-alias ll='eza -lah'
-alias ls='eza --color=auto'
 alias hf='history | fzf'
 alias bc='bc -q -l'
 alias nvimconf='nvim ~/.config/nvim/init.lua'
