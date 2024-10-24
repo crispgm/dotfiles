@@ -55,10 +55,7 @@ else
   brew 't-rec'
 
   # [brew] optional
-  # brew 'choose-rust'
-  # brew 'curlie'
   # brew 'hexyl'
-  # brew 'procs'
   # brew 'onefetch'
   # brew 'glow'
   # brew 'mpv'
@@ -101,4 +98,5 @@ else
   mas 'Numbers', id: 409_203_825
   mas 'Keynote', id: 409_183_694
   mas 'WeChat', id: 836_500_024
+  mas 'Command X', id: 6448461551
 end

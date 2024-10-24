@@ -1,5 +1,5 @@
 tap 'homebrew/cask'
 
-cask 'charles'
+cask 'feishu'
 cask 'postman'
 cask 'workflowy'
