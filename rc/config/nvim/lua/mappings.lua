@@ -71,7 +71,7 @@ nnoremap('<leader>lr', '<cmd>Telescope lsp_references<cr>')
 nnoremap('<leader>ls', '<cmd>Telescope lsp_document_symbols<cr>')
 nnoremap('<leader>lS', '<cmd>Telescope lsp_workspace_symbols<cr>')
 nnoremap('<leader>lR', '<cmd>lua vim.lsp.buf.rename()<cr>')
-nnoremap('<leader>lf', '<cmd>lua vim.lsp.buf.formatting()<cr>')
+nnoremap('<leader>lf', '<cmd>lua vim.lsp.buf.format({async=true})<cr>')
 
 -- dial.nvim
 map('n', '<c-a>', '<Plug>(dial-increment)')
