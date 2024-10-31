@@ -14,7 +14,7 @@ lspconfig.gopls.setup({
 lspconfig.rust_analyzer.setup({
     on_attach = attach_navic,
 })
-lspconfig.tsserver.setup({
+lspconfig.ts_ls.setup({
     on_attach = attach_navic,
 })
 
