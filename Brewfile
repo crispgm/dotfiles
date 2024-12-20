@@ -1,10 +1,3 @@
-tap 'homebrew/cask'
-tap 'homebrew/cask-fonts'
-tap 'homebrew/core'
-tap 'homebrew/services'
-tap 'homebrew/cask-versions'
-tap 'homebrew/cask-drivers'
-
 # primitives
 brew 'git'
 brew 'rcm'
@@ -15,7 +8,7 @@ brew 'tmux'
 brew 'fzf'
 
 # [brew] dev
-brew 'ruby@2.7'
+brew 'ruby'
 brew 'go'
 brew 'shellcheck' # for CI checks
 # dev: CI testing
@@ -35,7 +28,6 @@ else
   # [brew] productivity
   brew 'wget'
   brew 'p7zip'
-  brew 'rar'
   brew 'dos2unix'
   brew 'mas'
   brew 'bat'
@@ -72,16 +64,16 @@ else
   cask 'figma'
 
   # [cask] productivity
-  # cask 'clashx'
   cask '1password'
   cask 'alfred'
   cask 'google-chrome'
   cask 'dropbox'
   cask 'hiddenbar'
   cask 'rectangle'
-  cask 'appcleaner'
   cask 'karabiner-elements'
   cask 'google-trends'
+  cask 'rar'
+  cask 'appcleaner'
   # cask 'qmk-toolbox'
 
   # [cask] entertainment
