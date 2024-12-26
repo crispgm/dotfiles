@@ -20,7 +20,12 @@ return require('lazy').setup({
         -- dev = true,
     },
     'akinsho/toggleterm.nvim', -- terminal
-    'rmagatti/auto-session', -- auto session
+    {
+        'rmagatti/auto-session', -- auto session
+        opts = {
+            suppressed_dirs = { '~/', '~/dev', '~/work', '/' },
+        },
+    },
     'rmagatti/session-lens', -- session lens for telescope
     'ethanholz/nvim-lastplace', -- reopen files at your last edit position
     'AndrewRadev/undoquit.vim', -- restore closed tabs

@@ -30,7 +30,7 @@ nnoremap(
 nnoremap('<leader>fd', '<cmd>Telescope git_files<cr>')
 nnoremap(
     '<leader>fg',
-    "<cmd>lua require('telescope.builtin').live_grep({additional_args={'--sortr','modified'}})<cr>"
+    "<cmd>lua require('telescope.builtin').live_grep({default_text = vim.fn.expand('<cword>'), additional_args={'--sortr','modified'}})<cr>"
 )
 nnoremap('<leader>fG', '<cmd>Telescope grep_string<cr>')
 nnoremap('<leader>fb', '<cmd>Telescope buffers<cr>')
