@@ -151,13 +151,15 @@ return require('lazy').setup({
             require('mason-lspconfig').setup({
                 ensure_installed = {
                     'bashls',
+                    'beancount',
                     'cssls',
                     'gopls',
                     'html',
                     'jsonls',
                     'lua_ls',
+                    'pyright',
                     'rust_analyzer',
-                    'solargraph',
+                    'ruby_lsp',
                     'sqlls',
                     'ts_ls',
                     'vimls',
