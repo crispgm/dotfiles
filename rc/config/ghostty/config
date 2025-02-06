@@ -1,0 +1,19 @@
+theme = nord
+font-family = Iosevka Nerd Font
+font-size = 16
+font-feature = -calt, -liga, -dlig
+background-opacity = 0.90
+
+window-padding-x = 6,6
+window-padding-y = 6,6
+window-save-state = always
+
+link-url = true
+copy-on-select = false
+confirm-close-surface = false
+clipboard-trim-trailing-spaces = true
+auto-update = check
+keybind = global:cmd+shift+enter=toggle_quick_terminal
+
+macos-option-as-alt = true
+macos-titlebar-style = hidden
