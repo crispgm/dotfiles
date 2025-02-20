@@ -1,3 +1,4 @@
+-- status line
 require('hardline').setup({
     bufferline = false,
     theme = 'nord',

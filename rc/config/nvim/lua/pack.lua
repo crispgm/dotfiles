@@ -44,15 +44,7 @@ return require('lazy').setup({
         'SmiteshP/nvim-navic', -- LSP code context
         dependencies = { 'neovim/nvim-lspconfig' },
     },
-    {
-        'utilyre/barbecue.nvim', -- winbar
-        dependencies = {
-            'neovim/nvim-lspconfig',
-            'SmiteshP/nvim-navic',
-            'nvim-tree/nvim-web-devicons',
-        },
-        config = true,
-    },
+    'Bekaboo/dropbar.nvim', -- winbar
     'dstein64/nvim-scrollview', -- scroll bar
     {
         'declancm/cinnamon.nvim', -- smooth scrolling
