@@ -22,6 +22,7 @@ else
   brew 'postgresql'
   brew 'node'
   brew 'pnpm'
+  brew 'luarocks'
   brew 'navi'
   brew 'tokei'
 
@@ -38,7 +39,7 @@ else
   brew 'htop'
   brew 'jq'
   brew 'fx'
-  brew 'xsv'
+  brew 'qsv'
   brew 'pandoc'
   brew 'beancount'
   brew 'fava'
@@ -60,7 +61,7 @@ else
 
   # [cask] dev
   cask 'visual-studio-code'
-  cask 'alacritty'
+  cask 'ghostty'
   cask 'figma'
 
   # [cask] productivity
@@ -75,6 +76,7 @@ else
   cask 'rar'
   cask 'appcleaner'
   # cask 'qmk-toolbox'
+  # cask 'via'
 
   # [cask] entertainment
   cask 'iina'

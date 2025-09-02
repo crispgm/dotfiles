@@ -107,6 +107,17 @@ $ ./bootstrap
 - [ ] Downloads: View content as Grid
 - [ ] Add blank seperator: `defaults write com.apple.dock persistent-apps -array-add '{tile-type="spacer-tile";}'`
 
+### Keyboard
+
+- [ ] Input Sources -> Automatically switch to a document's input source
+- [ ] Add more input sources that you like
+
+#### Keyboard Shortcuts
+
+- [ ] Show Launchpad: `F4`
+- [ ] Select the previous input source: `Option + Space`
+- [ ] Copy picture of selected area to clipboard: `Command + Shift + a`
+
 ## Optional Setups
 
 ### bash
