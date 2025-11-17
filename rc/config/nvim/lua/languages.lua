@@ -1,36 +1,20 @@
-local lspconfig = require('lspconfig')
--- winbar setup
-local navic = require('nvim-navic')
-local attach_navic = function(client, bufnr)
-    if client.server_capabilities.documentSymbolProvider then
-        navic.attach(client, bufnr)
-    end
-end
-
--- major langs
-lspconfig.gopls.setup({
-    on_attach = attach_navic,
+vim.lsp.enable({
+    'bashls',
+    'beancount',
+    'cssls',
+    'gopls',
+    'html',
+    'jsonls',
+    'lua_ls',
+    'pyright',
+    'ruby_lsp',
+    'rust_analyzer',
+    'sqlls',
+    'ts_ls',
+    'vimls',
+    'vue_ls',
+    'yamlls',
 })
-lspconfig.rust_analyzer.setup({
-    on_attach = attach_navic,
-})
-lspconfig.ts_ls.setup({
-    on_attach = attach_navic,
-})
-
--- minor langs
-lspconfig.bashls.setup({})
-lspconfig.beancount.setup({})
-lspconfig.cssls.setup({})
-lspconfig.html.setup({})
-lspconfig.jsonls.setup({})
-lspconfig.lua_ls.setup({})
-lspconfig.pyright.setup({})
-lspconfig.ruby_lsp.setup({})
-lspconfig.sqlls.setup({})
-lspconfig.vimls.setup({})
-lspconfig.vuels.setup({})
-lspconfig.yamlls.setup({})
 
 -- html
 -- > emmet

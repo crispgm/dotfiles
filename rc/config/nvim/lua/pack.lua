@@ -43,6 +43,9 @@ return require('lazy').setup({
     {
         'SmiteshP/nvim-navic', -- LSP code context
         dependencies = { 'neovim/nvim-lspconfig' },
+        config = function()
+            require('nvim-navic').setup({ lsp = { auto_attach = true } })
+        end,
     },
     'Bekaboo/dropbar.nvim', -- winbar
     'dstein64/nvim-scrollview', -- scroll bar
