@@ -107,6 +107,10 @@ $ ./bootstrap
 - [ ] Downloads: View content as Grid
 - [ ] Add blank seperator: `defaults write com.apple.dock persistent-apps -array-add '{tile-type="spacer-tile";}'`
 
+### Mission Control
+
+- [ ] Disable automatically rearrange Spaces based on most recent use
+
 ### Keyboard
 
 - [ ] Input Sources -> Automatically switch to a document's input source
