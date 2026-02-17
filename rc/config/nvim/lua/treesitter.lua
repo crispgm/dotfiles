@@ -1,4 +1,4 @@
-require('nvim-treesitter.configs').setup({
+require('nvim-treesitter.config').setup({
     ensure_installed = {
         'bash',
         'beancount',
@@ -55,12 +55,6 @@ require('nvim-treesitter.configs').setup({
             scope_incremental = 'grc',
             node_decremental = 'grm',
         },
-    },
-    playground = {
-        enable = true,
-        disable = {},
-        updatetime = 25, -- Debounced time for highlighting nodes in the playground from source code
-        persist_queries = false, -- Whether the query persists across vim sessions
     },
     textobjects = {
         select = {

@@ -127,10 +127,6 @@ return require('lazy').setup({
         build = ':TSUpdate',
     },
     {
-        'nvim-treesitter/playground', -- treesitter playground
-        dependencies = { 'nvim-treesitter/nvim-treesitter' },
-    },
-    {
         'nvim-treesitter/nvim-treesitter-textobjects', -- treesitter textobj e.g., class, function
         dependencies = { 'nvim-treesitter/nvim-treesitter' },
     },
