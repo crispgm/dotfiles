@@ -21,7 +21,8 @@ require('telescope').load_extension('heading')
 
 nnoremap(
     '<leader>ff',
-    '<cmd>Telescope find_files find_command=fd,--hidden,--exclude,*.git,--type,f<cr>'
+    -- '<cmd>Telescope find_files find_command=fd,--hidden,--exclude,*.git,--type,f<cr>'
+    '<cmd>Telescope find_files find_command=rg,--files,--hidden,--sortr,modified<cr>'
 )
 nnoremap(
     '<leader>fF',
