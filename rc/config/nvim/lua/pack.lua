@@ -94,10 +94,10 @@ return require('lazy').setup({
         config = true,
     },
     'monaqa/dial.nvim', -- <c-a> <c-x> enhancement
-    'kana/vim-textobj-user', -- define textobj by user
+    'crispgm/vim-textobj-user', -- define textobj by user
     {
         'haya14busa/vim-textobj-number', -- number textobj
-        dependencies = { 'kana/vim-textobj-user' },
+        dependencies = { 'crispgm/vim-textobj-user' },
     },
     'AndrewRadev/splitjoin.vim', -- split and join in vim
     'wellle/targets.vim', -- various text objects
