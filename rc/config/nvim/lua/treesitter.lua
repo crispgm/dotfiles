@@ -1,4 +1,4 @@
-require('nvim-treesitter.config').setup({
+require('nvim-treesitter').setup({
     ensure_installed = {
         'bash',
         'beancount',
