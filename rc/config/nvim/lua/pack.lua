@@ -82,10 +82,10 @@ return require('lazy').setup({
 
     -- {{{ edit
     {
-        'phaazon/hop.nvim', -- jump to anywhere within 2 strokes
+        'folke/flash.nvim', -- f/t enhancement
+        event = 'VeryLazy',
         config = true,
     },
-    -- f/t enhancement
     'tpope/vim-repeat', -- allow commands from plugin do repeat
     'tpope/vim-surround', -- toggle surround
     'tpope/vim-abolish', -- eh, hard to describe, see README
