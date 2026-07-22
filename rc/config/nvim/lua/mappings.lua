@@ -80,8 +80,3 @@ map('n', '<c-a>', '<Plug>(dial-increment)')
 map('n', '<c-x>', '<Plug>(dial-decrement)')
 map('n', 'g<c-a>', '<Plug>(dial-increment-additional)')
 map('n', 'g<c-x>', '<Plug>(dial-decrement-additional)')
-
--- hop.nvim
-nnoremap('s', '<cmd>HopChar2<cr>')
-nnoremap('S', '<cmd>HopWord<cr>')
-nnoremap('<c-l>', '<cmd>HopLine<cr>')
