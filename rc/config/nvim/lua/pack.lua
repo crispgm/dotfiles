@@ -154,7 +154,7 @@ return require('lazy').setup({
                     'sqlls',
                     'ts_ls',
                     'vimls',
-                    'vuels',
+                    'vue_ls',
                     'yamlls',
                 },
             })
