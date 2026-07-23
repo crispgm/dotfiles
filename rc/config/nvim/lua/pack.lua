@@ -66,8 +66,9 @@ return require('lazy').setup({
     'lewis6991/gitsigns.nvim', -- git signs
     'rhysd/conflict-marker.vim', -- git conflict marker
     {
-        'norcalli/nvim-colorizer.lua', -- colorizer
-        config = true,
+        'catgoose/nvim-colorizer.lua', -- colorizer
+        event = 'BufReadPre',
+        opts = {},
     },
     {
         'winston0410/range-highlight.nvim', -- highlight range lines

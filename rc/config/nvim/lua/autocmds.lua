@@ -121,7 +121,7 @@ a.nvim_create_autocmd({ 'CursorHold' }, {
 
 -- formatter
 local format = a.nvim_create_augroup('formatter_options', { clear = true })
-a.nvim_create_autocmd({ 'BufWritePost' }, {
+a.nvim_create_autocmd({ 'BufWritePre' }, {
     group = format,
     pattern = { '{*.bean,*.beancount}' },
     callback = formatter.bean_format,
@@ -129,16 +129,14 @@ a.nvim_create_autocmd({ 'BufWritePost' }, {
 a.nvim_create_autocmd({ 'BufWritePost' }, {
     group = format,
     pattern = { '{*.bean,*.beancount}' },
-    callback = function()
-        vim.cmd('!bean-check <afile>')
-    end,
+    callback = formatter.bean_check,
 })
-a.nvim_create_autocmd({ 'BufWritePost' }, {
+a.nvim_create_autocmd({ 'BufWritePre' }, {
     group = format,
     pattern = { '*.lua' },
     callback = formatter.lua_format,
 })
-a.nvim_create_autocmd({ 'BufWritePost' }, {
+a.nvim_create_autocmd({ 'BufWritePre' }, {
     group = format,
     pattern = { '*.sh' },
     callback = formatter.shell_format,
