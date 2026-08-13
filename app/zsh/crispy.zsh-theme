@@ -2,61 +2,75 @@
 # Support exit code coloring and elapsed time.
 # It's based on gentoo.zsh-theme
 
-function preexec() {
-  timer=$(($(print -P %D{%s%6.})/1000))
+autoload -Uz add-zsh-hook
+
+function crispy_preexec() {
+  CRISPY_TIMER=$(($(print -P %D{%s%6.}) / 1000))
 }
 
-function precmd() {
-  if [ $timer ]; then
-    now=$(($(print -P %D{%s%6.})/1000))
-    elapsed=$(($now-$timer))
-    unit="ms"
+function crispy_precmd() {
+  if [[ -n ${CRISPY_TIMER-} ]]; then
+    local now=$(($(print -P %D{%s%6.}) / 1000))
+    local elapsed=$((now - CRISPY_TIMER))
+    local unit="ms"
     if [[ $elapsed -ge 1000 ]]; then
-        elapsed=$(($elapsed/1000))
+        elapsed=$((elapsed / 1000))
         unit="s"
         if [[ $elapsed -ge 60 ]]; then
-            elapsed=$(($elapsed/60))
+            elapsed=$((elapsed / 60))
             unit="m"
             if [[ $elapsed -ge 60 ]]; then
-                elapsed=$(($elapsed/60))
+                elapsed=$((elapsed / 60))
                 unit="h"
             fi
         fi
     fi
-    elapsed="$elapsed$unit"
-    unset timer
+    CRISPY_ELAPSED="$elapsed$unit"
+    CRISPY_SHOW_EXIT_CODE=1
+    unset CRISPY_TIMER
+  else
+    unset CRISPY_ELAPSED
+    unset CRISPY_SHOW_EXIT_CODE
   fi
 }
 
-function prompt_elapse {
-  echo "%{$fg[cyan]%}${elapsed} %{$reset_color%}"
+add-zsh-hook -d preexec crispy_preexec 2>/dev/null
+add-zsh-hook -d precmd crispy_precmd 2>/dev/null
+add-zsh-hook preexec crispy_preexec
+add-zsh-hook precmd crispy_precmd
+
+function crispy_prompt_elapse {
+  [[ -n ${CRISPY_ELAPSED-} ]] || return
+  echo "%{$fg[cyan]%}${CRISPY_ELAPSED} %{$reset_color%}"
 }
 
-function prompt_char {
-  if [ $UID -eq 0 ]; then CH=#; else CH=$; fi
-  echo "%(?..%{$fg[red]%})$CH"
+function crispy_prompt_char {
+  local ch
+  if [[ $UID -eq 0 ]]; then ch=#; else ch=$; fi
+  echo "%(?..%{$fg[red]%})$ch"
 }
 
-function prompt_exitcode {
-  if [ $? -ne 0 ]; then
-    echo "%{$fg[red]%}(%?) "
+function crispy_prompt_exitcode {
+  local exit_code=$?
+  if [[ -n ${CRISPY_SHOW_EXIT_CODE-} && $exit_code -ne 0 ]]; then
+    echo "%{$fg[red]%}($exit_code) "
   fi
 }
 
-function prompt_arch {
+function crispy_prompt_arch {
   if [ "$ZSH_CRISPY_SHOW_ARCH" != "1" ]; then
     return
   fi
-  MAC_ARCH=`arch`
-  if [ "$MAC_ARCH" = "i386" ]; then
+  local mac_arch=$(arch)
+  if [ "$mac_arch" = "i386" ]; then
     echo "i "
-  elif [ "$MAC_ARCH" = "arm64" ]; then
+  elif [ "$mac_arch" = "arm64" ]; then
     echo "a "
   fi
 }
 
-PROMPT='%{$fg_bold[blue]%}$(prompt_arch)%(!.%1~.%~) $(git_prompt_info)$(prompt_char)%{$reset_color%} '
-RPROMPT='$(prompt_exitcode)$(prompt_elapse)%{$fg[magenta]%}[%*]%{$reset_color%}'
+PROMPT='%{$fg_bold[blue]%}$(crispy_prompt_arch)%(!.%1~.%~) $(git_prompt_info)$(crispy_prompt_char)%{$reset_color%} '
+RPROMPT='$(crispy_prompt_exitcode)$(crispy_prompt_elapse)%{$fg[magenta]%}[%*]%{$reset_color%}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="("
 ZSH_THEME_GIT_PROMPT_SUFFIX=") "
