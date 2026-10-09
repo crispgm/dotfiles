@@ -2,7 +2,6 @@
 :backtrace: false
 :bulk_threshold: 1000
 :sources:
-- https://gems.ruby-china.com/
 :update_sources: true
 :ssl_verify_mode: 0
 :verbose: true

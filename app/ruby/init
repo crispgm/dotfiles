@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 
 gem install bundler
-bundle config mirror.https://rubygems.org https://gems.ruby-china.com

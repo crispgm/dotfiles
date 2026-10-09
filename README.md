@@ -56,7 +56,6 @@ $ ./bootstrap
 ### Ruby
 
 - [x] Setup `.gemrc`
-- [x] Setup bundler's mirror: `bundle config mirror.https://rubygems.org https://gems.ruby-china.com` if you locate in China mainland
 
 ### VSCode
 
