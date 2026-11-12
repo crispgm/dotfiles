@@ -20,6 +20,9 @@ vim.g.vimwiki_ext2syntax = vim.empty_dict()
 -- options
 try_require('options')
 
+-- wiki settings must be set before vimwiki loads
+try_require('wiki')
+
 -- packages
 try_require('pack')
 
@@ -35,7 +38,6 @@ try_require('languages')
 try_require('statusline')
 try_require('terminal')
 try_require('treesitter')
-try_require('wiki')
 
 -- autocmds
 try_require('autocmds')
